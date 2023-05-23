@@ -16,9 +16,9 @@ function AboutPage() {
           <h2 className=" ff_Inter fw-bold fs_8xl text_primary text-center mb-0">
             About
           </h2>
-          {/* <h1 className=" ff_Inter fw-bold fs_15xl text_primary text-center text-uppercase mt_n_20 opacity_1">
+          <h1 className=" ff_Inter fw-bold fs_15xl text_primary text-center text-uppercase mt_n_20 opacity_1">
             HEXABIRDS
-          </h1> */}
+          </h1>
         </Container>
       </section>
       <section className="py-5   my-5 ">
@@ -77,9 +77,9 @@ function AboutPage() {
           <h2 className=" ff_Inter fw-bold fs_10xl text_dark text-center">
             Meet the team
           </h2>
-          {/* <h2 className=" ff_Inter fw-bold fs_16xl text-center text-uppercase position-absolute text_dark start-50 translate-middle top-50 opacity_Low_1 index_n_1">
+          <h2 className=" ff_Inter fw-bold fs_16xl text-center text-uppercase position-absolute text_dark start-50 translate-middle top-50 opacity_Low_1 index_n_1">
             MANAGEMENT
-          </h2> */}
+          </h2>
 
           <Row className=" justify-content-center">
             <Col xs={12} md={11} xl={8}>
