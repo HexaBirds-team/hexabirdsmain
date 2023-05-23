@@ -32,6 +32,7 @@
   --fw-medium: 500;
   /* COLOR  */
   --clr-dark: #000000;
+  --clr-semidark: #1e222b;
   --clr-primary: #ffffff;
   --clr-secondary: #b63336;
   --clr-tertiary: #01010186;
@@ -135,6 +136,9 @@
 .bg_tertiary {
   background-color: var(--clr-tertiary);
 }
+.bg_semidark {
+  background-color: var(--clr-semidark);
+}
 .bg_red_to_tr {
   background: #b63336;
 }
@@ -154,6 +158,9 @@
 }
 .opacity_Low_1 {
   opacity: 0.1;
+}
+.opacity_Low_3 {
+  opacity: 0.3;
 }
 
 .cursor_pointer {
@@ -651,10 +658,15 @@ video {
   content: "";
   position: absolute;
   width: 100%;
-  background-color: var(--clr-secondary);
-  height: 14%;
-  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(182, 51, 54, 0) 0%,
+    rgba(182, 51, 54, 0.21) 79.13%
+  );
+  height: 20%;
+  bottom: -16%;
   left: 0;
+  z-index: -1;
 }
 
 .top_90 {
@@ -666,7 +678,136 @@ video {
 .index_1 {
   z-index: 1;
 }
-
+/* OUR TEAM section    ================================== */
+.images_hover:hover {
+  transform-origin: top center;
+  animation: row 2s linear infinite alternate;
+  z-index: 10;
+}
+.images_hover {
+  transform-origin: top center;
+  z-index: 3;
+}
+@keyframes row {
+  0% {
+    transform: rotate(12deg);
+  }
+  100% {
+    transform: rotate(-12deg);
+  }
+}
+.images_hover .imgoverlay {
+  transition: all 300ms linear;
+}
+.images_hover:hover .imgoverlay {
+  transform: translateY(30px);
+}
+.images_hover:hover .imgoverlay::after {
+  opacity: 0;
+}
+.images_hover .team_name {
+  transition: all 300ms linear;
+  opacity: 0;
+}
+.images_hover:hover .team_name {
+  transform: translateY(30px);
+  opacity: 1;
+}
+.teamline {
+  width: 2px;
+  height: 30px;
+  background-color: var(--clr-secondary);
+}
+.team_name {
+  left: -28px;
+  bottom: -12px;
+  z-index: 2;
+}
+.imgoverlay {
+  position: relative;
+}
+.imgoverlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000009e;
+  z-index: 10;
+  transition: all 300ms linear;
+}
+.bottom_73 {
+  bottom: 73px;
+}
+/* .linear_gradient{
+  background: linear-gradient(0deg, rgba(182, 51, 54, 0.21) 0%, rgba(182, 51, 54, 0) 79.13%);
+} */
+.reflect {
+  -webkit-box-reflect: below 40px;
+}
+@media (min-width: 576px) {
+  :root {
+    /* FONT SIZE  */
+    --fs-xsm: 10px;
+    --fs-sm: 14px;
+    --fs-md: 15px;
+    --fs-lg: 16px;
+    --fs-xl: 18px;
+    --fs-2xl: 15px;
+    --fs-3xl: 25px;
+    --fs-4xl: 30px;
+    --fs-5xl: 35px;
+    --fs-6xl: 30px;
+    --fs-7xl: 45px;
+    --fs-8xl: 50px;
+    --fs-9xl: 47px;
+    --fs-10xl: 60px;
+    --fs-11xl: 70px;
+    --fs-12xl: 80px;
+    --fs-13xl: 90px;
+    --fs-14xl: 100px;
+    --fs-15xl: 74px;
+    --fs-16xl: 75px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    /* FONT SIZE  */
+    --fs-xsm: 10px;
+    --fs-sm: 14px;
+    --fs-md: 15px;
+    --fs-lg: 16px;
+    --fs-xl: 18px;
+    --fs-2xl: 15px;
+    --fs-3xl: 25px;
+    --fs-4xl: 30px;
+    --fs-5xl: 35px;
+    --fs-6xl: 30px;
+    --fs-7xl: 45px;
+    --fs-8xl: 50px;
+    --fs-9xl: 47px;
+    --fs-10xl: 60px;
+    --fs-11xl: 70px;
+    --fs-12xl: 80px;
+    --fs-13xl: 90px;
+    --fs-14xl: 100px;
+    --fs-15xl: 107px;
+    --fs-16xl: 103px;
+  }
+  .opacity_Low_md_1 {
+    opacity: 0.1;
+  }
+  .index_n_md_1 {
+    z-index: -1;
+  }
+  .translate_middle_md {
+    transform: translate(-50%, -50%) !important;
+  }
+  .top_md_50 {
+    top: 50%;
+  }
+}
 @media (min-width: 992px) {
   .all_unset {
     all: unset !important;
@@ -676,6 +817,32 @@ video {
   }
   .translate_middle_lg_x {
     transform: translateX(-50%);
+  }
+  .rotate_n_90 {
+    transform: rotate(-90deg);
+  }
+  :root {
+    /* FONT SIZE  */
+    --fs-xsm: 10px;
+    --fs-sm: 14px;
+    --fs-md: 15px;
+    --fs-lg: 16px;
+    --fs-xl: 18px;
+    --fs-2xl: 18px;
+    --fs-3xl: 25px;
+    --fs-4xl: 30px;
+    --fs-5xl: 35px;
+    --fs-6xl: 40px;
+    --fs-7xl: 45px;
+    --fs-8xl: 50px;
+    --fs-9xl: 55px;
+    --fs-10xl: 60px;
+    --fs-11xl: 70px;
+    --fs-12xl: 80px;
+    --fs-13xl: 90px;
+    --fs-14xl: 100px;
+    --fs-15xl: 120px;
+    --fs-16xl: 130px;
   }
 }
 @media (min-width: 1200px) {
@@ -698,7 +865,30 @@ video {
     );
   }
   .MeetOurTeam_section::after {
-    height: 15%;
+    height: 16%;
+  }
+  :root {
+    /* FONT SIZE  */
+    --fs-xsm: 10px;
+    --fs-sm: 14px;
+    --fs-md: 15px;
+    --fs-lg: 16px;
+    --fs-xl: 18px;
+    --fs-2xl: 20px;
+    --fs-3xl: 25px;
+    --fs-4xl: 30px;
+    --fs-5xl: 35px;
+    --fs-6xl: 40px;
+    --fs-7xl: 45px;
+    --fs-8xl: 50px;
+    --fs-9xl: 55px;
+    --fs-10xl: 60px;
+    --fs-11xl: 70px;
+    --fs-12xl: 80px;
+    --fs-13xl: 90px;
+    --fs-14xl: 100px;
+    --fs-15xl: 120px;
+    --fs-16xl: 150px;
   }
 }
 
