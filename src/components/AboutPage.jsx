@@ -7,21 +7,17 @@ import Vikash from "../assets/images/png/Vikash.png";
 import JoginderSaini from "../assets/images/png/JoginderSaini.png";
 import RakeshSheoran from "../assets/images/png/RakeshSheoran.png";
 import Linkedin from "../assets/images/svg/Linkedin.svg";
+import HeroSection from "./HeroSection";
+import Footer from "./Footer";
 
 function AboutPage() {
   const [index, setIndex] = useState(1);
+  const data = {
+    name: "About",
+  };
   return (
     <>
-      <section className="AboutHeroSection pt-5">
-        <Container className="pt-5 mt-5">
-          <h2 className=" ff_Inter fw-bold fs_8xl text_primary text-center mb-0">
-            About
-          </h2>
-          <h1 className=" ff_Inter fw-bold fs_15xl text_primary text-center text-uppercase mt_n_20 opacity_1">
-            HEXABIRDS
-          </h1>
-        </Container>
-      </section>
+      <HeroSection myData={data} />
       <section className="py-5   my-5 ">
         <Container>
           <Row className=" justify-content-between align-items-center">
@@ -229,7 +225,7 @@ function AboutPage() {
       </section>
       <section className="py-5 mt-5">
         <Container>
-          <Row className=" position-relative">
+          <Row className=" position-relative py-5 mb-4">
             <Col xs={12} lg={3}>
               <h2 className=" ff_Inter fw-bold fs_10xl text-dark opacity_Low_3 d-lg-inline-block rotate_n_90 position_lg_absolute top-50 start-0 text-center">
                 OUR TEAM
@@ -267,6 +263,7 @@ function AboutPage() {
           </Row>
         </Container>
       </section>
+      <Footer />
     </>
   );
 }
