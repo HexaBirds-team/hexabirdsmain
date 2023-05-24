@@ -17,6 +17,9 @@ function ContactPage() {
         <Container>
           <h2 className=" ff_Roboto fw-bold fs_11xl text_secondary text-uppercase text-center gotthe_after position-relative">
             GOT THE IDEA?
+            <span className=" position-absolute top-0 translate-middle-x start-50 opacity_Low_1 fs_13xl text_dark w-100">
+              GOT THE IDEA?
+            </span>
           </h2>
           <h3 className=" ff_Roboto fw-bold fs_6xl text_dark text-center text-capitalize pt-3">
             we have got the <span className=" text_secondary">skills</span>.

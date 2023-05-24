@@ -24,7 +24,7 @@
   --fs-10xl: 41px;
   --fs-11xl: 38px;
   --fs-12xl: 80px;
-  --fs-13xl: 90px;
+  --fs-13xl: 42px;
   --fs-14xl: 100px;
   --fs-15xl: 52px;
   --fs-16xl: 42px;
@@ -750,17 +750,6 @@ video {
 .opacity_05 {
   opacity: 0.5;
 }
-.gotthe_after::after {
-  content: "GOT THE IDEA?";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: "Roboto", sans-serif;
-  color: var(--clr-dark);
-  opacity: 0.1;
-  font-size: var(--fs-13xl);
-}
 .box_shadow_got {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 }
@@ -790,9 +779,6 @@ textarea {
   border-radius: 10px !important;
 }
 .accordion-item {
-  /* color: var(--bs-accordion-color); */
-  /* background-color: var(--bs-accordion-bg); */
-  /* border: var(--bs-accordion-border-width) solid  */
   background: #ffffff;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
   border-radius: 10px !important;
@@ -820,18 +806,19 @@ textarea {
     --fs-3xl: 25px;
     --fs-4xl: 30px;
     --fs-5xl: 35px;
-    --fs-6xl: 30px;
+    --fs-6xl: 25px;
     --fs-7xl: 45px;
     --fs-8xl: 50px;
     --fs-9xl: 47px;
     --fs-10xl: 60px;
-    --fs-11xl: 70px;
+    --fs-11xl: 57px;
     --fs-12xl: 80px;
-    --fs-13xl: 90px;
+    --fs-13xl: 68px;
     --fs-14xl: 100px;
     --fs-15xl: 74px;
     --fs-16xl: 75px;
-  } .hexabirds_word {
+  }
+  .hexabirds_word {
     top: -46px;
   }
 }
