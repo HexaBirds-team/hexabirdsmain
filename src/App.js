@@ -8,6 +8,8 @@ import Hero from "./components/Hero";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
+import CareerPage from "./components/CareerPage";
+import ServicesPage from "./components/ServicesPage";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/" element={<Hero />} />
           <Route path="/About" element={<AboutPage />} />
           <Route path="/Contact" element={<ContactPage />} />
+          <Route path="/Career" element={<CareerPage />} />
+          <Route path="/Services" element={<ServicesPage />} />
         </Routes>
       </BrowserRouter>
     </>

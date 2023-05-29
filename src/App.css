@@ -12,8 +12,8 @@
   --fs-sm: 14px;
   --fs-md: 15px;
   --fs-lg: 16px;
-  --fs-xl: 18px;
-  --fs-2xl: 14px;
+  --fs-xl: 15px;
+  --fs-2xl: 16px;
   --fs-3xl: 25px;
   --fs-4xl: 30px;
   --fs-5xl: 35px;
@@ -36,6 +36,8 @@
   --clr-primary: #ffffff;
   --clr-secondary: #b63336;
   --clr-tertiary: #01010186;
+  --clr-light: #010101;
+  --clr-lightdark: #4d4d4d;
 }
 /* FONT FAMILY ===================================================== */
 .ff_Hyeon {
@@ -122,6 +124,12 @@
 }
 .text_secondary {
   color: var(--clr-secondary);
+}
+.text_light {
+  color: var(--clr-light);
+}
+.text_lightdark {
+  color: var(--clr-lightdark);
 }
 /* BACKGROUND COLOR ===================================================== */
 .bg_dark {
@@ -794,6 +802,35 @@ textarea {
   background-color: unset;
   box-shadow: unset;
 }
+/* PartOfMission_section ================================ */
+.PartOfMission_section {
+  background-image: url("./assets/images/png/PartOfMission.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.masking_images {
+  mask-image: url("./assets/images/png/Hexa.png");
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+.end_n_50 {
+  right: -50px;
+}
+.border_secondary {
+  border: 2px solid var(--clr-secondary);
+}
+.ListImage {
+  list-style-image: url("./assets/images/svg/ListImage.svg");
+}
+.ListImageRed {
+  list-style-image: url("./assets/images/svg/ListImageRed.svg");
+}
+.box_shadow_Services {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+}
+.list_style_disc {
+  list-style-type: disc !important;
+}
 @media (min-width: 576px) {
   :root {
     /* FONT SIZE  */
@@ -828,7 +865,7 @@ textarea {
     --fs-xsm: 10px;
     --fs-sm: 14px;
     --fs-md: 15px;
-    --fs-lg: 16px;
+    --fs-lg: 14px;
     --fs-xl: 18px;
     --fs-2xl: 15px;
     --fs-3xl: 25px;
@@ -839,7 +876,7 @@ textarea {
     --fs-8xl: 50px;
     --fs-9xl: 47px;
     --fs-10xl: 60px;
-    --fs-11xl: 70px;
+    --fs-11xl: 55px;
     --fs-12xl: 80px;
     --fs-13xl: 90px;
     --fs-14xl: 100px;
