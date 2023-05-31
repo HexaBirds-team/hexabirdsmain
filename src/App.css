@@ -14,18 +14,18 @@
   --fs-lg: 16px;
   --fs-xl: 15px;
   --fs-2xl: 16px;
-  --fs-3xl: 25px;
-  --fs-4xl: 30px;
+  --fs-3xl: 16px;
+  --fs-4xl: 23px;
   --fs-5xl: 35px;
   --fs-6xl: 20px;
   --fs-7xl: 45px;
   --fs-8xl: 50px;
   --fs-9xl: 43px;
   --fs-10xl: 41px;
-  --fs-11xl: 38px;
-  --fs-12xl: 80px;
+  --fs-11xl: 34px;
+  --fs-12xl: 31px;
   --fs-13xl: 42px;
-  --fs-14xl: 100px;
+  --fs-14xl: 49px;
   --fs-15xl: 52px;
   --fs-16xl: 42px;
   /* FONT WEIGHT  */
@@ -533,8 +533,8 @@ video {
   top: -25px;
 }
 /* BOTTOM============================== */
-.bottom_px_117 {
-  bottom: -18%;
+.Red_wave {
+  bottom: -14%;
 }
 .bottom_10 {
   bottom: 10px;
@@ -609,12 +609,7 @@ video {
 .border_dark {
   border: 1px solid var(--clr-dark);
 }
-.be_secondary {
-  border-right: 11px solid var(--clr-secondary);
-}
-.translateX_n_68 {
-  transform: translateX(-68px);
-}
+
 .translate_n {
   transform: translate(-38px, -22px);
 }
@@ -831,6 +826,20 @@ textarea {
 .list_style_disc {
   list-style-type: disc !important;
 }
+/* work section ======================= */
+.rounded_top_left {
+  border-top-left-radius: 30px;
+}
+.bottom_n_26 {
+  bottom: -26px;
+}
+
+@media (min-width: 400px) {
+  .px_xsm_5 {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
 @media (min-width: 576px) {
   :root {
     /* FONT SIZE  */
@@ -849,7 +858,7 @@ textarea {
     --fs-9xl: 47px;
     --fs-10xl: 60px;
     --fs-11xl: 57px;
-    --fs-12xl: 80px;
+    --fs-12xl: 43px;
     --fs-13xl: 68px;
     --fs-14xl: 100px;
     --fs-15xl: 74px;
@@ -857,6 +866,15 @@ textarea {
   }
   .hexabirds_word {
     top: -46px;
+  }
+  .Testimonials_height {
+    height: 520px;
+  }
+  .translate_94to203 {
+    transform: translate(94px, -203px);
+  }
+  .be_secondary {
+    border-right: 11px solid var(--clr-secondary);
   }
 }
 @media (min-width: 768px) {
@@ -868,7 +886,7 @@ textarea {
     --fs-lg: 14px;
     --fs-xl: 18px;
     --fs-2xl: 15px;
-    --fs-3xl: 25px;
+    --fs-3xl: 24px;
     --fs-4xl: 30px;
     --fs-5xl: 35px;
     --fs-6xl: 30px;
@@ -877,7 +895,7 @@ textarea {
     --fs-9xl: 47px;
     --fs-10xl: 60px;
     --fs-11xl: 55px;
-    --fs-12xl: 80px;
+    --fs-12xl: 56px;
     --fs-13xl: 90px;
     --fs-14xl: 100px;
     --fs-15xl: 107px;
@@ -898,6 +916,18 @@ textarea {
   .hexabirds_word {
     top: -61px;
   }
+  .Red_wave {
+    bottom: -10%;
+  }
+  .translateX_n_68 {
+    transform: translateX(-68px);
+  }
+  .translate_94to203 {
+    transform: translate(0, 0);
+  }
+  .Testimonials_height {
+    height: auto;
+  }
 }
 @media (min-width: 992px) {
   .all_unset {
@@ -911,6 +941,9 @@ textarea {
   }
   .rotate_n_90 {
     transform: rotate(-90deg);
+  }
+  .Red_wave {
+    bottom: -14%;
   }
   :root {
     /* FONT SIZE  */
@@ -929,7 +962,7 @@ textarea {
     --fs-9xl: 55px;
     --fs-10xl: 60px;
     --fs-11xl: 70px;
-    --fs-12xl: 80px;
+    --fs-12xl: 75px;
     --fs-13xl: 90px;
     --fs-14xl: 100px;
     --fs-15xl: 120px;
@@ -987,9 +1020,11 @@ textarea {
     --fs-15xl: 120px;
     --fs-16xl: 150px;
   }
+  .Red_wave {
+    bottom: -18%;
+  }
 }
 
 /* .slick-active {
- 
-  transform: scale(1.4);
+  transform: scale(1.2);
 } */

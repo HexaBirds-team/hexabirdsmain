@@ -32,7 +32,7 @@ function ContactPage() {
               next 24 hours.
             </span>
           </p>
-          <Row className=" justify-content-center">
+          <Row className=" justify-content-center px_xsm_5">
             <Col xs={12} xl={11} xxl={9}>
               <Row className="translateY_60px ">
                 <Col xs={12} sm={6} lg={3}>

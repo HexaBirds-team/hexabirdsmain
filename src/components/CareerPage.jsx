@@ -12,7 +12,6 @@ function CareerPage() {
   };
   return (
     <>
-      <NavbarFile />
       <HeroSection myData={data} />
       <section className=" PartOfMission_section position-relative overflow-hidden py-5">
         <Container className="py-5">

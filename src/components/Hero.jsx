@@ -14,14 +14,14 @@ import PreArrow from "../assets/images/svg/PreArrow.svg";
 import Red_Gubbare from "../assets/images/svg/Red_Gubbare.svg";
 import Girl_Images from "../assets/images/png/Girl_Images.png";
 import TheBest from "../assets/images/png/TheBest.png";
+import EmailGif from "../assets/images/Gif/EmailGif.gif";
 
 import { Col, Container, Row } from "react-bootstrap";
 import DummyData from "./DummyData";
 import Footer from "./Footer";
 function Hero() {
-  const [SliderOne, setSliderOne] = useState();
-  const [SliderTwo, setSliderTwo] = useState();
-  const sliderRef = React.useRef(null);
+  const sliderRef1 = React.useRef(null);
+  const sliderRef2 = React.useRef(null);
   const settings = {
     infinite: true,
     autoplaySpeed: 3000,
@@ -31,9 +31,11 @@ function Hero() {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: SliderTwo,
+    // asNavFor: sliderRef2,
+    // beforeChange: (oldIndex, i) => {},
   };
   const settings2 = {
+    arrows: false,
     infinite: true,
     autoplaySpeed: 3000,
     speed: 800,
@@ -41,13 +43,15 @@ function Hero() {
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
-    asNavFor: SliderOne,
+    // asNavFor: sliderRef1,
   };
   const settings3 = {
+    autoplay: true,
     infinite: true,
     arrows: false,
     slidesToScroll: 1,
     dots: false,
+    className: "center",
     centerMode: true,
     slidesToShow: 1.65,
   };
@@ -63,7 +67,7 @@ function Hero() {
             className="w-100 video_overley mb-0"
           ></video>
         </div>
-        <div className=" position-absolute top_22 start-50 translate-middle-x w-100">
+        <div className=" position-absolute top_22 start-50 translate-middle top-50 w-100">
           <Container>
             <div className="text-center">
               <h2 className=" ff_Hyeon fw-normal fs_4xl text_primary opacity_07">
@@ -71,11 +75,11 @@ function Hero() {
               </h2>
               <h2 className=" ff_Inter fw-bold fs_12xl text_primary">
                 Where Innovation Meets
-                <span className=" d-block">The Real World</span>
+                <span className=" d-md-block">The Real World</span>
               </h2>
               <p className=" ff_Roboto fw-normal fs_3xl text_primary">
                 With a smart combination of Creativity, Strategy and Technology;
-                <span className=" d-block">
+                <span className=" d-md-block">
                   We help our clients to grow their startups
                 </span>
               </p>
@@ -83,14 +87,20 @@ function Hero() {
           </Container>
         </div>
         <img
-          className=" bottom_px_117 start-0 w-100 position-absolute "
+          className="Red_wave start-0 w-100 position-absolute "
           src={Red_wave}
           alt="Red_wave"
         />
+        {/* <img
+          className=" position-absolute top-50 translate-middle-y end-0
+        "
+          src={EmailGif}
+          alt="EmailGif"
+        /> */}
       </section>
       <section>
         <Container>
-          <Row>
+          <Row className=" px_xsm_5 px-sm-0">
             <Col xs={12} sm={6} lg={3} className="pt-5 mt-4">
               <div className="cards px-4 py-3 text-center position-relative h-100">
                 <img
@@ -163,7 +173,7 @@ function Hero() {
             <div className=" position-relative">
               <img className="w-100" src={TeamWork} alt="TeamWork" />
               <div className="bg_dark position_lg_absolute translate_middle_lg_x start-50 team_paragraph text-end p-4">
-                <p className=" ff_Roboto fw-normal fs_2xl text_primary text-center px-2 mb_n_14">
+                <p className=" ff_Roboto fw-normal fs_2xl text_primary text-center px-md-2 mb_n_14 pb-3 pb-sm-0">
                   Our dedicated team is made up of professionals with diverse
                   backgrounds and complementary skills. Our team is passionate
                   about delivering high-quality work and providing exceptional
@@ -417,7 +427,7 @@ function Hero() {
           <h2 className=" ff_Roboto fw-normal fs_11xl text_dark text_shadow pt-5 mt-3">
             Success Stories
           </h2>
-          <Row className="pt-4">
+          <Row className="pt-4 px_xsm_5 px-sm-0">
             {DummyData.map((value) => {
               const { id, images, hadding, paragraph } = value;
               return (
@@ -480,134 +490,195 @@ function Hero() {
           </Row>
         </Container>
       </section>
-      <section className="py-5 ">
+      <section className="py-5  position-relative">
         <Container>
           <div className=" bg_primary white_shadow p-4">
             <h2 className=" ff_Roboto fw-bold fs_3xl text_secondary text-center">
               Testimonials
             </h2>
-            <div className="">
-              <Row className="px-5 pt-5 justify-content-center">
-                <Col xs={3}>
-                  <div>
-                    <Slider
-                      // ref={sliderRef}
-                      {...settings}
-                      ref={
-                        (sliderRef,
-                        (slider1) => {
-                          console.log(slider1);
-                          setSliderOne(slider1);
-                        })
+            <Row className="px-lg-5 pt-3 pt-md-5 justify-content-md-center Testimonials_height">
+              <Col xs={8} sm={6} md={4} lg={3}>
+                <div>
+                  <Slider
+                    {...settings}
+                    onSwipe={(direction) => {
+                      if (direction == "left") {
+                        sliderRef2?.current?.slickPrev();
+                      } else {
+                        sliderRef2?.current?.slickNext();
                       }
-                    >
-                      <img
-                        className="w-100"
-                        src={BalinaJosef}
-                        alt="BalinaJosef"
-                      />
+                    }}
+                    ref={sliderRef1}
+                  >
+                    <img
+                      className="w-100"
+                      src={BalinaJosef}
+                      alt="BalinaJosef"
+                    />
 
-                      <img className="w-100" src={company} alt="company" />
-                      <img
-                        className="w-100"
-                        src={BalinaJosef}
-                        alt="BalinaJosef"
-                      />
-                      <img className="w-100" src={company} alt="company" />
-                    </Slider>
-                  </div>
-                </Col>
-                <Col xs={8}>
-                  <div className="py-4 my-3 text-end pe-5">
+                    <img className="w-100" src={company} alt="company" />
                     <img
-                      className="me-4 cursor_pointer"
-                      onClick={() => {
-                        sliderRef?.current?.slickPrev();
-                      }}
-                      src={PreArrow}
-                      alt="PreArrow"
+                      className="w-100"
+                      src={BalinaJosef}
+                      alt="BalinaJosef"
                     />
-                    <img
-                      className="cursor_pointer translate_n"
-                      onClick={() => sliderRef?.current?.slickNext()}
-                      src={NextArrow}
-                      alt="NextArrow"
-                    />
-                  </div>
-                  <div className=" bg_primary white_shadow p-4 be_secondary translateX_n_68">
-                    <Slider
-                      {...settings2}
-                      ref={(sliderRef, (slide2) => setSliderTwo(slide2))}
+                    <img className="w-100" src={company} alt="company" />
+                  </Slider>
+                </div>
+              </Col>
+              <Col xs={12} sm={10} md={8} className="translate_94to203">
+                <div className="d-sm-none d-block">
+                  <span
+                    className=" position-absolute top-50 translate-middle-y d-inline-block"
+                    onClick={() => {
+                      sliderRef1?.current?.slickPrev();
+                      sliderRef2?.current?.slickPrev();
+                    }}
+                  >
+                    <svg
+                      width="20"
+                      height="16"
+                      viewBox="0 0 20 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <div className=" pe-1">
-                        <p className=" ff_Roboto fw-normal fs_xl text_dark">
-                          Nullam neque nibh, tempus et nisl ac, faucibus pretium
-                          enim. Sed scelerisque urna a nisl vestibulum
-                          ultricies. Aliquam ex eros, faucibus et tempus vel,
-                          varius non metus. Sed pellentesque magna sed nulla
-                          mollis bibendum. Proin ultricies nec justo a
-                          scelerisque. Nam.
-                        </p>
-                        <h2 className=" ff_Roboto fs_xl fw-bold text_dark pt-4">
-                          Balina Josef
-                        </h2>
-                        <h4 className=" ff_Roboto fs_sm fw-normal text_secondary">
-                          CEO , xyz company
-                        </h4>
-                      </div>
-                      <div className=" pe-1">
-                        <p className=" ff_Roboto fw-normal fs_xl text_dark">
-                          Nullam neque nibh, tempus et nisl ac, faucibus pretium
-                          enim. Sed scelerisque urna a nisl vestibulum
-                          ultricies. Aliquam ex eros, faucibus et tempus vel,
-                          varius non metus. Sed pellentesque magna sed nulla
-                          mollis bibendum. Proin ultricies nec justo a
-                          scelerisque. Nam.
-                        </p>
-                        <h2 className=" ff_Roboto fs_xl fw-bold text_dark pt-4">
-                          Balina Josef
-                        </h2>
-                        <h4 className=" ff_Roboto fs_sm fw-normal text_secondary">
-                          CEO , xyz company
-                        </h4>
-                      </div>
-                      <div className=" pe-1">
-                        <p className=" ff_Roboto fw-normal fs_xl text_dark">
-                          Nullam neque nibh, tempus et nisl ac, faucibus pretium
-                          enim. Sed scelerisque urna a nisl vestibulum
-                          ultricies. Aliquam ex eros, faucibus et tempus vel,
-                          varius non metus. Sed pellentesque magna sed nulla
-                          mollis bibendum. Proin ultricies nec justo a
-                          scelerisque. Nam.
-                        </p>
-                        <h2 className=" ff_Roboto fs_xl fw-bold text_dark pt-4">
-                          Balina Josef
-                        </h2>
-                        <h4 className=" ff_Roboto fs_sm fw-normal text_secondary">
-                          CEO , xyz company
-                        </h4>
-                      </div>
-                      <div className=" pe-1">
-                        <p className=" ff_Roboto fw-normal fs_xl text_dark">
-                          Nullam neque nibh, tempus et nisl ac, faucibus pretium
-                          enim. Sed scelerisque urna a nisl vestibulum
-                          ultricies. Aliquam ex eros, faucibus et tempus vel,
-                          varius non metus. Sed pellentesque magna sed nulla
-                          mollis bibendum. Proin ultricies nec justo a
-                          scelerisque. Nam.
-                        </p>
-                        <h2 className=" ff_Roboto fs_xl fw-bold text_dark pt-4">
-                          Balina Josef
-                        </h2>
-                        <h4 className=" ff_Roboto fs_sm fw-normal text_secondary">
-                          CEO , xyz company
-                        </h4>
-                      </div>
-                    </Slider>
-                  </div>
-                </Col>
-              </Row>
-            </div>
+                      <g clip-path="url(#clip0_904_86)">
+                        <path
+                          d="M19.7071 8.70711C20.0976 8.31659 20.0976 7.68342 19.7071 7.2929L13.3431 0.928936C12.9526 0.538411 12.3195 0.538411 11.9289 0.928935C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM-25 9L19 9L19 7L-25 7L-25 9Z"
+                          fill="black"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_904_86">
+                          <rect width="20" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                   <span
+                    className="cursor_pointer  position-absolute top-50 translate-middle-y end-0 d-inline-block"
+                    onClick={() => {
+                      sliderRef1?.current?.slickNext();
+                      sliderRef2?.current?.slickNext();
+                    }}
+                  >
+                    <svg
+                      width="20"
+                      height="16"
+                      viewBox="0 0 20 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_904_86)">
+                        <path
+                          d="M19.7071 8.70711C20.0976 8.31659 20.0976 7.68342 19.7071 7.2929L13.3431 0.928936C12.9526 0.538411 12.3195 0.538411 11.9289 0.928935C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM-25 9L19 9L19 7L-25 7L-25 9Z"
+                          fill="black"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_904_86">
+                          <rect width="20" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </div>
+                <div className="py-4 my-3 text-end pe-5 d-none d-sm-block">
+                  <img
+                    className="me-4 cursor_pointer"
+                    onClick={() => {
+                      sliderRef1?.current?.slickPrev();
+                      sliderRef2?.current?.slickPrev();
+                    }}
+                    src={PreArrow}
+                    alt="PreArrow"
+                  />
+                  <img
+                    className="cursor_pointer translate_n"
+                    onClick={() => {
+                      sliderRef1?.current?.slickNext();
+                      sliderRef2?.current?.slickNext();
+                    }}
+                    src={NextArrow}
+                    alt="NextArrow"
+                  />
+                </div>
+                <div className=" bg_primary white_shadow p-3 p-lg-4 be_secondary translateX_n_68">
+                  <Slider
+                    {...settings2}
+                    onSwipe={(direction) => {
+                      if (direction == "left") {
+                        sliderRef1?.current?.slickPrev();
+                      } else {
+                        sliderRef1?.current?.slickNext();
+                      }
+                    }}
+                    ref={sliderRef2}
+                  >
+                    <div className=" pe-1">
+                      <p className=" ff_Roboto fw-normal fs_xl text_dark">
+                        Nullam neque nibh, tempus et nisl ac, faucibus pretium
+                        enim. Sed scelerisque urna a nisl vestibulum ultricies.
+                        Aliquam ex eros, faucibus et tempus vel, varius non
+                        metus. Sed pellentesque magna sed nulla mollis bibendum.
+                        Proin ultricies nec justo a scelerisque. Nam.
+                      </p>
+                      <h2 className=" ff_Roboto fs_xl fw-bold text_dark pt-4">
+                        Balina Josef
+                      </h2>
+                      <h4 className=" ff_Roboto fs_sm fw-normal text_secondary">
+                        CEO , xyz company
+                      </h4>
+                    </div>
+                    <div className=" pe-1">
+                      <p className=" ff_Roboto fw-normal fs_xl text_dark">
+                        Nullam neque nibh, tempus et nisl ac, faucibus pretium
+                        enim. Sed scelerisque urna a nisl vestibulum ultricies.
+                        Aliquam ex eros, faucibus et tempus vel, varius non
+                        metus. Sed pellentesque magna sed nulla mollis bibendum.
+                        Proin ultricies nec justo a scelerisque. Nam.
+                      </p>
+                      <h2 className=" ff_Roboto fs_xl fw-bold text_dark pt-4">
+                        Balina Josef
+                      </h2>
+                      <h4 className=" ff_Roboto fs_sm fw-normal text_secondary">
+                        CEO , xyz company
+                      </h4>
+                    </div>
+                    <div className=" pe-1">
+                      <p className=" ff_Roboto fw-normal fs_xl text_dark">
+                        Nullam neque nibh, tempus et nisl ac, faucibus pretium
+                        enim. Sed scelerisque urna a nisl vestibulum ultricies.
+                        Aliquam ex eros, faucibus et tempus vel, varius non
+                        metus. Sed pellentesque magna sed nulla mollis bibendum.
+                        Proin ultricies nec justo a scelerisque. Nam.
+                      </p>
+                      <h2 className=" ff_Roboto fs_xl fw-bold text_dark pt-4">
+                        Balina Josef
+                      </h2>
+                      <h4 className=" ff_Roboto fs_sm fw-normal text_secondary">
+                        CEO , xyz company
+                      </h4>
+                    </div>
+                    <div className=" pe-1">
+                      <p className=" ff_Roboto fw-normal fs_xl text_dark">
+                        Nullam neque nibh, tempus et nisl ac, faucibus pretium
+                        enim. Sed scelerisque urna a nisl vestibulum ultricies.
+                        Aliquam ex eros, faucibus et tempus vel, varius non
+                        metus. Sed pellentesque magna sed nulla mollis bibendum.
+                        Proin ultricies nec justo a scelerisque. Nam.
+                      </p>
+                      <h2 className=" ff_Roboto fs_xl fw-bold text_dark pt-4">
+                        Balina Josef
+                      </h2>
+                      <h4 className=" ff_Roboto fs_sm fw-normal text_secondary">
+                        CEO , xyz company
+                      </h4>
+                    </div>
+                  </Slider>
+                </div>
+              </Col>
+            </Row>
           </div>
         </Container>
       </section>
@@ -618,7 +689,7 @@ function Hero() {
           </h1>
           <Slider {...settings3}>
             <div className="px-4">
-              <Row className="pt-5 align-items-center max_w_910 ">
+              <Row className="pt-5 align-items-center px-5 mx-5">
                 <Col xs={5}>
                   <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
                     <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
@@ -656,7 +727,7 @@ function Hero() {
               </Row>
             </div>
             <div className="px-4">
-              <Row className="pt-5 align-items-center max_w_910">
+              <Row className="pt-5 align-items-center px-5 mx-5">
                 <Col xs={5}>
                   <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
                     <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
@@ -694,7 +765,7 @@ function Hero() {
               </Row>
             </div>
             <div className="px-4">
-              <Row className="pt-5 align-items-center max_w_910">
+              <Row className="pt-5 align-items-center px-5 mx-5">
                 <Col xs={5}>
                   <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
                     <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
@@ -732,7 +803,7 @@ function Hero() {
               </Row>
             </div>
             <div className="px-4">
-              <Row className="pt-5 align-items-center max_w_910">
+              <Row className="pt-5 align-items-center px-5 mx-5">
                 <Col xs={5}>
                   <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
                     <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">

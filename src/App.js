@@ -10,6 +10,7 @@ import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
 import CareerPage from "./components/CareerPage";
 import ServicesPage from "./components/ServicesPage";
+import ProjectsPage from "./components/ProjectsPage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/Contact" element={<ContactPage />} />
           <Route path="/Career" element={<CareerPage />} />
           <Route path="/Services" element={<ServicesPage />} />
+          <Route path="/Projects" element={<ProjectsPage />} />
         </Routes>
       </BrowserRouter>
     </>

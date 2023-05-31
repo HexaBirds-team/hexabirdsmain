@@ -17,7 +17,6 @@ function ServicesPage() {
   };
   return (
     <>
-      <NavbarFile />
       <HeroSection myData={data} />
       <section className="py-md-5 my-5">
         <Container>
@@ -43,7 +42,7 @@ function ServicesPage() {
       </section>
       <section className="py-md-5 my-5">
         <Container>
-          <Row className=" px-md-0">
+          <Row className=" px_xsm_5 px-md-0">
             <Col xs={12} md={6} lg={4} className=" position-relative py-2">
               <img
                 className=" position-absolute top-0 start-0"
@@ -229,294 +228,296 @@ function ServicesPage() {
               </div>
             </Col>
           </Row>
-          <h2 className=" ff_Roboto fw_medium fs_5xl text_secondary pb-lg-3 pt-5 mt-lg-5">
-            Web Development Services
-          </h2>
-          <Row>
-            <Col xs={12} sm={6} lg={3}>
-              <ul className="mb-0 ListImageRed ps-3">
-                <li className="ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    React Development
-                  </span>
-                </li>
-                <li className="ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    HTML / Css Development
-                  </span>
-                </li>
-                <li className="ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Wordpress Development
-                  </span>
-                </li>
-                <li className="ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    JavaScript Development
-                  </span>
-                </li>
-              </ul>
-            </Col>
-            <Col xs={12} sm={6} lg={3}>
-              <ul className="mb-0 ListImageRed ps-3">
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Laravel Development
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Blog Website Development
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Event Website Development
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Hotel and Booking Websites
-                  </span>
-                </li>
-              </ul>
-            </Col>
-            <Col xs={12} sm={6} lg={3}>
-              <ul className="mb-0 ListImageRed ps-3">
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    E-commerce development
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Portfolio Development
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    School Management
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Corporate Website Development
-                  </span>
-                </li>
-              </ul>
-            </Col>
-            <Col xs={12} sm={6} lg={3}>
-              <ul className="mb-0 ListImageRed ps-3">
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Business Website Development
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Personal Website Development
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Education Website Development
-                  </span>
-                </li>
-              </ul>
-            </Col>
-          </Row>
-          <h2 className=" ff_Roboto fw_medium fs_5xl text_secondary pb-lg-3 pt-5">
-            App Development Services
-          </h2>
-          <Row>
-            <Col xs={12} sm={6} lg={3}>
-              <ul className="mb-0 ListImageRed ps-3">
-                <li className="ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Flutter Development
-                  </span>
-                </li>
-                <li className="ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    React Native Development
-                  </span>
-                </li>
-                <li className="ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Android / IOS Development
-                  </span>
-                </li>
-                <li className="ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Hybrid App Development
-                  </span>
-                </li>
-              </ul>
-            </Col>
-            <Col xs={12} sm={6} lg={3}>
-              <ul className="mb-0 ListImageRed ps-3">
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Vehicle Booking App
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Delivery App
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Logistics App
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Home Service App
-                  </span>
-                </li>
-              </ul>
-            </Col>
-            <Col xs={12} sm={6} lg={3}>
-              <ul className="mb-0 ListImageRed ps-3">
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Beauty Service App
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Doctor & Appointment App
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    E-Learning App
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Taxi On-Demand App
-                  </span>
-                </li>
-              </ul>
-            </Col>
-            <Col xs={12} sm={6} lg={3}>
-              <ul className="mb-0 ListImageRed ps-3">
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    E-commerce App Development
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Food Order App Development
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Social Media App Development
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Matrimony App Development
-                  </span>
-                </li>
-              </ul>
-            </Col>
-          </Row>
-          <h2 className=" ff_Roboto fw_medium fs_5xl text_secondary pb-lg-3 pt-5">
-            Web / App Designing Services
-          </h2>
-          <Row>
-            <Col xs={12} sm={6} lg={3}>
-              <ul className="  ps-3 mb-0 ListImageRed">
-                <li className="ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Figma Designing
-                  </span>
-                </li>
-                <li className="ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Adobe XD Designing
-                  </span>
-                </li>
-                <li className="ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    CorelDraw Designing
-                  </span>
-                </li>
-                <li className="ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Photoshop / Video Editing
-                  </span>
-                </li>
-              </ul>
-            </Col>
-            <Col xs={12} sm={6} lg={3}>
-              <ul className="mb-0 ListImageRed ps-3">
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    E-commerce Design
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Portfolio Design
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Blog Website Design
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Business Website Design
-                  </span>
-                </li>
-              </ul>
-            </Col>
-            <Col xs={12} sm={6} lg={3}>
-              <ul className="mb-0 ListImageRed ps-3">
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Delivery App UI Design
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Logistic App UI
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Design Dating App UI Design
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Social Media App Design
-                  </span>
-                </li>
-              </ul>
-            </Col>
-            <Col xs={12} sm={6} lg={3}>
-              <ul className="mb-0 ListImageRed ps-3">
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Chatting App Design
-                  </span>
-                </li>
-                <li className=" ps-2 pt-2">
-                  <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
-                    Educational App Design
-                  </span>
-                </li>
-              </ul>
-            </Col>
-          </Row>
+          <div className="px_xsm_5">
+            <h2 className=" ff_Roboto fw_medium fs_5xl text_secondary pb-lg-3 pt-5 mt-lg-5">
+              Web Development Services
+            </h2>
+            <Row>
+              <Col xs={12} sm={6} lg={3}>
+                <ul className="mb-0 ListImageRed ps-3">
+                  <li className="ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      React Development
+                    </span>
+                  </li>
+                  <li className="ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      HTML / Css Development
+                    </span>
+                  </li>
+                  <li className="ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Wordpress Development
+                    </span>
+                  </li>
+                  <li className="ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      JavaScript Development
+                    </span>
+                  </li>
+                </ul>
+              </Col>
+              <Col xs={12} sm={6} lg={3}>
+                <ul className="mb-0 ListImageRed ps-3">
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Laravel Development
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Blog Website Development
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Event Website Development
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Hotel and Booking Websites
+                    </span>
+                  </li>
+                </ul>
+              </Col>
+              <Col xs={12} sm={6} lg={3}>
+                <ul className="mb-0 ListImageRed ps-3">
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      E-commerce development
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Portfolio Development
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      School Management
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Corporate Website Development
+                    </span>
+                  </li>
+                </ul>
+              </Col>
+              <Col xs={12} sm={6} lg={3}>
+                <ul className="mb-0 ListImageRed ps-3">
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Business Website Development
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Personal Website Development
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Education Website Development
+                    </span>
+                  </li>
+                </ul>
+              </Col>
+            </Row>
+            <h2 className=" ff_Roboto fw_medium fs_5xl text_secondary pb-lg-3 pt-5">
+              App Development Services
+            </h2>
+            <Row>
+              <Col xs={12} sm={6} lg={3}>
+                <ul className="mb-0 ListImageRed ps-3">
+                  <li className="ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Flutter Development
+                    </span>
+                  </li>
+                  <li className="ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      React Native Development
+                    </span>
+                  </li>
+                  <li className="ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Android / IOS Development
+                    </span>
+                  </li>
+                  <li className="ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Hybrid App Development
+                    </span>
+                  </li>
+                </ul>
+              </Col>
+              <Col xs={12} sm={6} lg={3}>
+                <ul className="mb-0 ListImageRed ps-3">
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Vehicle Booking App
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Delivery App
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Logistics App
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Home Service App
+                    </span>
+                  </li>
+                </ul>
+              </Col>
+              <Col xs={12} sm={6} lg={3}>
+                <ul className="mb-0 ListImageRed ps-3">
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Beauty Service App
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Doctor & Appointment App
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      E-Learning App
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Taxi On-Demand App
+                    </span>
+                  </li>
+                </ul>
+              </Col>
+              <Col xs={12} sm={6} lg={3}>
+                <ul className="mb-0 ListImageRed ps-3">
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      E-commerce App Development
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Food Order App Development
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Social Media App Development
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Matrimony App Development
+                    </span>
+                  </li>
+                </ul>
+              </Col>
+            </Row>
+            <h2 className=" ff_Roboto fw_medium fs_5xl text_secondary pb-lg-3 pt-5">
+              Web / App Designing Services
+            </h2>
+            <Row>
+              <Col xs={12} sm={6} lg={3}>
+                <ul className="  ps-3 mb-0 ListImageRed">
+                  <li className="ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Figma Designing
+                    </span>
+                  </li>
+                  <li className="ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Adobe XD Designing
+                    </span>
+                  </li>
+                  <li className="ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      CorelDraw Designing
+                    </span>
+                  </li>
+                  <li className="ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Photoshop / Video Editing
+                    </span>
+                  </li>
+                </ul>
+              </Col>
+              <Col xs={12} sm={6} lg={3}>
+                <ul className="mb-0 ListImageRed ps-3">
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      E-commerce Design
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Portfolio Design
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Blog Website Design
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Business Website Design
+                    </span>
+                  </li>
+                </ul>
+              </Col>
+              <Col xs={12} sm={6} lg={3}>
+                <ul className="mb-0 ListImageRed ps-3">
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Delivery App UI Design
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Logistic App UI
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Design Dating App UI Design
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Social Media App Design
+                    </span>
+                  </li>
+                </ul>
+              </Col>
+              <Col xs={12} sm={6} lg={3}>
+                <ul className="mb-0 ListImageRed ps-3">
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Chatting App Design
+                    </span>
+                  </li>
+                  <li className=" ps-2 pt-2">
+                    <span className="ff_Roboto fw-normal fs_lg text_dark opacity_07">
+                      Educational App Design
+                    </span>
+                  </li>
+                </ul>
+              </Col>
+            </Row>
+          </div>
         </Container>
       </section>
       <Footer />
