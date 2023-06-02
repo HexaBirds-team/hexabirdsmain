@@ -1,22 +1,46 @@
 import React from "react";
-import NavbarFile from "./NavbarFile";
 import HeroSection from "./HeroSection";
 import { Col, Container, Row } from "react-bootstrap";
 import Expertise from "../assets/images/svg/Expertise.svg";
 import Innovation from "../assets/images/svg/Innovation.svg";
 import guaranteed from "../assets/images/svg/guaranteed.svg";
 import PeopleChoose from "../assets/images/png/PeopleChoose.png";
-import Prime from "../assets/images/png/Prime.png";
-import sri from "../assets/images/png/sri.png";
+import Prime from "../assets/images/svg/Prime.svg";
+import Prime_2 from "../assets/images/svg/Prime_2.svg";
+import Dots from "../assets/images/svg/Dots.svg";
+import sri from "../assets/images/svg/sri.svg";
+import sri_2 from "../assets/images/svg/sri_2.svg";
+import Flutter from "../assets/images/svg/Flutter.svg";
+import logos_php from "../assets/images/svg/logos_php.svg";
+import devicon_figma from "../assets/images/svg/devicon_figma.svg";
+import app_logo from "../assets/images/svg/app_logo.svg";
+import CEO_EMV from "../assets/images/png/CEO_EMV.png";
+import Phone from "../assets/images/png/Phone.png";
 import vision from "../assets/images/png/vision.png";
+import vision_2 from "../assets/images/png/vision_2.png";
 import Closet from "../assets/images/png/Closet.png";
+import Closet_2 from "../assets/images/png/Closet_2.png";
 import edumato_2 from "../assets/images/png/edumato_2.png";
+import edumato_3 from "../assets/images/png/edumato_3.png";
 import WorkDummyData from "./WorkDummyData";
 import Footer from "./Footer";
-
+import Slider from "react-slick";
+import ElonMuskVision from "../assets/images/png/ElonMuskVision.png";
+import EduApp from "../assets/images/png/EduApp.png";
 function ProjectsPage() {
   const data = {
     name: "Projects",
+  };
+  const settings = {
+    arrows: false,
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 4.6,
+    speed: 500,
+    vertical: true,
+    verticalSwiping: true,
   };
   return (
     <>
@@ -24,11 +48,11 @@ function ProjectsPage() {
       <section className=" py-5 my-5">
         <Container>
           <Row className=" justify-content-between">
-            <Col xs={12} lg={6}>
+            <Col xs={12} lg={6} className=" position-relative">
               <h2 className=" ff_Inter fw-bold fs_6xl text_dark">
                 Why people choose to
                 <span className="d-block">
-                  work with{" "}
+                  work with
                   <span className=" text_secondary text-uppercase">
                     HEXABIRDS
                   </span>
@@ -91,6 +115,11 @@ function ProjectsPage() {
                   </p>
                 </div>
               </div>
+              <img
+                className=" position-absolute position_dots index_n_1 d-none d-sm-block"
+                src={Dots}
+                alt="Dots"
+              />
             </Col>
             <Col xs={6}>
               <img
@@ -102,12 +131,139 @@ function ProjectsPage() {
           </Row>
         </Container>
       </section>
-      <section className=" py-5 my-5 bg_semidark">
-        <Container>
-          <h2 className=" ff_Inter fw-bold fs_6xl text_primary text-center">
+      <section className=" my-5 bg_semidark overflow-hidden">
+        <Container className=" py-5 position-relative">
+          <h2 className=" ff_Inter fw-bold fs_6xl text_primary text-center pt-4">
             Our Latest Creative Work
           </h2>
-          <Row className=" pt-4 px_xsm_5 px-3">
+          <div className="d-flex justify-content-center align-items-center pt-4">
+            <button className=" bg-transparent py-2 px-4 text_primary ff_Inter fw-bold fs_2xl  rounded-4 apps_border">
+              Apps
+            </button>
+            <button className=" ff_Inter fw-normal py-2 fs_2xl text_primary opacity_05 bg-transparent border-0 mx-5 px-4">
+              Website
+            </button>
+            <button className=" ff_Inter fw-normal py-2 fs_2xl text_primary opacity_05 bg-transparent border-0 px-4">
+              Design
+            </button>
+          </div>
+          <Row className=" py-5">
+            <Col xs={10} className=" py-5 mb-5">
+              <Row className=" py-5 position-relative index_1">
+                <Col xs={3}>
+                  <img className=" w-100" src={Phone} alt="Phone" />
+                </Col>
+                <Col xs={8}>
+                  <div className="ps-5">
+                    <div className=" d-flex align-items-center">
+                      <img src={app_logo} alt="app_logo" />
+                      <h2 className=" ff_Roboto fw-bold fs_4xl text_primary text-uppercase mb-0 ms-5">
+                        ELON MUSK VISION
+                      </h2>
+                    </div>
+                    <p className=" ff_Inter fw-normal fs_lg text_primary pt-4">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Phasellus eleifend gravida diam, et efficitur nunc posuere
+                      ut. Morbi nec urna non diam consequat aliquam quis et
+                      lorem. Maecenas rhoncus, dui non consequat semper, ligula
+                      velit hendrerit augue, non pharetra sem libero non eros.
+                      Fusce facilisis pulvinar pretium. Lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit. Donec non vulputate
+                      quam. Fusce egestas libero sit amet venenatis fringilla.
+                      Proin id euismod tortor.
+                    </p>
+                    <h2 className=" ff_Roboto fw-bold fs_xl text_primary text-capitalize pt-5">
+                      Stack Used
+                    </h2>
+                    <div className="pt-3 d-flex align-items-center">
+                      <div className=" d-flex align-items-center">
+                        <img src={Flutter} alt="Flutter" />
+                        <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3">
+                          Flutter
+                        </h2>
+                      </div>
+                      <div className=" d-flex align-items-center ms-5">
+                        <img src={logos_php} alt="logos_php" />
+                        <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3 text-uppercase">
+                          PHP
+                        </h2>
+                      </div>
+                      <div className=" d-flex align-items-center ms-5">
+                        <img src={devicon_figma} alt="devicon_figma" />
+                        <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3 text-uppercase">
+                          Figma
+                        </h2>
+                      </div>
+                    </div>
+                    <h2 className=" ff_Roboto fw-bold fs_xl text_primary text-capitalize pt-5 mt-4">
+                      What they say
+                    </h2>
+                    <div className=" d-flex pt-4 align-items-center">
+                      <div className="me-3">
+                        <img src={CEO_EMV} alt="CEO_EMV" />
+                      </div>
+                      <div className="ms-1">
+                        <p className=" ff_Inter fw-normal  fs_sm text_primary mb-0 pb-2">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Phasellus eleifend gravida diam, et efficitur
+                          nunc posuere ut. Morbi nec urna non diam consequat
+                          aliquam quis et lorem.
+                        </p>
+                        <h2 className=" ff_Inter  fw-bold fs_sm text_primary mb-0">
+                          CEO
+                        </h2>
+                        <h2 className=" ff_Inter  fw-normal fs_sm text_primary">
+                          EMV Pvt Ltd.
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </Col>{" "}
+                <div className=" position-absolute position_dots_2 index_n_1 d-none d-sm-inline-block">
+                  <img src={Dots} alt="Dots" />
+                </div>
+                <h2 className=" ff_Inter fw-bold fs_lg text_primary">
+                  Visit :{" "}
+                  <a
+                    className=" fw-normal text_lightprimary know_hover"
+                    href="#"
+                  >
+                    h/ag/ga/ba/hhh.playstore.com
+                  </a>
+                </h2>
+              </Row>
+            </Col>
+          </Row>
+          <div className=" position-absolute top-0 end-0 max_200 ">
+            <Slider {...settings} className="overlay_up">
+              <div className=" py-2">
+                <img className="w-100" src={ElonMuskVision} alt="" />
+              </div>
+              <div className=" py-2">
+                <img className="w-100" src={EduApp} alt="" />
+              </div>
+              <div className=" py-2">
+                <img className="w-100" src={ElonMuskVision} alt="" />
+              </div>
+              <div className=" py-2">
+                <img className="w-100" src={EduApp} alt="" />
+              </div>
+              <div className=" py-2">
+                <img className="w-100" src={ElonMuskVision} alt="" />
+              </div>
+              <div className=" py-2">
+                <img className="w-100" src={EduApp} alt="" />
+              </div>
+              <div className=" py-2">
+                <img className="w-100" src={ElonMuskVision} alt="" />
+              </div>
+              <div className=" py-2">
+                <img className="w-100" src={EduApp} alt="" />
+              </div>
+            </Slider>
+          </div>
+
+          {/* <Row className=" pt-4 px_xsm_5 px-3">
             {WorkDummyData.map((value) => {
               const { image, heading, subheading, id } = value;
               return (
@@ -127,7 +283,7 @@ function ProjectsPage() {
                 </Col>
               );
             })}
-          </Row>
+          </Row> */}
         </Container>
       </section>
       <section className=" py-5 my-5">
@@ -137,20 +293,31 @@ function ProjectsPage() {
           </h2>
           <p className=" ff_Inter fw-normal fs_xl text-dark text-center">
             <span className=" fw-bold">Hexabirds'</span> team of skilled
-            developers, designers, and analysts assures{" "}
+            developers, designers, and analysts assures
             <span className="d-block">
               your company an increase of business and quick market expansion.
             </span>
           </p>
-          <div className=" d-flex justify-content-center pt-5 align-items-center flex-column flex-md-row">
-            <div className="d-flex">
+          <div className=" d-flex justify-content-center pt-5 align-items-center">
+            <div className="hover_images">
               <img className="" src={Prime} alt="Prime" />
-              <img className="ms-3 ms-sm-5" src={sri} alt="sri" />
-              <img className="ms-3 ms-sm-5" src={vision} alt="vision" />
+              <img className=" d-none" src={Prime_2} alt="Prime_2" />
             </div>
-            <div className="d-flex pt-4 pt-sm-0">
-              <img className="ms-md-5" src={Closet} alt="Closet" />
-              <img className="ms-5" src={edumato_2} alt="edumato_2" />
+            <div className="hover_images ms-5">
+              <img className="" src={sri} alt="sri" />
+              <img className=" d-none" src={sri_2} alt="sri_2" />
+            </div>
+            <div className="ms-3 ms-sm-5 hover_images">
+              <img className="" src={vision} alt="vision" />
+              <img className=" d-none" src={vision_2} alt="vision_2" />
+            </div>
+            <div className="ms-5 hover_images">
+              <img className="" src={Closet} alt="Closet" />
+              <img className=" d-none" src={Closet_2} alt="Closet_2" />
+            </div>
+            <div className="ms-5 hover_images">
+              <img className="" src={edumato_2} alt="edumato_2" />
+              <img className="d-none" src={edumato_3} alt="edumato_3" />
             </div>
           </div>
         </Container>

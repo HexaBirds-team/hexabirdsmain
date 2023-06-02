@@ -1,5 +1,4 @@
 import React from "react";
-import NavbarFile from "./NavbarFile";
 import HeroSection from "./HeroSection";
 import { Col, Container, Row } from "react-bootstrap";
 import service_offer from "../assets/images/png/service_offer.png";

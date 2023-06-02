@@ -34,6 +34,7 @@
   --clr-dark: #000000;
   --clr-semidark: #1e222b;
   --clr-primary: #ffffff;
+  --clr-lightprimary: #00ffe0;
   --clr-secondary: #b63336;
   --clr-tertiary: #01010186;
   --clr-light: #010101;
@@ -130,6 +131,9 @@
 }
 .text_lightdark {
   color: var(--clr-lightdark);
+}
+.text_lightprimary {
+  color: var(--clr-lightprimary);
 }
 /* BACKGROUND COLOR ===================================================== */
 .bg_dark {
@@ -617,7 +621,7 @@ video {
   max-width: 190px;
 }
 .max_w_230 {
-  max-width: 220px;
+  width: 220px;
 }
 .girl_position {
   top: -24px;
@@ -833,11 +837,64 @@ textarea {
 .bottom_n_26 {
   bottom: -26px;
 }
-
+.apps_border {
+  background: linear-gradient(var(--clr-semidark) 0%, var(--clr-semidark) 100%)
+      padding-box,
+    linear-gradient(var(--clr-semidark) 20%, #05ff00 100%) border-box;
+  border: 2px solid transparent;
+}
+.max_200 {
+  max-width: 200px;
+}
+.overlay_up {
+  position: relative;
+}
+.overlay_up::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180.07deg,
+    #1e222b 8.38%,
+    rgba(30, 34, 43, 0.596591) 63.01%,
+    rgba(30, 34, 43, 0) 99.94%
+  );
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+}
+.overlay_up::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: linear-gradient(
+    360.07deg,
+    #1e222b 8.38%,
+    rgba(30, 34, 43, 0.596591) 63.01%,
+    rgba(30, 34, 43, 0) 99.94%
+  );
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+}
+.position_dots_2 {
+  bottom: -3%;
+  left: 72%;
+}
+.position_arrow {
+  top: 31%;
+  right: -36px;
+}
 @media (min-width: 400px) {
   .px_xsm_5 {
     padding-left: 48px;
     padding-right: 48px;
+  }
+  .position_arrow {
+    top: 53%;
+    right: -1px;
   }
 }
 @media (min-width: 576px) {
@@ -1025,6 +1082,27 @@ textarea {
   }
 }
 
-/* .slick-active {
+/* .center .slick-active {
   transform: scale(1.2);
 } */
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+.hover_images img:nth-child(1) {
+  transition: all 300ms linear;
+}
+.hover_images img:nth-child(2) {
+  transition: all 300ms linear;
+}
+.hover_images:hover img:nth-child(1) {
+  display: none;
+}
+.hover_images:hover img:nth-child(2) {
+  display: block !important;
+}
+
+.position_dots {
+  top: -46px;
+  left: -22px !important;
+}
