@@ -8,10 +8,13 @@ import Excellent_Support from "../assets/images/png/Excellent_Support.png";
 import Management from "../assets/images/png/Management.png";
 import TeamWork from "../assets/images/png/TeamWork.png";
 import BalinaJosef from "../assets/images/png/BalinaJosef.png";
-
+import Testimonials_wave from "../assets/images/png/Testimonials_wave.png";
 import NextArrow from "../assets/images/svg/NextArrow.svg";
 import PreArrow from "../assets/images/svg/PreArrow.svg";
 import Red_Gubbare from "../assets/images/svg/Red_Gubbare.svg";
+import yellow_circle from "../assets/images/svg/yellow_circle.svg";
+import ListImageRed from "../assets/images/svg/ListImageRed.svg";
+import Curve_line from "../assets/images/svg/Curve_line.svg";
 import Girl_Images from "../assets/images/png/Girl_Images.png";
 import TheBest from "../assets/images/png/TheBest.png";
 import EmailGif from "../assets/images/Gif/EmailGif.gif";
@@ -49,12 +52,21 @@ function Hero() {
   const settings3 = {
     autoplay: true,
     infinite: true,
-    // arrows: false,
+    arrows: false,
     slidesToScroll: 1,
     dots: false,
     className: "center",
     centerMode: true,
     slidesToShow: 1.68,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
+    ],
   };
   return (
     <>
@@ -166,8 +178,8 @@ function Hero() {
         </Container>
       </section>
       <section className="pb-5 ">
-        <Container fluid className="pe-xl-0 py-5 my-5">
-          <div className=" d-xl-flex pb-5 mb-5">
+        <Container fluid className="pe-xl-0 py-5 my-md-5">
+          <div className=" d-xl-flex pb-lg-5 mb-lg-5">
             <h2 className=" ff_Roboto fw_medium fs_11xl text_dark text-center writing_lr pt-5 mt-3">
               DEDICATED <span className=" d-xl-block">TEAM</span>
             </h2>
@@ -206,15 +218,15 @@ function Hero() {
           </div>
         </Container>
       </section>
-      <section className=" bg_red_to_tr py-5 mt-5 ps-xl-4 position-relative">
+      <section className=" bg_red_to_tr py-5 mt-sm-5 ps-xl-4 position-relative">
         <Container fluid>
           <Row>
-            <h2 className=" ff_Roboto fw-normal fs_14xl text_black_white text-uppercase text-center start-0 position-absolute top_n_60">
+            <h2 className=" ff_Roboto fw-normal fs_14xl text_black_white text-uppercase text-center start-0 position-absolute Our_services">
               OUR SERVICES
             </h2>
             <Col xs={12} xl={10}>
               <Row>
-                <Col xs={12} sm={6} lg={4} className="pt-5">
+                <Col xs={12} sm={6} lg={4} className="pt-sm-5">
                   <div className=" position-relative Service_card p-4 ps-5 h-100">
                     <h2 className=" ff_Roboto fw-normal fs_2xl text_primary">
                       Websites
@@ -491,137 +503,166 @@ function Hero() {
           </Row>
         </Container>
       </section>
-      <section className="py-5  position-relative overflow-hidden">
-        <Container>
-          <div className=" bg_primary white_shadow p-4">
-            <h2 className=" ff_Roboto fw-bold fs_3xl text_secondary text-center">
-              Testimonials
-            </h2>
-            <Row className="px-lg-5 pt-3 pt-md-5 justify-content-md-center Testimonials_height position-relative">
-              <Col xs={8} sm={6} md={4} lg={3}>
-                <div>
-                  <Slider
-                    {...settings}
-                    onSwipe={(direction) => {
-                      if (direction == "left") {
-                        sliderRef2?.current?.slickPrev();
-                      } else {
-                        sliderRef2?.current?.slickNext();
-                      }
-                    }}
-                    ref={sliderRef1}
-                  >
-                    {TestimonialsDummyData.map((value) => {
-                      const { Image, id } = value;
-                      return (
-                        <div key={id}>
-                          <img className="w-100" src={Image} alt="Image" />
-                        </div>
-                      );
-                    })}
-                  </Slider>
-                </div>
-              </Col>
-              <Col xs={12} sm={10} md={8} className="translate_94to203">
-                <div className="d-sm-none d-block position-absolute position_arrow">
-                  <img
-                    className="me-4 cursor_pointer"
-                    onClick={() => {
-                      sliderRef1?.current?.slickPrev();
-                      sliderRef2?.current?.slickPrev();
-                    }}
-                    src={PreArrow}
-                    alt="PreArrow"
-                  />
-                  <img
-                    className="cursor_pointer translate_n"
-                    onClick={() => {
-                      sliderRef1?.current?.slickNext();
-                      sliderRef2?.current?.slickNext();
-                    }}
-                    src={NextArrow}
-                    alt="NextArrow"
-                  />
-                </div>
-                <div className="py-4 my-3 text-end pe-5 d-none d-sm-block">
-                  <img
-                    className="me-4 cursor_pointer"
-                    onClick={() => {
-                      sliderRef1?.current?.slickPrev();
-                      sliderRef2?.current?.slickPrev();
-                    }}
-                    src={PreArrow}
-                    alt="PreArrow"
-                  />
-                  <img
-                    className="cursor_pointer translate_n"
-                    onClick={() => {
-                      sliderRef1?.current?.slickNext();
-                      sliderRef2?.current?.slickNext();
-                    }}
-                    src={NextArrow}
-                    alt="NextArrow"
-                  />
-                </div>
-                <div className=" bg_primary white_shadow p-3 p-lg-4 be_secondary translateX_n_68">
-                  <Slider
-                    {...settings2}
-                    onSwipe={(direction) => {
-                      if (direction == "left") {
+      <section className="py-5 my-sm-5  position-relative">
+        <div className=" position-relative overflow-hidden py-5">
+          <Container className="mb-xxl-5 pb-xl-5">
+            <div className=" bg_primary white_shadow p-4 position-relative">
+              <h2 className=" ff_Roboto fw-bold fs_3xl text_secondary text-center">
+                Testimonials
+              </h2>
+              <Row className="px-lg-5 py-3 py-md-5 justify-content-md-center Testimonials_height position-relative">
+                <Col xs={8} sm={6} md={4} lg={3}>
+                  <div>
+                    <Slider
+                      {...settings}
+                      onSwipe={(direction) => {
+                        if (direction == "left") {
+                          sliderRef2?.current?.slickPrev();
+                        } else {
+                          sliderRef2?.current?.slickNext();
+                        }
+                      }}
+                      ref={sliderRef1}
+                    >
+                      {TestimonialsDummyData.map((value) => {
+                        const { Image, id } = value;
+                        return (
+                          <div key={id}>
+                            <img className="w-100" src={Image} alt="Image" />
+                          </div>
+                        );
+                      })}
+                    </Slider>
+                  </div>
+                </Col>
+                <Col xs={12} sm={10} md={8} className="translate_94to203">
+                  <div className="d-sm-none d-block position-absolute position_arrow">
+                    <img
+                      className="me-4 cursor_pointer"
+                      onClick={() => {
                         sliderRef1?.current?.slickPrev();
-                      } else {
+                        sliderRef2?.current?.slickPrev();
+                      }}
+                      src={PreArrow}
+                      alt="PreArrow"
+                    />
+                    <img
+                      className="cursor_pointer translate_n"
+                      onClick={() => {
                         sliderRef1?.current?.slickNext();
-                      }
-                    }}
-                    ref={sliderRef2}
-                  >
-                    {TestimonialsDummyData.map((value) => {
-                      const { id, name, company, paragraph } = value;
-                      return (
-                        <div className=" pe-1" key={id}>
-                          <p className=" ff_Roboto fw-normal fs_xl text_dark">
-                            {paragraph}
-                          </p>
-                          <h2 className=" ff_Roboto fs_xl fw-bold text_dark pt-4">
-                            {name}
-                          </h2>
-                          <h4 className=" ff_Roboto fs_sm fw-normal text_secondary">
-                            {company}
-                          </h4>
-                        </div>
-                      );
-                    })}
-                    <div className=" pe-1">
-                      <p className=" ff_Roboto fw-normal fs_xl text_dark">
-                        Nullam neque nibh, tempus et nisl ac, faucibus pretium
-                        enim. Sed scelerisque urna a nisl vestibulum ultricies.
-                        Aliquam ex eros, faucibus et tempus vel, varius non
-                        metus. Sed pellentesque magna sed nulla mollis bibendum.
-                        Proin ultricies nec justo a scelerisque. Nam.
-                      </p>
-                      <h2 className=" ff_Roboto fs_xl fw-bold text_dark pt-4">
-                        Balina Josef
-                      </h2>
-                      <h4 className=" ff_Roboto fs_sm fw-normal text_secondary">
-                        CEO , xyz company
-                      </h4>
-                    </div>
-                  </Slider>
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </Container>
+                        sliderRef2?.current?.slickNext();
+                      }}
+                      src={NextArrow}
+                      alt="NextArrow"
+                    />
+                  </div>
+                  <div className="py-4 my-3 text-end pe-5 d-none d-sm-block">
+                    <img
+                      className="me-4 cursor_pointer"
+                      onClick={() => {
+                        sliderRef1?.current?.slickPrev();
+                        sliderRef2?.current?.slickPrev();
+                      }}
+                      src={PreArrow}
+                      alt="PreArrow"
+                    />
+                    <img
+                      className="cursor_pointer translate_n"
+                      onClick={() => {
+                        sliderRef1?.current?.slickNext();
+                        sliderRef2?.current?.slickNext();
+                      }}
+                      src={NextArrow}
+                      alt="NextArrow"
+                    />
+                  </div>
+                  <div className=" bg_primary white_shadow p-3 p-lg-4 be_secondary translateX_n_68">
+                    <Slider
+                      {...settings2}
+                      onSwipe={(direction) => {
+                        if (direction == "left") {
+                          sliderRef1?.current?.slickPrev();
+                        } else {
+                          sliderRef1?.current?.slickNext();
+                        }
+                      }}
+                      ref={sliderRef2}
+                    >
+                      {TestimonialsDummyData.map((value) => {
+                        const { id, name, company, paragraph } = value;
+                        return (
+                          <div className=" pe-1" key={id}>
+                            <p className=" ff_Roboto fw-normal fs_xl text_dark">
+                              {paragraph}
+                            </p>
+                            <h2 className=" ff_Roboto fs_xl fw-bold text_dark pt-4">
+                              {name}
+                            </h2>
+                            <h4 className=" ff_Roboto fs_sm fw-normal text_secondary">
+                              {company}
+                            </h4>
+                          </div>
+                        );
+                      })}
+                      <div className=" pe-1">
+                        <p className=" ff_Roboto fw-normal fs_xl text_dark">
+                          Nullam neque nibh, tempus et nisl ac, faucibus pretium
+                          enim. Sed scelerisque urna a nisl vestibulum
+                          ultricies. Aliquam ex eros, faucibus et tempus vel,
+                          varius non metus. Sed pellentesque magna sed nulla
+                          mollis bibendum. Proin ultricies nec justo a
+                          scelerisque. Nam.
+                        </p>
+                        <h2 className=" ff_Roboto fs_xl fw-bold text_dark pt-4">
+                          Balina Josef
+                        </h2>
+                        <h4 className=" ff_Roboto fs_sm fw-normal text_secondary">
+                          CEO , xyz company
+                        </h4>
+                      </div>
+                    </Slider>
+                  </div>
+                </Col>
+              </Row>
+              <img
+                className=" position-absolute yellow_circle d-none d-sm-block"
+                src={yellow_circle}
+                alt="yellow_circle"
+              />
+              <img
+                className=" position-absolute yellow_circle_2 d-none d-sm-block"
+                src={yellow_circle}
+                alt="yellow_circle"
+              />
+              <img
+                className=" position-absolute red_circle_2 d-none d-sm-block"
+                width={25}
+                src={ListImageRed}
+                alt="ListImageRed"
+              />
+            </div>
+          </Container>
+        </div>
+        <img
+          className=" position-absolute end-0 index_n_1 Testimonials_wave"
+          src={Testimonials_wave}
+          alt="Testimonials_wave"
+        />
+        <img
+          className=" position-absolute start-0 w-100 index_n _1  Curve_line d-none d-md-block"
+          src={Curve_line}
+          alt="Curve_line"
+        />
       </section>
-      <section className=" bg_dark my-5 py-5 position-relative">
-        <Container fluid className="">
-          <h1 className=" ff_Roboto fw-bold fs_10xl text-uppercase text_white_black position-absolute top_n_36 start-0 ps-5 ms-5  ">
+      <section className=" bg_dark my-sm-5 py-5 position-relative">
+        <Container fluid className="p-0">
+          <h1 className=" ff_Roboto fw-bold fs_10xl text-uppercase text_white_black position-absolute top_n_36 start-0 ps-3 ps-sm-5 ms-md-5  ">
             OUR TEAM WORK
           </h1>
           <Slider {...settings3}>
             <div className="px-2 px-xl-4">
-              <Row className="pt-5 align-items-center px-5">
-                <Col xs={5}>
+              <Row className="pt-5 align-items-center px-4 px-sm-5 ">
+                <Col xs={12} xl={6}>
                   <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
                     <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
                       created by :
@@ -645,21 +686,21 @@ function Hero() {
                       </div>
                     </div>
                   </div>
-                  <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-4 mt-2">
+                  <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-3 mt-2">
                     Stack Used:{" "}
                   </h2>
                   <h3 className=" ff_Roboto fw-normal fs_lg text_primary">
                     HTML / CSS, Java Script, Bootsrap
                   </h3>
                 </Col>
-                <Col xs={7}>
+                <Col xs={12} xl={6}>
                   <img className="w-100" src={TheBest} alt="TheBest" />
                 </Col>
               </Row>
             </div>
             <div className="px-2 px-xl-4">
-              <Row className="pt-5 align-items-center px-5">
-                <Col xs={5}>
+              <Row className="pt-5 align-items-center px-4 px-sm-5 ">
+                <Col xs={12} xl={6}>
                   <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
                     <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
                       created by :
@@ -683,21 +724,21 @@ function Hero() {
                       </div>
                     </div>
                   </div>
-                  <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-4 mt-2">
+                  <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-3 mt-2">
                     Stack Used:{" "}
                   </h2>
                   <h3 className=" ff_Roboto fw-normal fs_lg text_primary">
                     HTML / CSS, Java Script, Bootsrap
                   </h3>
                 </Col>
-                <Col xs={7}>
+                <Col xs={12} xl={6}>
                   <img className="w-100" src={TheBest} alt="TheBest" />
                 </Col>
               </Row>
             </div>
             <div className="px-2 px-xl-4">
-              <Row className="pt-5 align-items-center px-5">
-                <Col xs={5}>
+              <Row className="pt-5 align-items-center px-4 px-sm-5 ">
+                <Col xs={12} xl={6}>
                   <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
                     <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
                       created by :
@@ -721,21 +762,21 @@ function Hero() {
                       </div>
                     </div>
                   </div>
-                  <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-4 mt-2">
+                  <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-3 mt-2">
                     Stack Used:{" "}
                   </h2>
                   <h3 className=" ff_Roboto fw-normal fs_lg text_primary">
                     HTML / CSS, Java Script, Bootsrap
                   </h3>
                 </Col>
-                <Col xs={7}>
+                <Col xs={12} xl={6}>
                   <img className="w-100" src={TheBest} alt="TheBest" />
                 </Col>
               </Row>
             </div>
             <div className="px-2 px-xl-4">
-              <Row className="pt-5 align-items-center px-5">
-                <Col xs={5}>
+              <Row className="pt-5 align-items-center px-4 px-sm-5 ">
+                <Col xs={12} xl={6}>
                   <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
                     <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
                       created by :
@@ -759,14 +800,14 @@ function Hero() {
                       </div>
                     </div>
                   </div>
-                  <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-4 mt-2">
+                  <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-3 mt-2">
                     Stack Used:{" "}
                   </h2>
                   <h3 className=" ff_Roboto fw-normal fs_lg text_primary">
                     HTML / CSS, Java Script, Bootsrap
                   </h3>
                 </Col>
-                <Col xs={7}>
+                <Col xs={12} xl={6}>
                   <img className="w-100" src={TheBest} alt="TheBest" />
                 </Col>
               </Row>

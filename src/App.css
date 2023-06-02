@@ -21,11 +21,11 @@
   --fs-7xl: 45px;
   --fs-8xl: 50px;
   --fs-9xl: 43px;
-  --fs-10xl: 41px;
+  --fs-10xl: 37px;
   --fs-11xl: 34px;
   --fs-12xl: 31px;
   --fs-13xl: 42px;
-  --fs-14xl: 49px;
+  --fs-14xl: 44px;
   --fs-15xl: 52px;
   --fs-16xl: 42px;
   /* FONT WEIGHT  */
@@ -522,10 +522,10 @@ video {
   top: 10px;
 }
 .top_n_36 {
-  top: -36px;
+  top: -21px;
 }
-.top_n_60 {
-  top: -60px;
+.Our_services {
+  top: -26.5px;
 }
 .top_4 {
   top: 5px;
@@ -538,7 +538,7 @@ video {
 }
 /* BOTTOM============================== */
 .Red_wave {
-  bottom: -14%;
+  bottom: -5%;
 }
 .bottom_10 {
   bottom: 10px;
@@ -887,6 +887,24 @@ textarea {
   top: 31%;
   right: -36px;
 }
+.Testimonials_wave {
+  top: -26%;
+}
+.yellow_circle {
+  top: 10px;
+  right: -42.5px;
+}
+.yellow_circle_2 {
+  bottom: 50px;
+  left: -42.5px;
+}
+.red_circle_2 {
+  bottom: 30px;
+  left: 40px;
+}
+.Curve_line {
+  bottom: -155px;
+}
 @media (min-width: 400px) {
   .px_xsm_5 {
     padding-left: 48px;
@@ -917,7 +935,7 @@ textarea {
     --fs-11xl: 57px;
     --fs-12xl: 43px;
     --fs-13xl: 68px;
-    --fs-14xl: 100px;
+    --fs-14xl: 82px;
     --fs-15xl: 74px;
     --fs-16xl: 75px;
   }
@@ -932,6 +950,15 @@ textarea {
   }
   .be_secondary {
     border-right: 11px solid var(--clr-secondary);
+  }
+  .top_n_36 {
+    top: -36px;
+  }
+  .Our_services {
+    top: -46px;
+  }
+  .Red_wave {
+    bottom: -10%;
   }
 }
 @media (min-width: 768px) {
@@ -957,6 +984,9 @@ textarea {
     --fs-14xl: 100px;
     --fs-15xl: 107px;
     --fs-16xl: 103px;
+  }
+  .Our_services {
+    top: -60px;
   }
   .opacity_Low_md_1 {
     opacity: 0.1;
