@@ -18,6 +18,7 @@ import Curve_line from "../assets/images/svg/Curve_line.svg";
 import Girl_Images from "../assets/images/png/Girl_Images.png";
 import TheBest from "../assets/images/png/TheBest.png";
 import EmailGif from "../assets/images/Gif/EmailGif.gif";
+import PhoneGif from "../assets/images/Gif/PhoneGif.gif";
 import TestimonialsDummyData from "./TestimonialsDummyData";
 
 import { Col, Container, Row } from "react-bootstrap";
@@ -70,7 +71,7 @@ function Hero() {
   };
   return (
     <>
-      <section className=" position-relative">
+      <section className=" position-relative ">
         <div className="over_ley">
           <video
             src={hexabirds_intro}
@@ -104,12 +105,16 @@ function Hero() {
           src={Red_wave}
           alt="Red_wave"
         />
-        {/* <img
-          className=" position-absolute top-50 translate-middle-y end-0
-        "
-          src={EmailGif}
-          alt="EmailGif"
-        /> */}
+
+        <div className=" d-inline-block position-absolute top-50 translate-middle-y end-0">
+          <img className="" width={40} src={EmailGif} alt="EmailGif" />
+          <img
+            className=" pt-4 d-block"
+            width={40}
+            src={PhoneGif}
+            alt="PhoneGif"
+          />
+        </div>
       </section>
       <section>
         <Container>
@@ -659,7 +664,7 @@ function Hero() {
           <h1 className=" ff_Roboto fw-bold fs_10xl text-uppercase text_white_black position-absolute top_n_36 start-0 ps-3 ps-sm-5 ms-md-5  ">
             OUR TEAM WORK
           </h1>
-          <Slider {...settings3}>
+          <Slider {...settings3} className="py-4 overley_slider">
             <div className="px-2 px-xl-4">
               <Row className="pt-5 align-items-center px-4 px-sm-5 ">
                 <Col xs={12} xl={6}>

@@ -685,10 +685,13 @@ video {
 .index_1 {
   z-index: 1;
 }
+.index_99 {
+  z-index: 99;
+}
 /* OUR TEAM section    ================================== */
 .images_hover:hover {
   transform-origin: top center;
-  animation: row 2s linear infinite alternate;
+  /* animation: row 2s linear infinite alternate; */
   z-index: 10;
 }
 .images_hover {
@@ -745,7 +748,7 @@ video {
   transition: all 300ms linear;
 }
 .bottom_73 {
-  bottom: 73px;
+  bottom: 97px;
 }
 /* .linear_gradient{
   background: linear-gradient(0deg, rgba(182, 51, 54, 0.21) 0%, rgba(182, 51, 54, 0) 79.13%);
@@ -905,6 +908,145 @@ textarea {
 .Curve_line {
   bottom: -155px;
 }
+/* robo animation ======================================== */
+
+.robo {
+  animation: robo_movement 2s linear infinite;
+}
+
+@keyframes robo_movement {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.shadow_ellipse {
+  animation: visi 2s linear infinite;
+}
+
+@keyframes visi {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.eye {
+  top: 33.5%;
+  left: 60.3%;
+  transition: 1s;
+  animation: blink 3s linear infinite;
+}
+
+.eye2 {
+  top: 33.5%;
+  left: 78.6%;
+  transition: 1s;
+  animation: blink 3s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    transform: translateY(0%);
+  }
+
+  49% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-5%);
+    height: 9px;
+  }
+
+  52% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(0%);
+    height: 12.5px;
+  }
+}
+
+.mouth {
+  position: absolute;
+  height: 3px;
+  width: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  top: 45%;
+  right: 22.5%;
+}
+.mouth_new {
+  top: 35%;
+  right: 21%;
+}
+
+.right_hand {
+  position: absolute;
+  top: 85px;
+  left: 89px;
+}
+
+.right_hand {
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+  animation: hand_movement 5s linear infinite;
+}
+
+@keyframes hand_movement {
+  0% {
+    transform-origin: top right;
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform-origin: top right;
+    transform: rotate(40deg);
+  }
+
+  80% {
+    transform-origin: top right;
+    transform: rotate(40deg);
+  }
+
+  100% {
+    transform-origin: top right;
+    transform: rotate(0deg);
+  }
+}
+
+.txt_board {
+  height: 80px;
+  width: 200px;
+  background-color: white;
+  border-radius: 30px;
+  border: 2px solid black;
+}
+.robo_position {
+  right: 40px;
+  bottom: 30px;
+}
+.hello_word {
+  top: 11px;
+  left: 10px;
+}
 @media (min-width: 400px) {
   .px_xsm_5 {
     padding-left: 48px;
@@ -959,6 +1101,12 @@ textarea {
   }
   .Red_wave {
     bottom: -10%;
+  }
+  .images_hover:hover {
+    animation: row 2s linear infinite alternate;
+  }
+  .bottom_73 {
+    bottom: 89px;
   }
 }
 @media (min-width: 768px) {
@@ -1015,6 +1163,30 @@ textarea {
   .Testimonials_height {
     height: auto;
   }
+
+  .overley_slider {
+    position: relative;
+  }
+  .overley_slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(1, 1, 1, 0.537);
+    width: 200px;
+  }
+  .overley_slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(1, 1, 1, 0.537);
+    width: 200px;
+  }
 }
 @media (min-width: 992px) {
   .all_unset {
@@ -1058,8 +1230,20 @@ textarea {
   .hexabirds_word {
     top: -79px;
   }
+  .overley_slider::after {
+    width: 280px;
+  }
+  .overley_slider::before {
+    width: 280px;
+  }
 }
 @media (min-width: 1200px) {
+  .overley_slider::after {
+    width: 310px;
+  }
+  .overley_slider::before {
+    width: 310px;
+  }
   .writing_lr {
     transform: rotate(-90deg) translateY(56px);
     text-shadow: 25px 15px 1px #dbdbdb;
