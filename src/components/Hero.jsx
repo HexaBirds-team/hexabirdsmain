@@ -15,6 +15,8 @@ import Red_Gubbare from "../assets/images/svg/Red_Gubbare.svg";
 import yellow_circle from "../assets/images/svg/yellow_circle.svg";
 import ListImageRed from "../assets/images/svg/ListImageRed.svg";
 import Curve_line from "../assets/images/svg/Curve_line.svg";
+import LeftArrow from "../assets/images/svg/LeftArrow.svg";
+import RightArrow from "../assets/images/svg/RightArrow.svg";
 import Girl_Images from "../assets/images/png/Girl_Images.png";
 import TheBest from "../assets/images/png/TheBest.png";
 import EmailGif from "../assets/images/Gif/EmailGif.gif";
@@ -69,6 +71,7 @@ function Hero() {
       },
     ],
   };
+  const slider = React.useRef(null);
   return (
     <>
       <section className=" position-relative ">
@@ -516,7 +519,7 @@ function Hero() {
                 Testimonials
               </h2>
               <Row className="px-lg-5 py-3 py-md-5 justify-content-md-center Testimonials_height position-relative">
-                <Col xs={8} sm={6} md={4} lg={3}>
+                <Col xs={12} sm={6} md={4} lg={3}>
                   <div>
                     <Slider
                       {...settings}
@@ -532,8 +535,12 @@ function Hero() {
                       {TestimonialsDummyData.map((value) => {
                         const { Image, id } = value;
                         return (
-                          <div key={id}>
-                            <img className="w-100" src={Image} alt="Image" />
+                          <div key={id} className="">
+                            <img
+                              className="w-100 mb-0 white_shadow bg_primary"
+                              src={Image}
+                              alt="Image"
+                            />
                           </div>
                         );
                       })}
@@ -541,7 +548,27 @@ function Hero() {
                   </div>
                 </Col>
                 <Col xs={12} sm={10} md={8} className="translate_94to203">
-                  <div className="d-sm-none d-block position-absolute position_arrow">
+                  <div className="d-sm-none d-block">
+                    <img
+                      className="me-4 cursor_pointer position-absolute top-50 translate-middle-y start-0"
+                      onClick={() => {
+                        sliderRef1?.current?.slickPrev();
+                        sliderRef2?.current?.slickPrev();
+                      }}
+                      src={PreArrow}
+                      alt="PreArrow"
+                    />
+                    <img
+                      className="cursor_pointer translate_n position-absolute top-50 translate-middle-y end-0"
+                      onClick={() => {
+                        sliderRef1?.current?.slickNext();
+                        sliderRef2?.current?.slickNext();
+                      }}
+                      src={NextArrow}
+                      alt="NextArrow"
+                    />
+                  </div>
+                  <div className="py-4 my-3 text-end pe-5 d-none d-sm-block ">
                     <img
                       className="me-4 cursor_pointer"
                       onClick={() => {
@@ -561,27 +588,7 @@ function Hero() {
                       alt="NextArrow"
                     />
                   </div>
-                  <div className="py-4 my-3 text-end pe-5 d-none d-sm-block">
-                    <img
-                      className="me-4 cursor_pointer"
-                      onClick={() => {
-                        sliderRef1?.current?.slickPrev();
-                        sliderRef2?.current?.slickPrev();
-                      }}
-                      src={PreArrow}
-                      alt="PreArrow"
-                    />
-                    <img
-                      className="cursor_pointer translate_n"
-                      onClick={() => {
-                        sliderRef1?.current?.slickNext();
-                        sliderRef2?.current?.slickNext();
-                      }}
-                      src={NextArrow}
-                      alt="NextArrow"
-                    />
-                  </div>
-                  <div className=" bg_primary white_shadow p-3 p-lg-4 be_secondary translateX_n_68">
+                  <div className=" bg_primary white_shadow p-3 p-lg-4 be_secondary translateX_n_68 ">
                     <Slider
                       {...settings2}
                       onSwipe={(direction) => {
@@ -609,22 +616,6 @@ function Hero() {
                           </div>
                         );
                       })}
-                      <div className=" pe-1">
-                        <p className=" ff_Roboto fw-normal fs_xl text_dark">
-                          Nullam neque nibh, tempus et nisl ac, faucibus pretium
-                          enim. Sed scelerisque urna a nisl vestibulum
-                          ultricies. Aliquam ex eros, faucibus et tempus vel,
-                          varius non metus. Sed pellentesque magna sed nulla
-                          mollis bibendum. Proin ultricies nec justo a
-                          scelerisque. Nam.
-                        </p>
-                        <h2 className=" ff_Roboto fs_xl fw-bold text_dark pt-4">
-                          Balina Josef
-                        </h2>
-                        <h4 className=" ff_Roboto fs_sm fw-normal text_secondary">
-                          CEO , xyz company
-                        </h4>
-                      </div>
                     </Slider>
                   </div>
                 </Col>
@@ -664,160 +655,174 @@ function Hero() {
           <h1 className=" ff_Roboto fw-bold fs_10xl text-uppercase text_white_black position-absolute top_n_36 start-0 ps-3 ps-sm-5 ms-md-5  ">
             OUR TEAM WORK
           </h1>
-          <Slider {...settings3} className="py-4 overley_slider">
-            <div className="px-2 px-xl-4">
-              <Row className="pt-5 align-items-center px-4 px-sm-5 ">
-                <Col xs={12} xl={6}>
-                  <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
-                    <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
-                      created by :
-                    </h2>
-                    <h3 className=" ff_Roboto fw_medium fs_xl text_secondary ps-4 mb-0 ms-4">
-                      Nisha
-                    </h3>
-                    <h4 className="ff_Roboto fw_medium fs_sm text_dark ps-4 ms-4">
-                      App Developer
-                    </h4>{" "}
-                    <div className=" position-absolute girl_position">
-                      <div className=" d-inline-block position-relative">
-                        <img
-                          width={88}
-                          height={88}
-                          className=" position-absolute top_4 end_5 rounded-circle"
-                          src={Girl_Images}
-                          alt="Girl_Images"
-                        />
-                        <img src={Red_Gubbare} alt="Red_Gubbare" />
+          <div className=" position-relative">
+            <Slider {...settings3} ref={slider} className="py-4 overley_slider">
+              <div className="px-2 px-xl-4 py-4">
+                <Row className=" align-items-center px-4 px-sm-5 ">
+                  <Col xs={12} xl={6}>
+                    <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
+                      <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
+                        created by :
+                      </h2>
+                      <h3 className=" ff_Roboto fw_medium fs_xl text_secondary ps-4 mb-0 ms-4">
+                        Nisha
+                      </h3>
+                      <h4 className="ff_Roboto fw_medium fs_sm text_dark ps-4 ms-4">
+                        App Developer
+                      </h4>{" "}
+                      <div className=" position-absolute girl_position">
+                        <div className=" d-inline-block position-relative">
+                          <img
+                            width={88}
+                            height={88}
+                            className=" position-absolute top_4 end_5 rounded-circle"
+                            src={Girl_Images}
+                            alt="Girl_Images"
+                          />
+                          <img src={Red_Gubbare} alt="Red_Gubbare" />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-3 mt-2">
-                    Stack Used:{" "}
-                  </h2>
-                  <h3 className=" ff_Roboto fw-normal fs_lg text_primary">
-                    HTML / CSS, Java Script, Bootsrap
-                  </h3>
-                </Col>
-                <Col xs={12} xl={6}>
-                  <img className="w-100" src={TheBest} alt="TheBest" />
-                </Col>
-              </Row>
-            </div>
-            <div className="px-2 px-xl-4">
-              <Row className="pt-5 align-items-center px-4 px-sm-5 ">
-                <Col xs={12} xl={6}>
-                  <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
-                    <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
-                      created by :
+                    <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-3 mt-2">
+                      Stack Used:{" "}
                     </h2>
-                    <h3 className=" ff_Roboto fw_medium fs_xl text_secondary ps-4 mb-0 ms-4">
-                      Nisha
+                    <h3 className=" ff_Roboto fw-normal fs_lg text_primary">
+                      HTML / CSS, Java Script, Bootsrap
                     </h3>
-                    <h4 className="ff_Roboto fw_medium fs_sm text_dark ps-4 ms-4">
-                      App Developer
-                    </h4>{" "}
-                    <div className=" position-absolute girl_position">
-                      <div className=" d-inline-block position-relative">
-                        <img
-                          width={88}
-                          height={88}
-                          className=" position-absolute top_4 end_5 rounded-circle"
-                          src={Girl_Images}
-                          alt="Girl_Images"
-                        />
-                        <img src={Red_Gubbare} alt="Red_Gubbare" />
+                  </Col>
+                  <Col xs={12} xl={6}>
+                    <img className="w-100" src={TheBest} alt="TheBest" />
+                  </Col>
+                </Row>
+              </div>
+              <div className="px-2 px-xl-4 py-4">
+                <Row className=" align-items-center px-4 px-sm-5 ">
+                  <Col xs={12} xl={6}>
+                    <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
+                      <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
+                        created by :
+                      </h2>
+                      <h3 className=" ff_Roboto fw_medium fs_xl text_secondary ps-4 mb-0 ms-4">
+                        Nisha
+                      </h3>
+                      <h4 className="ff_Roboto fw_medium fs_sm text_dark ps-4 ms-4">
+                        App Developer
+                      </h4>{" "}
+                      <div className=" position-absolute girl_position">
+                        <div className=" d-inline-block position-relative">
+                          <img
+                            width={88}
+                            height={88}
+                            className=" position-absolute top_4 end_5 rounded-circle"
+                            src={Girl_Images}
+                            alt="Girl_Images"
+                          />
+                          <img src={Red_Gubbare} alt="Red_Gubbare" />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-3 mt-2">
-                    Stack Used:{" "}
-                  </h2>
-                  <h3 className=" ff_Roboto fw-normal fs_lg text_primary">
-                    HTML / CSS, Java Script, Bootsrap
-                  </h3>
-                </Col>
-                <Col xs={12} xl={6}>
-                  <img className="w-100" src={TheBest} alt="TheBest" />
-                </Col>
-              </Row>
-            </div>
-            <div className="px-2 px-xl-4">
-              <Row className="pt-5 align-items-center px-4 px-sm-5 ">
-                <Col xs={12} xl={6}>
-                  <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
-                    <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
-                      created by :
+                    <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-3 mt-2">
+                      Stack Used:{" "}
                     </h2>
-                    <h3 className=" ff_Roboto fw_medium fs_xl text_secondary ps-4 mb-0 ms-4">
-                      Nisha
+                    <h3 className=" ff_Roboto fw-normal fs_lg text_primary">
+                      HTML / CSS, Java Script, Bootsrap
                     </h3>
-                    <h4 className="ff_Roboto fw_medium fs_sm text_dark ps-4 ms-4">
-                      App Developer
-                    </h4>{" "}
-                    <div className=" position-absolute girl_position">
-                      <div className=" d-inline-block position-relative">
-                        <img
-                          width={88}
-                          height={88}
-                          className=" position-absolute top_4 end_5 rounded-circle"
-                          src={Girl_Images}
-                          alt="Girl_Images"
-                        />
-                        <img src={Red_Gubbare} alt="Red_Gubbare" />
+                  </Col>
+                  <Col xs={12} xl={6}>
+                    <img className="w-100" src={TheBest} alt="TheBest" />
+                  </Col>
+                </Row>
+              </div>
+              <div className="px-2 px-xl-4 py-4">
+                <Row className=" align-items-center px-4 px-sm-5 ">
+                  <Col xs={12} xl={6}>
+                    <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
+                      <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
+                        created by :
+                      </h2>
+                      <h3 className=" ff_Roboto fw_medium fs_xl text_secondary ps-4 mb-0 ms-4">
+                        Nisha
+                      </h3>
+                      <h4 className="ff_Roboto fw_medium fs_sm text_dark ps-4 ms-4">
+                        App Developer
+                      </h4>{" "}
+                      <div className=" position-absolute girl_position">
+                        <div className=" d-inline-block position-relative">
+                          <img
+                            width={88}
+                            height={88}
+                            className=" position-absolute top_4 end_5 rounded-circle"
+                            src={Girl_Images}
+                            alt="Girl_Images"
+                          />
+                          <img src={Red_Gubbare} alt="Red_Gubbare" />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-3 mt-2">
-                    Stack Used:{" "}
-                  </h2>
-                  <h3 className=" ff_Roboto fw-normal fs_lg text_primary">
-                    HTML / CSS, Java Script, Bootsrap
-                  </h3>
-                </Col>
-                <Col xs={12} xl={6}>
-                  <img className="w-100" src={TheBest} alt="TheBest" />
-                </Col>
-              </Row>
-            </div>
-            <div className="px-2 px-xl-4">
-              <Row className="pt-5 align-items-center px-4 px-sm-5 ">
-                <Col xs={12} xl={6}>
-                  <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
-                    <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
-                      created by :
+                    <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-3 mt-2">
+                      Stack Used:{" "}
                     </h2>
-                    <h3 className=" ff_Roboto fw_medium fs_xl text_secondary ps-4 mb-0 ms-4">
-                      Nisha
+                    <h3 className=" ff_Roboto fw-normal fs_lg text_primary">
+                      HTML / CSS, Java Script, Bootsrap
                     </h3>
-                    <h4 className="ff_Roboto fw_medium fs_sm text_dark ps-4 ms-4">
-                      App Developer
-                    </h4>{" "}
-                    <div className=" position-absolute girl_position">
-                      <div className=" d-inline-block position-relative">
-                        <img
-                          width={88}
-                          height={88}
-                          className=" position-absolute top_4 end_5 rounded-circle"
-                          src={Girl_Images}
-                          alt="Girl_Images"
-                        />
-                        <img src={Red_Gubbare} alt="Red_Gubbare" />
+                  </Col>
+                  <Col xs={12} xl={6}>
+                    <img className="w-100" src={TheBest} alt="TheBest" />
+                  </Col>
+                </Row>
+              </div>
+              <div className="px-2 px-xl-4 py-4">
+                <Row className=" align-items-center px-4 px-sm-5 ">
+                  <Col xs={12} xl={6}>
+                    <div className=" bg_primary p-2 rounded-pill ps-5 position-relative max_w_230 ms-5">
+                      <h2 className=" ff_Roboto fw-normal fs_sm text_dark ps-4 ms-4">
+                        created by :
+                      </h2>
+                      <h3 className=" ff_Roboto fw_medium fs_xl text_secondary ps-4 mb-0 ms-4">
+                        Nisha
+                      </h3>
+                      <h4 className="ff_Roboto fw_medium fs_sm text_dark ps-4 ms-4">
+                        App Developer
+                      </h4>{" "}
+                      <div className=" position-absolute girl_position">
+                        <div className=" d-inline-block position-relative">
+                          <img
+                            width={88}
+                            height={88}
+                            className=" position-absolute top_4 end_5 rounded-circle"
+                            src={Girl_Images}
+                            alt="Girl_Images"
+                          />
+                          <img src={Red_Gubbare} alt="Red_Gubbare" />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-3 mt-2">
-                    Stack Used:{" "}
-                  </h2>
-                  <h3 className=" ff_Roboto fw-normal fs_lg text_primary">
-                    HTML / CSS, Java Script, Bootsrap
-                  </h3>
-                </Col>
-                <Col xs={12} xl={6}>
-                  <img className="w-100" src={TheBest} alt="TheBest" />
-                </Col>
-              </Row>
-            </div>
-          </Slider>
+                    <h2 className=" ff_Roboto fw-bold fs_lg text_primary pt-3 mt-2">
+                      Stack Used:{" "}
+                    </h2>
+                    <h3 className=" ff_Roboto fw-normal fs_lg text_primary">
+                      HTML / CSS, Java Script, Bootsrap
+                    </h3>
+                  </Col>
+                  <Col xs={12} xl={6}>
+                    <img className="w-100" src={TheBest} alt="TheBest" />
+                  </Col>
+                </Row>
+              </div>
+            </Slider>
+            <img
+              className=" position-absolute top-50 translate-middle-y LeftArrow cursor_pointer"
+              onClick={() => slider?.current?.slickPrev()}
+              src={LeftArrow}
+              alt="LeftArrow"
+            />
+            <img
+              className=" position-absolute top-50 translate-middle-y RightArrow cursor_pointer"
+              onClick={() => slider?.current?.slickNext()}
+              src={RightArrow}
+              alt="RightArrow"
+            />
+          </div>
         </Container>
       </section>
       <section>

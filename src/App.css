@@ -11,7 +11,7 @@
   --fs-xsm: 10px;
   --fs-sm: 14px;
   --fs-md: 15px;
-  --fs-lg: 16px;
+  --fs-lg: 14px;
   --fs-xl: 15px;
   --fs-2xl: 16px;
   --fs-3xl: 16px;
@@ -579,7 +579,7 @@ video {
   text-shadow: 27px 9px 1px #dbdbdb;
 }
 .white_shadow {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 .team_paragraph {
   bottom: -100px;
@@ -729,7 +729,7 @@ video {
   background-color: var(--clr-secondary);
 }
 .team_name {
-  left: -28px;
+  left: -9px;
   bottom: -12px;
   z-index: 2;
 }
@@ -1040,12 +1040,20 @@ textarea {
   border: 2px solid black;
 }
 .robo_position {
-  right: 40px;
-  bottom: 30px;
+  right: 10px;
+  bottom: 11px;
 }
 .hello_word {
   top: 11px;
   left: 10px;
+}
+.LeftArrow {
+  left: 11%;
+  z-index: 2;
+}
+.RightArrow {
+  right: 11%;
+  z-index: 2;
 }
 @media (min-width: 400px) {
   .px_xsm_5 {
@@ -1108,7 +1116,15 @@ textarea {
   .bottom_73 {
     bottom: 89px;
   }
+  .robo_position {
+    right: 40px;
+    bottom: 30px;
+  }
+  .team_name {
+    left: -28px;
+  }
 }
+
 @media (min-width: 768px) {
   :root {
     /* FONT SIZE  */
@@ -1117,7 +1133,7 @@ textarea {
     --fs-md: 15px;
     --fs-lg: 14px;
     --fs-xl: 18px;
-    --fs-2xl: 15px;
+    --fs-2xl: 20px;
     --fs-3xl: 24px;
     --fs-4xl: 30px;
     --fs-5xl: 35px;
@@ -1234,7 +1250,7 @@ textarea {
     width: 280px;
   }
   .overley_slider::before {
-    width: 280px;
+    width: 265px;
   }
 }
 @media (min-width: 1200px) {
@@ -1296,13 +1312,6 @@ textarea {
   }
 }
 
-/* .center .slick-active {
-  transform: scale(1.2);
-} */
-
-::-webkit-scrollbar {
-  width: 0px;
-}
 .hover_images img:nth-child(1) {
   transition: all 300ms linear;
 }

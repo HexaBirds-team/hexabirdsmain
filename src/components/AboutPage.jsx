@@ -225,13 +225,13 @@ function AboutPage() {
       </section>
       <section className="py-5 mt-5">
         <Container>
-          <Row className=" position-relative py-5 mb-4">
+          <Row className=" position-relative py-5 mb-md-4">
             <Col xs={12} lg={3}>
               <h2 className=" ff_Inter fw-bold fs_10xl text-dark opacity_Low_3 d-lg-inline-block rotate_n_90 position_lg_absolute top-50 start-0 text-center">
                 OUR TEAM
               </h2>
             </Col>
-            <Col xs={12} lg={9}>
+            <Col xs={12} lg={9} >
               <Row>
                 {TeamDummyData.map((value) => {
                   const { id, stack, name, images } = value;
