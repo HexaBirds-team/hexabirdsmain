@@ -2,22 +2,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavbarFile from "./components/NavbarFile";
-// import Nav from "./components/Nav";
+
 import "./App.css";
 import Hero from "./components/Hero";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
 import CareerPage from "./components/CareerPage";
 import ServicesPage from "./components/ServicesPage";
 import ProjectsPage from "./components/ProjectsPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <NavbarFile />
-
-      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/About" element={<AboutPage />} />
@@ -25,8 +24,8 @@ function App() {
           <Route path="/Career" element={<CareerPage />} />
           <Route path="/Services" element={<ServicesPage />} />
           <Route path="/Projects" element={<ProjectsPage />} />
-        </Routes>
-      </BrowserRouter>
+      </Routes>
+      <Footer/>
       <div className=" position-fixed index_99 d-inline-block robo_position overflow-hidden pt-2">
         <span className="d-inline-block position-relative">
           <div className="robo">

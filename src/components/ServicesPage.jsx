@@ -8,7 +8,6 @@ import AppDesigning from "../assets/images/png/AppDesigning.png";
 import Web_top from "../assets/images/svg/Web_top.svg";
 import Web_bottom from "../assets/images/svg/Web_bottom.svg";
 import ExploreArrow from "../assets/images/svg/ExploreArrow.svg";
-import Footer from "./Footer";
 
 function ServicesPage() {
   const data = {
@@ -519,7 +518,6 @@ function ServicesPage() {
           </div>
         </Container>
       </section>
-      <Footer />
     </>
   );
 }

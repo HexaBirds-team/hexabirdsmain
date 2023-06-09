@@ -180,7 +180,7 @@ function Footer() {
             </Row>
           </Container>
         </div>
-        <div className="bg_ dark py-5 position-relative">
+        <div className="bg_ dark pt-5 pb-2 position-relative">
           <Container className=" d-flex  justify-content-between flex-column flex-sm-row pt-md-5 pt-3">
             <h2 className=" ff_Roboto fw-normal fs_16xl text_black_red text-uppercase position-absolute hexabirds_word start-50 translate-middle-x">
               HEXABIRDS

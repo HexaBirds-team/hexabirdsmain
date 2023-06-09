@@ -7,7 +7,6 @@ import Expert_Team from "../assets/images/png/Expert_Team.png";
 import Excellent_Support from "../assets/images/png/Excellent_Support.png";
 import Management from "../assets/images/png/Management.png";
 import TeamWork from "../assets/images/png/TeamWork.png";
-import BalinaJosef from "../assets/images/png/BalinaJosef.png";
 import Testimonials_wave from "../assets/images/png/Testimonials_wave.png";
 import NextArrow from "../assets/images/svg/NextArrow.svg";
 import PreArrow from "../assets/images/svg/PreArrow.svg";
@@ -22,10 +21,9 @@ import TheBest from "../assets/images/png/TheBest.png";
 import EmailGif from "../assets/images/Gif/EmailGif.gif";
 import PhoneGif from "../assets/images/Gif/PhoneGif.gif";
 import TestimonialsDummyData from "./TestimonialsDummyData";
-
 import { Col, Container, Row } from "react-bootstrap";
 import DummyData from "./DummyData";
-import Footer from "./Footer";
+
 function Hero() {
   const sliderRef1 = React.useRef(null);
   const sliderRef2 = React.useRef(null);
@@ -514,7 +512,7 @@ function Hero() {
       <section className="py-5 my-sm-5  position-relative">
         <div className=" position-relative overflow-hidden py-5">
           <Container className="mb-xxl-5 pb-xl-5">
-            <div className=" bg_primary white_shadow p-4 position-relative">
+            <div className=" bg_primary white_shadow pt-5 px-4 pb-0 position-relative">
               <h2 className=" ff_Roboto fw-bold fs_3xl text_secondary text-center">
                 Testimonials
               </h2>
@@ -570,7 +568,7 @@ function Hero() {
                   </div>
                   <div className="py-4 my-3 text-end pe-5 d-none d-sm-block ">
                     <img
-                      className="me-4 cursor_pointer"
+                      className="me-5 cursor_pointer"
                       onClick={() => {
                         sliderRef1?.current?.slickPrev();
                         sliderRef2?.current?.slickPrev();
@@ -579,7 +577,7 @@ function Hero() {
                       alt="PreArrow"
                     />
                     <img
-                      className="cursor_pointer translate_n"
+                      className="cursor_pointer translate_n ms-5"
                       onClick={() => {
                         sliderRef1?.current?.slickNext();
                         sliderRef2?.current?.slickNext();
@@ -838,7 +836,6 @@ function Hero() {
           </button>
         </Container>
       </section>
-      <Footer />
     </>
   );
 }

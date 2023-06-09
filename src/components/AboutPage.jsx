@@ -8,7 +8,6 @@ import JoginderSaini from "../assets/images/png/JoginderSaini.png";
 import RakeshSheoran from "../assets/images/png/RakeshSheoran.png";
 import Linkedin from "../assets/images/svg/Linkedin.svg";
 import HeroSection from "./HeroSection";
-import Footer from "./Footer";
 
 function AboutPage() {
   const [index, setIndex] = useState(1);
@@ -263,7 +262,6 @@ function AboutPage() {
           </Row>
         </Container>
       </section>
-      <Footer />
     </>
   );
 }

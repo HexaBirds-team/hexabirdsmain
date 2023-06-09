@@ -1117,8 +1117,8 @@ textarea {
     bottom: 89px;
   }
   .robo_position {
-    right: 40px;
-    bottom: 30px;
+    right: 20px;
+    bottom: 10px;
   }
   .team_name {
     left: -28px;
@@ -1190,7 +1190,7 @@ textarea {
     height: 100%;
     right: 0;
     z-index: 2;
-    background-color: rgba(1, 1, 1, 0.537);
+   background: linear-gradient(-90deg, #010101 0%, rgba(1, 1, 1, 0.68) 64.58%, rgba(1, 1, 1, 0) 100%);
     width: 200px;
   }
   .overley_slider::before {
@@ -1200,7 +1200,7 @@ textarea {
     height: 100%;
     left: 0;
     z-index: 2;
-    background-color: rgba(1, 1, 1, 0.537);
+    background: linear-gradient(90deg, #010101 0%, rgba(1, 1, 1, 0.68) 64.58%, rgba(1, 1, 1, 0) 100%);
     width: 200px;
   }
 }
@@ -1309,6 +1309,17 @@ textarea {
   }
   .Red_wave {
     bottom: -18%;
+  }
+  .overley_slider::before {
+    width: 310px;
+  }
+}
+@media (min-width: 1400px) {
+  .overley_slider::before {
+    width: 350px;
+  }
+  .overley_slider::after {
+    width: 400px;
   }
 }
 

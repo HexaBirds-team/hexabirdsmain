@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo_hexabirds from "../assets/images/png/logo_hexabirds.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function NavbarFile() {
   const [open, setopen] = useState(true);
@@ -27,11 +27,13 @@ function NavbarFile() {
   return (
     <>
       {scrollPosition > 58.4 ? (
-        <nav className="bg-black py-3 overflow-hidden position-fixed w-100 z-2">
+        <nav className="py-3 overflow-hidden position-fixed w-100 z-2 bg_dark">
           <div className="container">
             <div className=" d-flex align-items-center justify-content-between">
               <div className="d-flex justify-content-between align-items-center w-100">
-                <img src={logo_hexabirds} alt="logo_hexabirds" />
+                <NavLink to="/">
+                  <img src={logo_hexabirds} alt="logo_hexabirds" />
+                </NavLink>
                 <button
                   className="d-flex flex-column align-items-center menuIcon bg-transparent border-0 d-lg-none"
                   onClick={() => setopen(false)}
@@ -51,44 +53,44 @@ function NavbarFile() {
               >
                 <ul className="mb-0 d-lg-flex align-items-center">
                   <li>
-                    <a
-                      className="ff_Inter fw-bold fs_lg text_primary text-uppercase d-inline-block me-4 mt-5 mt-lg-0 ms-1 me-xl-5 navlink_hover"
-                      href="#"
+                    <NavLink
+                      className="ff_Inter fw-bold fs_lg text_primary text-uppercase d-inline-block me-4 mt-5 mt-lg-0 me-xl-5 ms-1 navlink_hover"
+                      to="/"
                     >
                       HOME
-                    </a>{" "}
+                    </NavLink>
                   </li>
                   <li>
-                    <a
+                    <NavLink
                       className="ff_Inter fw-bold fs_lg text_primary text-uppercase d-inline-block me-4 mt-5 mt-lg-0 me-xl-5 ms-1 navlink_hover"
-                      href="#"
+                      to="/About"
                     >
                       ABOUT
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
+                    <NavLink
                       className="ff_Inter fw-bold fs_lg text_primary text-uppercase d-inline-block me-4 mt-5 mt-lg-0 me-xl-5 ms-1 navlink_hover"
-                      href="#"
+                      to="/Services"
                     >
                       SERVICES
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
+                    <NavLink
                       className="ff_Inter fw-bold fs_lg text_primary text-uppercase d-inline-block me-4 mt-5 mt-lg-0 me-xl-5 ms-1 navlink_hover"
-                      href="#"
+                      to="/Projects"
                     >
                       PROJECTS
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
+                    <NavLink
                       className="ff_Inter fw-bold fs_lg text_primary text-uppercase d-inline-block me-4 mt-5 mt-lg-0 me-xl-5 ms-1 navlink_hover"
-                      href="#"
+                      to="/Career"
                     >
                       CAREER
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
                     <a
@@ -117,7 +119,9 @@ function NavbarFile() {
           <div className="container">
             <div className=" d-flex align-items-center justify-content-between">
               <div className="d-flex justify-content-between align-items-center w-100">
-                <img src={logo_hexabirds} alt="logo_hexabirds" />
+                <NavLink to="/">
+                  <img src={logo_hexabirds} alt="logo_hexabirds" />
+                </NavLink>
                 <button
                   className="d-flex flex-column align-items-center menuIcon bg-transparent border-0 d-lg-none"
                   onClick={() => setopen(false)}
@@ -137,46 +141,44 @@ function NavbarFile() {
               >
                 <ul className="mb-0 d-lg-flex align-items-center">
                   <li>
-                    <a
-                      className="ff_Inter fw-bold fs_lg text_primary text-uppercase d-inline-block me-4 mt-5 mt-lg-0 ms-1 me-xl-5 navlink_hover"
-                      href="#"
+                    <NavLink
+                      className="ff_Inter fw-bold fs_lg text_primary text-uppercase d-inline-block me-4 mt-5 mt-lg-0 me-xl-5 ms-1 navlink_hover"
+                      to="/"
                     >
                       HOME
-                    </a>{" "}
+                    </NavLink>
                   </li>
-                    <li>  
-                      {/* <Link>
-                      </Link> */}
-                    <a
+                  <li>
+                    <NavLink
                       className="ff_Inter fw-bold fs_lg text_primary text-uppercase d-inline-block me-4 mt-5 mt-lg-0 me-xl-5 ms-1 navlink_hover"
-                      href="#"
+                      to="/About"
                     >
                       ABOUT
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
+                    <NavLink
                       className="ff_Inter fw-bold fs_lg text_primary text-uppercase d-inline-block me-4 mt-5 mt-lg-0 me-xl-5 ms-1 navlink_hover"
-                      href="#"
+                      to="/Services"
                     >
                       SERVICES
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
+                    <NavLink
                       className="ff_Inter fw-bold fs_lg text_primary text-uppercase d-inline-block me-4 mt-5 mt-lg-0 me-xl-5 ms-1 navlink_hover"
-                      href="#"
+                      to="/Projects"
                     >
                       PROJECTS
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
+                    <NavLink
                       className="ff_Inter fw-bold fs_lg text_primary text-uppercase d-inline-block me-4 mt-5 mt-lg-0 me-xl-5 ms-1 navlink_hover"
-                      href="#"
+                      to="/Career"
                     >
                       CAREER
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
                     <a

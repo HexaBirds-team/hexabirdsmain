@@ -1,7 +1,6 @@
 import React from "react";
 import NavbarFile from "./NavbarFile";
 import HeroSection from "./HeroSection";
-import Footer from "./Footer";
 import { Col, Container, Row } from "react-bootstrap";
 import MaskingImage from "../assets/images/png/MaskingImage.png";
 import ListIsEmpty from "../assets/images/png/ListIsEmpty.png";
@@ -72,7 +71,6 @@ function CareerPage() {
           </Row>
         </Container>
       </section>
-      <Footer />
     </>
   );
 }

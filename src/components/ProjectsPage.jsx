@@ -23,7 +23,6 @@ import Closet_2 from "../assets/images/png/Closet_2.png";
 import edumato_2 from "../assets/images/png/edumato_2.png";
 import edumato_3 from "../assets/images/png/edumato_3.png";
 import WorkDummyData from "./WorkDummyData";
-import Footer from "./Footer";
 import Slider from "react-slick";
 import ElonMuskVision from "../assets/images/png/ElonMuskVision.png";
 import EduApp from "../assets/images/png/EduApp.png";
@@ -325,7 +324,6 @@ function ProjectsPage() {
           </div>
         </Container>
       </section>
-      <Footer />
     </>
   );
 }

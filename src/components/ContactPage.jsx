@@ -4,7 +4,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
 import Questions from "../assets/images/png/Questions.png";
 import FaqOpen from "../assets/images/png/FaqOpen.png";
-import Footer from "./Footer";
 
 function ContactPage() {
   const data = {
@@ -317,7 +316,6 @@ function ContactPage() {
           </Row>
         </Container>
       </section>
-      <Footer />
     </>
   );
 }
