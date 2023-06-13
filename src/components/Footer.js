@@ -10,7 +10,16 @@ function Footer() {
           <Container className="py-5">
             <Row className=" pb-lg-5">
               {" "}
-              <Col xs={12} sm={6} lg={4} xl={3}>
+              <Col
+                xs={12}
+                sm={6}
+                lg={4}
+                xl={3}
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-delay="100"
+                data-aos-offset="0"
+              >
                 <div className=" position-relative p-4 footer_box rounded-5">
                   <img
                     className=" position-absolute start-50 translate-middle-x top_n_44"
@@ -24,7 +33,15 @@ function Footer() {
                   </p>
                 </div>
               </Col>
-              <Col xs={12} sm={6} lg={3}>
+              <Col
+                xs={12}
+                sm={6}
+                lg={3}
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-delay="200"
+                data-aos-offset="0"
+              >
                 <div className="ps-xl-5 pe-xl-1 pt-4 pt-lg-0">
                   <h2 className=" ff_Roboto fw-bold fs_2xl text_dark">
                     Office
@@ -91,7 +108,14 @@ function Footer() {
                   </a>
                 </div>
               </Col>
-              <Col xs={6} lg={2}>
+              <Col
+                xs={6}
+                lg={2}
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-offset="0"
+              >
                 <ul className="ps-0 ps-lg-5 pt-lg-0 pt-4">
                   <li className=" ff_Roboto fw-bold fs_2xl text_dark">
                     Services
@@ -130,7 +154,14 @@ function Footer() {
                   </li>
                 </ul>
               </Col>
-              <Col xs={6} lg={3}>
+              <Col
+                xs={6}
+                lg={3}
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-delay="400"
+                data-aos-offset="0"
+              >
                 <ul className="ps-0 ps-lg-5  pt-lg-0 pt-4">
                   <li className=" ff_Roboto fw-bold fs_2xl text_dark">
                     Quick Links
@@ -185,10 +216,22 @@ function Footer() {
             <h2 className=" ff_Roboto fw-normal fs_16xl text_black_red text-uppercase position-absolute hexabirds_word start-50 translate-middle-x">
               HEXABIRDS
             </h2>
-            <p className=" ff_Roboto fw-normal fs_xl text_primary text-center">
+            <p
+              className=" ff_Roboto fw-normal fs_xl text_primary text-center"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay="100"
+              data-aos-offset="0"
+            >
               All rights reserved to Hexabirds Private Limited
             </p>
-            <p className=" ff_Roboto fw-normal fs_xl text_primary ps-4 text-center">
+            <p
+              className=" ff_Roboto fw-normal fs_xl text_primary ps-4 text-center"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay="300"
+              data-aos-offset="0"
+            >
               Designed and Developed by HEXABIRDS
             </p>
           </Container>

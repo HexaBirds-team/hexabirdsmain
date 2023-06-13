@@ -14,27 +14,54 @@ function ContactPage() {
       <HeroSection myData={data} />
       <section className="py-5 my-5">
         <Container>
-          <h2 className=" ff_Roboto fw-bold fs_11xl text_secondary text-uppercase text-center gotthe_after position-relative">
+          <h2
+            className=" ff_Roboto fw-bold fs_11xl text_secondary text-uppercase text-center gotthe_after position-relative"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="100"
+            data-aos-offset="0"
+          >
             GOT THE IDEA?
             <span className=" position-absolute top-0 translate-middle-x start-50 opacity_Low_1 fs_13xl text_dark w-100">
               GOT THE IDEA?
             </span>
           </h2>
-          <h3 className=" ff_Roboto fw-bold fs_6xl text_dark text-center text-capitalize pt-3">
+          <h3
+            className=" ff_Roboto fw-bold fs_6xl text_dark text-center text-capitalize pt-3"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="200"
+            data-aos-offset="0"
+          >
             we have got the <span className=" text_secondary">skills</span>.
             let’s <span className=" text_secondary">team up</span>
           </h3>
-          <p className=" ff_Roboto fw-normal fs_2xl text_dark opacity_05 text-center mb-0">
-            Let us help you become even greater at what you do.
-            <span className="d-sm-block">
-              Fill out the following form and we will get back to you in the
-              next 24 hours.
-            </span>
-          </p>
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <p className=" ff_Roboto fw-normal fs_2xl text_dark opacity_05 text-center mb-0">
+              Let us help you become even greater at what you do.
+              <span className="d-sm-block">
+                Fill out the following form and we will get back to you in the
+                next 24 hours.
+              </span>
+            </p>
+          </div>
           <Row className=" justify-content-center px_xsm_5">
             <Col xs={12} xl={11} xxl={9}>
               <Row className="translateY_60px ">
-                <Col xs={12} sm={6} lg={3}>
+                <Col
+                  xs={12}
+                  sm={6}
+                  lg={3}
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="100"
+                  data-aos-offset="0"
+                >
                   <div className=" text-center p-4 box_shadow_got rounded-5 h-100 bg_primary">
                     <svg
                       width="50"
@@ -58,7 +85,16 @@ function ContactPage() {
                     </p>
                   </div>
                 </Col>
-                <Col xs={12} sm={6} lg={3} className="pt-4 pt-sm-0">
+                <Col
+                  xs={12}
+                  sm={6}
+                  lg={3}
+                  className="pt-4 pt-sm-0"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                  data-aos-offset="0"
+                >
                   <div className=" text-center p-4 box_shadow_got rounded-5 h-100 bg_primary">
                     <svg
                       width="50"
@@ -81,7 +117,16 @@ function ContactPage() {
                     </p>
                   </div>
                 </Col>
-                <Col xs={12} sm={6} lg={3} className="pt-4 pt-lg-0">
+                <Col
+                  xs={12}
+                  sm={6}
+                  lg={3}
+                  className="pt-4 pt-lg-0"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                  data-aos-offset="0"
+                >
                   <div className=" text-center p-4 box_shadow_got rounded-5 h-100 bg_primary">
                     <svg
                       width="50"
@@ -109,7 +154,16 @@ function ContactPage() {
                     </p>
                   </div>
                 </Col>
-                <Col xs={12} sm={6} lg={3} className="pt-4 pt-lg-0">
+                <Col
+                  xs={12}
+                  sm={6}
+                  lg={3}
+                  className="pt-4 pt-lg-0"
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
+                  data-aos-offset="0"
+                >
                   <div className=" text-center p-4 box_shadow_got rounded-5 h-100 bg_primary">
                     <svg
                       width="50"
@@ -142,76 +196,128 @@ function ContactPage() {
               <Col xs={12} xl={11} xxl={9}>
                 <Row className=" align-items-center">
                   <Col xs={12} md={6}>
-                    <label
-                      className=" ff_Inter fw-normal fs_xl text_primary"
-                      htmlFor="Email"
+                    <div
+                      data-aos="fade-right"
+                      data-aos-duration="800"
+                      data-aos-delay="100"
+                      data-aos-offset="200"
                     >
-                      Email
-                    </label>{" "}
-                    <br />
-                    <input
-                      placeholder="Enter your email address"
-                      id="Email"
-                      className="w-100 bg-transparent border-0 border_bottom ps-3 mt-2 ff_Inter fw-normal text_primary"
-                      type="text"
-                    />
-                    <label
-                      className=" ff_Inter fw-normal fs_xl text_primary pt-4 mt-2"
-                      htmlFor="Name"
+                      <label
+                        className=" ff_Inter fw-normal fs_xl text_primary"
+                        htmlFor="Email"
+                      >
+                        Email
+                      </label>{" "}
+                      <br />
+                      <input
+                        placeholder="Enter your email address"
+                        id="Email"
+                        className="w-100 bg-transparent border-0 border_bottom ps-3 mt-2 ff_Inter fw-normal text_primary"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      data-aos="fade-right"
+                      data-aos-duration="800"
+                      data-aos-delay="200"
+                      data-aos-offset="200"
                     >
-                      Name
-                    </label>{" "}
-                    <br />
-                    <input
-                      placeholder="Enter your name "
-                      id="Name"
-                      className="w-100 bg-transparent border-0 border_bottom ps-3 mt-2 ff_Inter fw-normal text_primary"
-                      type="text"
-                    />
-                    <label
-                      className=" ff_Inter fw-normal fs_xl text_primary pt-4 mt-2"
-                      htmlFor="Phone"
+                      <label
+                        className=" ff_Inter fw-normal fs_xl text_primary pt-4 mt-2"
+                        htmlFor="Name"
+                      >
+                        Name
+                      </label>{" "}
+                      <br />
+                      <input
+                        placeholder="Enter your name "
+                        id="Name"
+                        className="w-100 bg-transparent border-0 border_bottom ps-3 mt-2 ff_Inter fw-normal text_primary"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      data-aos="fade-right"
+                      data-aos-duration="800"
+                      data-aos-delay="300"
+                      data-aos-offset="200"
                     >
-                      Phone number
-                    </label>{" "}
-                    <br />
-                    <input
-                      placeholder="Enter your phone number "
-                      id="Phone"
-                      className="w-100 bg-transparent border-0 border_bottom ps-3 mt-2 ff_Inter fw-normal text_primary"
-                      type="text"
-                    />
-                    <label
-                      className=" ff_Inter fw-normal fs_xl text_primary pt-4 mt-2"
-                      htmlFor="Message"
+                      <label
+                        className=" ff_Inter fw-normal fs_xl text_primary pt-4 mt-2"
+                        htmlFor="Phone"
+                      >
+                        Phone number
+                      </label>{" "}
+                      <br />
+                      <input
+                        placeholder="Enter your phone number "
+                        id="Phone"
+                        className="w-100 bg-transparent border-0 border_bottom ps-3 mt-2 ff_Inter fw-normal text_primary"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      data-aos="fade-right"
+                      data-aos-duration="800"
+                      data-aos-delay="500"
+                      data-aos-offset="200"
                     >
-                      Message
-                    </label>{" "}
-                    <br />
-                    <textarea
-                      id="Message"
-                      rows="3"
-                      className=" w-100 bg-transparent border-0 border_bottom ps-3 mt-2 ff_Inter fw-normal text_primary"
-                      placeholder="Message "
-                    ></textarea>
+                      <label
+                        className=" ff_Inter fw-normal fs_xl text_primary pt-4 mt-2"
+                        htmlFor="Message"
+                      >
+                        Message
+                      </label>{" "}
+                      <br />
+                      <textarea
+                        id="Message"
+                        rows="3"
+                        className=" w-100 bg-transparent border-0 border_bottom ps-3 mt-2 ff_Inter fw-normal text_primary"
+                        placeholder="Message "
+                      ></textarea>
+                    </div>
                   </Col>
                   <Col xs={12} md={6}>
                     <div className="ps-lg-5 ps-md-3 mt-4">
-                      <h2 className=" ff_Inter fw-normal fs_7xl text_primary">
+                      <h2
+                        className=" ff_Inter fw-normal fs_7xl text_primary"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                        data-aos-delay="100"
+                        data-aos-offset="200"
+                      >
                         Get in touch
                       </h2>
-                      <p className=" ff_Inter fw_medium fs_xl text_primary">
+                      <p
+                        className=" ff_Inter fw_medium fs_xl text_primary"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                        data-aos-delay="200"
+                        data-aos-offset="200"
+                      >
                         We can ensure reliability, low cost fares and most
                         important, with safety and comfort in mind.
                       </p>
-                      <p className=" ff_Inter fw-light text_primary fs_xl">
+                      <p
+                        className=" ff_Inter fw-light text_primary fs_xl"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                        data-aos-delay="300"
+                        data-aos-offset="200"
+                      >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nunc vestibulum egestas diam, sit amet porta nibh
                         sagittis at. Integer suscipit bibendum velit, a sodales
                         orci sagittis eget. Quisque laoreet viverra malesuada.
                         Etiam non porttitor tortor.
                       </p>
-                      <button className=" w-100 ff_Inter fw_medium fs_xl text_dark bg_primary rounded-pill border-0 py-2 mt-lg-5 mt-3 text-uppercase">
+                      <button
+                        className=" w-100 ff_Inter fw_medium fs_xl text_dark bg_primary rounded-pill border-0 py-2 mt-lg-5 mt-3 text-uppercase"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                        data-aos-delay="400"
+                        data-aos-offset="200"
+                      >
                         SUBMIT
                       </button>
                     </div>
@@ -228,6 +334,10 @@ function ContactPage() {
             <Col xs={12} md={6}>
               <div className=" d-flex align-items-center">
                 <img
+                  data-aos="fade-right"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                  data-aos-offset="200"
                   className="w-100 pe-lg-5"
                   src={Questions}
                   alt="Questions"
@@ -237,6 +347,10 @@ function ContactPage() {
             <Col xs={12} md={6}>
               <Accordion defaultActiveKey="0" flush>
                 <Accordion.Item
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="0"
+                  data-aos-offset="200"
                   eventKey="0"
                   className=" position-relative overflow-hidden"
                 >
@@ -252,6 +366,10 @@ function ContactPage() {
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                  data-aos-offset="200"
                   eventKey="1"
                   className="mt-4 position-relative overflow-hidden"
                 >
@@ -267,6 +385,10 @@ function ContactPage() {
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                  data-aos-offset="200"
                   eventKey="2"
                   className="mt-4 position-relative overflow-hidden"
                 >
@@ -282,6 +404,10 @@ function ContactPage() {
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
+                  data-aos-offset="200"
                   eventKey="3"
                   className="mt-4 position-relative overflow-hidden"
                 >
@@ -297,6 +423,10 @@ function ContactPage() {
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="500"
+                  data-aos-offset="200"
                   eventKey="4"
                   className="mt-4 position-relative overflow-hidden"
                 >

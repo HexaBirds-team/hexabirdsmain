@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroSection from "./HeroSection";
 import { Col, Container, Row } from "react-bootstrap";
 import Expertise from "../assets/images/svg/Expertise.svg";
@@ -10,12 +10,7 @@ import Prime_2 from "../assets/images/svg/Prime_2.svg";
 import Dots from "../assets/images/svg/Dots.svg";
 import sri from "../assets/images/svg/sri.svg";
 import sri_2 from "../assets/images/svg/sri_2.svg";
-import Flutter from "../assets/images/svg/Flutter.svg";
-import logos_php from "../assets/images/svg/logos_php.svg";
-import devicon_figma from "../assets/images/svg/devicon_figma.svg";
 import app_logo from "../assets/images/svg/app_logo.svg";
-import CEO_EMV from "../assets/images/png/CEO_EMV.png";
-import Phone from "../assets/images/png/Phone.png";
 import vision from "../assets/images/png/vision.png";
 import vision_2 from "../assets/images/png/vision_2.png";
 import Closet from "../assets/images/png/Closet.png";
@@ -30,6 +25,8 @@ function ProjectsPage() {
   const data = {
     name: "Projects",
   };
+  const [nav1, setNav1] = useState();
+  const [nav2, setNav2] = useState();
   const settings = {
     autoplay: true,
     arrows: false,
@@ -41,6 +38,17 @@ function ProjectsPage() {
     speed: 500,
     vertical: true,
     verticalSwiping: true,
+    asNavFor: nav2,
+    slidesToScroll: 1,
+  };
+  const settings2 = {
+    autoplay: true,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 1,
+    speed: 500,
+    asNavFor: nav1,
+    slidesToScroll: 1,
   };
   return (
     <>
@@ -49,26 +57,48 @@ function ProjectsPage() {
         <Container>
           <Row className=" justify-content-between">
             <Col xs={12} lg={6} className=" position-relative">
-              <h2 className=" ff_Inter fw-bold fs_6xl text_dark">
+              <h2
+                className=" ff_Inter fw-bold fs_6xl text_dark"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="100"
+                data-aos-offset="0"
+              >
                 Why people choose to
                 <span className="d-block">
                   work with
-                  <span className=" text_secondary text-uppercase">
+                  <span className=" text_secondary text-uppercase ps-2">
                     HEXABIRDS
                   </span>
                 </span>
               </h2>
-              <p className=" ff_Inter fw-normal fs_xl text_dark pt-4">
+              <p
+                className=" ff_Inter fw-normal fs_xl text_dark pt-4"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="200"
+                data-aos-offset="0"
+              >
                 By presenting you with fresh ideas and better-suited
                 alternatives, we treat you like a partner and build on your
                 vision.
               </p>
               <img
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-offset="0"
                 className="w-100 d-lg-none d-block pt-4"
                 src={PeopleChoose}
                 alt="PeopleChoose"
               />
-              <div className=" d-flex pt-4">
+              <div
+                className=" d-flex pt-4"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="400"
+                data-aos-offset="0"
+              >
                 <div className="">
                   <img src={Expertise} alt="Expertise" />
                 </div>
@@ -83,7 +113,13 @@ function ProjectsPage() {
                   </p>
                 </div>
               </div>
-              <div className=" d-flex pt-4">
+              <div
+                className=" d-flex pt-4"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="500"
+                data-aos-offset="0"
+              >
                 <div className="">
                   <img src={Innovation} alt="Innovation" />
                 </div>
@@ -100,7 +136,13 @@ function ProjectsPage() {
                   </p>
                 </div>
               </div>
-              <div className=" d-flex pt-4">
+              <div
+                className=" d-flex pt-4"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="600"
+                data-aos-offset="0"
+              >
                 <div className="">
                   <img src={guaranteed} alt="guaranteed" />
                 </div>
@@ -123,6 +165,10 @@ function ProjectsPage() {
             </Col>
             <Col xs={6}>
               <img
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="200"
+                data-aos-offset="0"
                 className="w-100 d-none d-lg-block"
                 src={PeopleChoose}
                 alt="PeopleChoose"
@@ -131,7 +177,7 @@ function ProjectsPage() {
           </Row>
         </Container>
       </section>
-      <section className=" my-5 bg_semidark overflow-hidden">
+      <section className=" my-5 bg_semidark overflow-hidden position-relative">
         <Container className=" py-5 position-relative">
           <div className=" position-relative index_99">
             <h2 className=" ff_Inter fw-bold fs_6xl text_primary text-center pt-lg-4">
@@ -151,149 +197,147 @@ function ProjectsPage() {
           </div>
           <Row className=" py-lg-5 justify-content-center justify-content-md-start">
             <Col xs={12} sm={10} md={12} lg={10} className=" py-5 mb-lg-5">
-              <Row className=" py-lg-5 position-relative index_1  justify-content-center justify-content-md-start">
-                <Col xs={8} md={4} lg={3}>
-                  <img className=" w-100" src={Phone} alt="Phone" />
-                </Col>
-                <Col xs={12} md={8}>
-                  <div className="ps-xl-5 pt-4 pt-lg-0">
-                    <div className=" d-flex align-items-center">
-                      <img src={app_logo} alt="app_logo" />
-                      <h2 className=" ff_Roboto fw-bold fs_4xl text_primary text-uppercase mb-0 ms-3 ms-lg-5">
-                        ELON MUSK VISION
-                      </h2>
+              <Slider {...settings2} ref={(slider2) => setNav2(slider2)}>
+                {WorkDummyData.map((value) => {
+                  const {
+                    image2,
+                    heading,
+                    subheading,
+                    paragraph,
+                    paragraph2,
+                    id,
+                    link,
+                    Flutterimage,
+                    StackUsedName1,
+                    StackUsedName2,
+                    StackUsedName3,
+                    PHPimage,
+                    figmaImage,
+                    CeoImage,
+                    CEO,
+                  } = value;
+                  return (
+                    <div key={id}>
+                      <Row className=" py-lg-5 position-relative index_1  justify-content-center justify-content-md-start">
+                        <Col xs={8} md={4} lg={3}>
+                          <img className=" w-100" src={image2} alt="image2" />
+                        </Col>
+                        <Col xs={12} md={8}>
+                          <div className="ps-xl-5 pt-4 pt-lg-0">
+                            <div className=" d-flex align-items-center">
+                              <img src={app_logo} alt="app_logo" />
+                              <h2 className=" ff_Roboto fw-bold fs_4xl text_primary text-uppercase mb-0 ms-3 ms-lg-5">
+                                {heading}
+                              </h2>
+                            </div>
+                            <p className=" ff_Inter fw-normal fs_lg text_primary pt-4">
+                              {paragraph}
+                            </p>
+                            <h2 className=" ff_Roboto fw-bold fs_xl text_primary text-capitalize pt-1 pt-lg-4 pt-xl-5">
+                              Stack Used
+                            </h2>
+                            <div className="pt-3 d-flex align-items-center">
+                              <div className=" d-flex align-items-center">
+                                <img src={Flutterimage} alt="Flutterimage" />
+                                <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3">
+                                  {StackUsedName1}
+                                </h2>
+                              </div>
+                              <div className=" d-flex align-items-center ms-4 ms-sm-5">
+                                <img src={PHPimage} alt="PHPimage" />
+                                <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3 text-uppercase">
+                                  {StackUsedName2}
+                                </h2>
+                              </div>
+                              <div className=" d-flex align-items-center ms-4 ms-sm-5">
+                                <img src={figmaImage} alt="figmaImage" />
+                                <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3 text-uppercase">
+                                  {StackUsedName3}
+                                </h2>
+                              </div>
+                            </div>
+                            <h2 className=" ff_Roboto fw-bold fs_xl text_primary text-capitalize  pt-1 pt-lg-4 pt-xl-5 mt-4">
+                              What they say
+                            </h2>
+                            <div className=" d-flex pt-2 pt-lg-4 align-items-md-center flex-column flex-sm-row pt-4 pt-sm-0">
+                              <div className="me-3">
+                                <img src={CeoImage} alt="CeoImage" />
+                              </div>
+                              <div className="ms-1 pt-4 pt-sm-0">
+                                <p className=" ff_Inter fw-normal  fs_sm text_primary mb-0 pb-2">
+                                  {paragraph2}
+                                </p>
+                                <h2 className=" ff_Inter  fw-bold fs_sm text_primary mb-0">
+                                  CEO
+                                </h2>
+                                <h2 className=" ff_Inter  fw-normal fs_sm text_primary">
+                                  {CEO}
+                                </h2>
+                              </div>
+                            </div>
+                          </div>
+                        </Col>
+                        <h2 className=" ff_Inter fw-bold fs_lg text_primary">
+                          Visit :
+                          <a
+                            className=" fw-normal text_lightprimary know_hover"
+                            href="#"
+                          >
+                            {link}
+                          </a>
+                        </h2>
+                      </Row>
                     </div>
-                    <p className=" ff_Inter fw-normal fs_lg text_primary pt-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Phasellus eleifend gravida diam, et efficitur nunc posuere
-                      ut. Morbi nec urna non diam consequat aliquam quis et
-                      lorem. Maecenas rhoncus, dui non consequat semper, ligula
-                      velit hendrerit augue, non pharetra sem libero non eros.
-                      Fusce facilisis pulvinar pretium. Lorem ipsum dolor sit
-                      amet, consectetur adipiscing elit. Donec non vulputate
-                      quam. Fusce egestas libero sit amet venenatis fringilla.
-                      Proin id euismod tortor.
-                    </p>
-                    <h2 className=" ff_Roboto fw-bold fs_xl text_primary text-capitalize pt-1 pt-lg-4 pt-xl-5">
-                      Stack Used
-                    </h2>
-                    <div className="pt-3 d-flex align-items-center">
-                      <div className=" d-flex align-items-center">
-                        <img src={Flutter} alt="Flutter" />
-                        <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3">
-                          Flutter
-                        </h2>
-                      </div>
-                      <div className=" d-flex align-items-center ms-4 ms-sm-5">
-                        <img src={logos_php} alt="logos_php" />
-                        <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3 text-uppercase">
-                          PHP
-                        </h2>
-                      </div>
-                      <div className=" d-flex align-items-center ms-4 ms-sm-5">
-                        <img src={devicon_figma} alt="devicon_figma" />
-                        <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3 text-uppercase">
-                          Figma
-                        </h2>
-                      </div>
-                    </div>
-                    <h2 className=" ff_Roboto fw-bold fs_xl text_primary text-capitalize  pt-1 pt-lg-4 pt-xl-5 mt-4">
-                      What they say
-                    </h2>
-                    <div className=" d-flex pt-2 pt-lg-4 align-items-md-center flex-column flex-sm-row pt-4 pt-sm-0">
-                      <div className="me-3">
-                        <img src={CEO_EMV} alt="CEO_EMV" />
-                      </div>
-                      <div className="ms-1 pt-4 pt-sm-0">
-                        <p className=" ff_Inter fw-normal  fs_sm text_primary mb-0 pb-2">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Phasellus eleifend gravida diam, et efficitur
-                          nunc posuere ut. Morbi nec urna non diam consequat
-                          aliquam quis et lorem.
-                        </p>
-                        <h2 className=" ff_Inter  fw-bold fs_sm text_primary mb-0">
-                          CEO
-                        </h2>
-                        <h2 className=" ff_Inter  fw-normal fs_sm text_primary">
-                          EMV Pvt Ltd.
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </Col>{" "}
-                <div className=" position-absolute position_dots_2 index_n_1 d-none d-md-inline-block">
-                  <img src={Dots} alt="Dots" />
-                </div>
-                <h2 className=" ff_Inter fw-bold fs_lg text_primary">
-                  Visit :{" "}
-                  <a
-                    className=" fw-normal text_lightprimary know_hover"
-                    href="#"
-                  >
-                    h/ag/ga/ba/hhh.playstore.com
-                  </a>
-                </h2>
-              </Row>
+                  );
+                })}
+              </Slider>
             </Col>
+            <div className=" position-absolute position_dots_3  d-none d-md-inline-block opacity-50">
+              <img src={Dots} alt="Dots" />
+            </div>
+            <div className=" position-absolute position_dots_2 d-none d-md-inline-block opacity-50">
+              <img src={Dots} alt="Dots" />
+            </div>
           </Row>
           <div className=" position-absolute top-0 end-0 max_200 index_1 d-none d-lg-block">
-            <Slider {...settings} className="overlay_up">
-              <div className=" py-2">
-                <img className="w-100" src={ElonMuskVision} alt="" />
-              </div>
-              <div className=" py-2">
-                <img className="w-100" src={EduApp} alt="" />
-              </div>
-              <div className=" py-2">
-                <img className="w-100" src={ElonMuskVision} alt="" />
-              </div>
-              <div className=" py-2">
-                <img className="w-100" src={EduApp} alt="" />
-              </div>
-              <div className=" py-2">
-                <img className="w-100" src={ElonMuskVision} alt="" />
-              </div>
-              <div className=" py-2">
-                <img className="w-100" src={EduApp} alt="" />
-              </div>
-              <div className=" py-2">
-                <img className="w-100" src={ElonMuskVision} alt="" />
-              </div>
-              <div className=" py-2">
-                <img className="w-100" src={EduApp} alt="" />
-              </div>
+            <Slider
+              {...settings}
+              ref={(slider1) => setNav1(slider1)}
+              className="overlay_up"
+            >
+              {WorkDummyData.map((value) => {
+                const { image, id } = value;
+                return (
+                  <div className="py-2" key={id}>
+                    <img className="w-100 " src={image} alt="image" />
+                  </div>
+                );
+              })}
             </Slider>
           </div>
-
-          {/* <Row className=" pt-4 px_xsm_5 px-3">
-            {WorkDummyData.map((value) => {
-              const { image, heading, subheading, id } = value;
-              return (
-                <Col xs={12} sm={6} md={4} lg={3} className=" pt-5" key={id}>
-                  <div className=" position-relative">
-                    <img className=" w-100" src={image} alt="EduApp" />
-                    <div className=" bg_primary text-center rounded_top_left py-2 d-inline-block px-5 position-absolute bottom_n_26 end-0">
-                      <h2 className=" ff_Roboto fw-bold fs_xl text_dark mb-0">
-                        {heading}
-                      </h2>
-
-                      <p className=" ff_Roboto fw-normal fs_sm text_dark mb-0 text-nowrap">
-                        {subheading}
-                      </p>
-                    </div>
-                  </div>
-                </Col>
-              );
-            })}
-          </Row> */}
         </Container>
+        <div className=" position-absolute bottom-0 start-0 index_ n_1 d-none d-md-inline-block opacity-50">
+          <img src={Dots} alt="Dots" />
+        </div>
       </section>
       <section className=" py-5 my-5">
         <Container>
-          <h2 className=" ff_Inter fw-bold fs_6xl text_secondary text-center">
+          <h2
+            className=" ff_Inter fw-bold fs_6xl text_secondary text-center"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="100"
+            data-aos-offset="200"
+          >
             Trusted and recognized
           </h2>
-          <p className=" ff_Inter fw-normal fs_xl text-dark text-center">
+          <p
+            className=" ff_Inter fw-normal fs_xl text-dark text-center"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="200"
+            data-aos-offset="200"
+          >
             <span className=" fw-bold">Hexabirds'</span> team of skilled
             developers, designers, and analysts assures
             <span className="d-block">
@@ -301,23 +345,53 @@ function ProjectsPage() {
             </span>
           </p>
           <div className=" d-flex justify-content-center pt-5 align-items-center overflow-auto">
-            <div className="hover_images">
+            <div
+              className="hover_images"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay="300"
+              data-aos-offset="200"
+            >
               <img className="" src={Prime} alt="Prime" />
               <img className=" d-none" src={Prime_2} alt="Prime_2" />
             </div>
-            <div className="hover_images ms-5">
+            <div
+              className="hover_images ms-5"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay="400"
+              data-aos-offset="200"
+            >
               <img className="" src={sri} alt="sri" />
               <img className=" d-none" src={sri_2} alt="sri_2" />
             </div>
-            <div className="ms-3 ms-sm-5 hover_images">
+            <div
+              className="ms-3 ms-sm-5 hover_images"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay="500"
+              data-aos-offset="200"
+            >
               <img className="" src={vision} alt="vision" />
               <img className=" d-none" src={vision_2} alt="vision_2" />
             </div>
-            <div className="ms-5 hover_images">
+            <div
+              className="ms-5 hover_images"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay="600"
+              data-aos-offset="200"
+            >
               <img className="" src={Closet} alt="Closet" />
               <img className=" d-none" src={Closet_2} alt="Closet_2" />
             </div>
-            <div className="ms-5 hover_images">
+            <div
+              className="ms-5 hover_images"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay="700"
+              data-aos-offset="200"
+            >
               <img className="" src={edumato_2} alt="edumato_2" />
               <img className="d-none" src={edumato_3} alt="edumato_3" />
             </div>
