@@ -180,14 +180,14 @@ function ProjectsPage() {
       </section>
       <section className=" my-5 bg_semidark overflow-hidden position-relative">
         <Container className=" py-5 position-relative">
-          <div className=" position-relative index_99">
-            <h2
-              className=" ff_Inter fw-bold fs_6xl text_primary text-center pt-lg-4"
-              data-aos="zoom-in"
-              data-aos-duration="800"
-              data-aos-delay="100"
-              data-aos-offset="100"
-            >
+          <div
+            className=" position-relative index_99"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="100"
+            data-aos-offset="100"
+          >
+            <h2 className=" ff_Inter fw-bold fs_6xl text_primary text-center pt-lg-4">
               Our Latest Creative Work
             </h2>
             <div className="d-flex justify-content-center align-items-center pt-4">
@@ -200,18 +200,10 @@ function ProjectsPage() {
                 onClick={() => {
                   setIndex(1);
                 }}
-                data-aos="zoom-in"
-                data-aos-duration="800"
-                data-aos-delay="200"
-                data-aos-offset="100"
               >
                 Apps
               </button>
               <button
-                data-aos="zoom-in"
-                data-aos-duration="800"
-                data-aos-delay="300"
-                data-aos-offset="100"
                 className={
                   Index === 2
                     ? " bg-transparent py-2 px-4 text_primary ff_Inter fw-bold fs_2xl  rounded-4 apps_border mx-2 mx-sm-5"
@@ -224,10 +216,6 @@ function ProjectsPage() {
                 Website
               </button>
               <button
-                data-aos="zoom-in"
-                data-aos-duration="800"
-                data-aos-delay="400"
-                data-aos-offset="100"
                 className={
                   Index === 3
                     ? " bg-transparent py-2 px-4 text_primary ff_Inter fw-bold fs_2xl  rounded-4 apps_border"
