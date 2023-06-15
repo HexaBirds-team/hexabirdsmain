@@ -149,7 +149,7 @@ function ContactPage() {
                     <h2 className=" ff_Inter fs_lg fw-bold text_dark pt-3 text-uppercase">
                       CONTACT
                     </h2>
-                    <p className=" ff_Inter fw-normal fs_sm text-dark mb-0">
+                    <p className=" ff_Inter fw-normal fs_sm text-dark mb-0 text-break">
                       hexabirdspvtltd@gmail.com
                     </p>
                   </div>

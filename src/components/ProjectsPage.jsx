@@ -27,6 +27,7 @@ function ProjectsPage() {
   };
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
+  const [Index, setIndex] = useState(1);
   const settings = {
     autoplay: true,
     arrows: false,
@@ -180,140 +181,494 @@ function ProjectsPage() {
       <section className=" my-5 bg_semidark overflow-hidden position-relative">
         <Container className=" py-5 position-relative">
           <div className=" position-relative index_99">
-            <h2 className=" ff_Inter fw-bold fs_6xl text_primary text-center pt-lg-4">
+            <h2
+              className=" ff_Inter fw-bold fs_6xl text_primary text-center pt-lg-4"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay="100"
+              data-aos-offset="100"
+            >
               Our Latest Creative Work
             </h2>
             <div className="d-flex justify-content-center align-items-center pt-4">
-              <button className=" bg-transparent py-2 px-4 text_primary ff_Inter fw-bold fs_2xl  rounded-4 apps_border">
+              <button
+                className={
+                  Index === 1
+                    ? " bg-transparent py-2 px-4 text_primary ff_Inter fw-bold fs_2xl  rounded-4 apps_border"
+                    : " bg-transparent py-2 px-4 text_primary ff_Inter fw-normal fs_2xl  rounded-4 border_transparent opacity_05"
+                }
+                onClick={() => {
+                  setIndex(1);
+                }}
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-delay="200"
+                data-aos-offset="100"
+              >
                 Apps
               </button>
-              <button className=" ff_Inter fw-normal py-2 fs_2xl text_primary opacity_05 bg-transparent border-0 mx-2 mx-sm-5 px-4">
+              <button
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-offset="100"
+                className={
+                  Index === 2
+                    ? " bg-transparent py-2 px-4 text_primary ff_Inter fw-bold fs_2xl  rounded-4 apps_border mx-2 mx-sm-5"
+                    : " bg-transparent py-2 px-4 text_primary ff_Inter fw-normal fs_2xl  rounded-4 border_transparent opacity_05 mx-2 mx-sm-5"
+                }
+                onClick={() => {
+                  setIndex(2);
+                }}
+              >
                 Website
               </button>
-              <button className=" ff_Inter fw-normal py-2 fs_2xl text_primary opacity_05 bg-transparent border-0 px-4">
+              <button
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-delay="400"
+                data-aos-offset="100"
+                className={
+                  Index === 3
+                    ? " bg-transparent py-2 px-4 text_primary ff_Inter fw-bold fs_2xl  rounded-4 apps_border"
+                    : " bg-transparent py-2 px-4 text_primary ff_Inter fw-normal fs_2xl  rounded-4 border_transparent opacity_05"
+                }
+                onClick={() => {
+                  setIndex(3);
+                }}
+              >
                 Design
               </button>
             </div>
           </div>
-          <Row className=" py-lg-5 justify-content-center justify-content-md-start">
-            <Col xs={12} sm={10} md={12} lg={10} className=" py-5 mb-lg-5">
-              <Slider {...settings2} ref={(slider2) => setNav2(slider2)}>
-                {WorkDummyData.map((value) => {
-                  const {
-                    image2,
-                    heading,
-                    subheading,
-                    paragraph,
-                    paragraph2,
-                    id,
-                    link,
-                    Flutterimage,
-                    StackUsedName1,
-                    StackUsedName2,
-                    StackUsedName3,
-                    PHPimage,
-                    figmaImage,
-                    CeoImage,
-                    CEO,
-                  } = value;
-                  return (
-                    <div key={id}>
-                      <Row className=" py-lg-5 position-relative index_1  justify-content-center justify-content-md-start">
-                        <Col xs={8} md={4} lg={3}>
-                          <img className=" w-100" src={image2} alt="image2" />
-                        </Col>
-                        <Col xs={12} md={8}>
-                          <div className="ps-xl-5 pt-4 pt-lg-0">
-                            <div className=" d-flex align-items-center">
-                              <img src={app_logo} alt="app_logo" />
-                              <h2 className=" ff_Roboto fw-bold fs_4xl text_primary text-uppercase mb-0 ms-3 ms-lg-5">
-                                {heading}
-                              </h2>
-                            </div>
-                            <p className=" ff_Inter fw-normal fs_lg text_primary pt-4">
-                              {paragraph}
-                            </p>
-                            <h2 className=" ff_Roboto fw-bold fs_xl text_primary text-capitalize pt-1 pt-lg-4 pt-xl-5">
-                              Stack Used
-                            </h2>
-                            <div className="pt-3 d-flex align-items-center">
+          <div className={Index === 1 ? "d-block" : "d-none"}>
+            <Row className=" py-lg-5 justify-content-center justify-content-md-start">
+              <Col xs={12} sm={10} md={12} lg={10} className=" py-5 mb-lg-5">
+                <Slider {...settings2} ref={(slider2) => setNav2(slider2)}>
+                  {WorkDummyData.map((value) => {
+                    const {
+                      image2,
+                      heading,
+                      subheading,
+                      paragraph,
+                      paragraph2,
+                      id,
+                      link,
+                      Flutterimage,
+                      StackUsedName1,
+                      StackUsedName2,
+                      StackUsedName3,
+                      PHPimage,
+                      figmaImage,
+                      CeoImage,
+                      CEO,
+                    } = value;
+                    return (
+                      <div key={id}>
+                        <Row className=" py-lg-5 position-relative index_1  justify-content-center justify-content-md-start">
+                          <Col xs={8} md={4} lg={3}>
+                            <img
+                              data-aos="fade-right"
+                              data-aos-duration="800"
+                              data-aos-delay="100"
+                              data-aos-offset="100"
+                              className=" w-100"
+                              src={image2}
+                              alt="image2"
+                            />
+                          </Col>
+                          <Col xs={12} md={8}>
+                            <div className="ps-xl-5 pt-4 pt-lg-0">
                               <div className=" d-flex align-items-center">
-                                <img src={Flutterimage} alt="Flutterimage" />
-                                <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3">
-                                  {StackUsedName1}
+                                <img
+                                  data-aos="fade-right"
+                                  data-aos-duration="800"
+                                  data-aos-delay="100"
+                                  data-aos-offset="100"
+                                  src={app_logo}
+                                  alt="app_logo"
+                                />
+                                <h2
+                                  className=" ff_Roboto fw-bold fs_4xl text_primary text-uppercase mb-0 ms-3 ms-lg-5"
+                                  data-aos="fade-left"
+                                  data-aos-duration="800"
+                                  data-aos-delay="200"
+                                  data-aos-offset="100"
+                                >
+                                  {heading}
                                 </h2>
                               </div>
-                              <div className=" d-flex align-items-center ms-4 ms-sm-5">
-                                <img src={PHPimage} alt="PHPimage" />
-                                <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3 text-uppercase">
-                                  {StackUsedName2}
-                                </h2>
+                              <p
+                                className=" ff_Inter fw-normal fs_lg text_primary pt-4"
+                                data-aos="zoom-in"
+                                data-aos-duration="800"
+                                data-aos-delay="300"
+                                data-aos-offset="100"
+                              >
+                                {paragraph}
+                              </p>
+                              <h2
+                                className=" ff_Roboto fw-bold fs_xl text_primary text-capitalize pt-1 pt-lg-4 pt-xl-5"
+                                data-aos="fade-right"
+                                data-aos-duration="800"
+                                data-aos-delay="400"
+                                data-aos-offset="100"
+                              >
+                                Stack Used
+                              </h2>
+                              <div className="pt-3 d-flex align-items-center">
+                                <div
+                                  className=" d-flex align-items-center"
+                                  data-aos="zoom-in"
+                                  data-aos-duration="800"
+                                  data-aos-delay="500"
+                                  data-aos-offset="100"
+                                >
+                                  <img src={Flutterimage} alt="Flutterimage" />
+                                  <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3">
+                                    {StackUsedName1}
+                                  </h2>
+                                </div>
+                                <div
+                                  className=" d-flex align-items-center ms-4 ms-sm-5"
+                                  data-aos="zoom-in"
+                                  data-aos-duration="800"
+                                  data-aos-delay="600"
+                                  data-aos-offset="100"
+                                >
+                                  <img src={PHPimage} alt="PHPimage" />
+                                  <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3 text-uppercase">
+                                    {StackUsedName2}
+                                  </h2>
+                                </div>
+                                <div
+                                  className=" d-flex align-items-center ms-4 ms-sm-5"
+                                  data-aos="zoom-in"
+                                  data-aos-duration="800"
+                                  data-aos-delay="700"
+                                  data-aos-offset="100"
+                                >
+                                  <img src={figmaImage} alt="figmaImage" />
+                                  <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3 text-uppercase">
+                                    {StackUsedName3}
+                                  </h2>
+                                </div>
                               </div>
-                              <div className=" d-flex align-items-center ms-4 ms-sm-5">
-                                <img src={figmaImage} alt="figmaImage" />
-                                <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3 text-uppercase">
-                                  {StackUsedName3}
-                                </h2>
+                              <h2
+                                className=" ff_Roboto fw-bold fs_xl text_primary text-capitalize  pt-1 pt-lg-4 pt-xl-5 mt-4"
+                                data-aos="fade-down"
+                                data-aos-duration="800"
+                                data-aos-delay="100"
+                                data-aos-offset="0"
+                              >
+                                What they say
+                              </h2>
+                              <div className=" d-flex pt-2 pt-lg-4 align-items-md-center flex-column flex-sm-row pt-4 pt-sm-0">
+                                <div
+                                  className="me-3"
+                                  data-aos="fade-right"
+                                  data-aos-duration="800"
+                                  data-aos-delay="100"
+                                  data-aos-offset="0"
+                                >
+                                  <img src={CeoImage} alt="CeoImage" />
+                                </div>
+                                <div
+                                  className="ms-1 pt-4 pt-sm-0"
+                                  data-aos="fade-left"
+                                  data-aos-duration="800"
+                                  data-aos-delay="100"
+                                  data-aos-offset="0"
+                                >
+                                  <p className=" ff_Inter fw-normal  fs_sm text_primary mb-0 pb-2">
+                                    {paragraph2}
+                                  </p>
+                                  <h2 className=" ff_Inter  fw-bold fs_sm text_primary mb-0">
+                                    CEO
+                                  </h2>
+                                  <h2 className=" ff_Inter  fw-normal fs_sm text_primary">
+                                    {CEO}
+                                  </h2>
+                                </div>
                               </div>
                             </div>
-                            <h2 className=" ff_Roboto fw-bold fs_xl text_primary text-capitalize  pt-1 pt-lg-4 pt-xl-5 mt-4">
-                              What they say
-                            </h2>
-                            <div className=" d-flex pt-2 pt-lg-4 align-items-md-center flex-column flex-sm-row pt-4 pt-sm-0">
-                              <div className="me-3">
-                                <img src={CeoImage} alt="CeoImage" />
-                              </div>
-                              <div className="ms-1 pt-4 pt-sm-0">
-                                <p className=" ff_Inter fw-normal  fs_sm text_primary mb-0 pb-2">
-                                  {paragraph2}
-                                </p>
-                                <h2 className=" ff_Inter  fw-bold fs_sm text_primary mb-0">
-                                  CEO
-                                </h2>
-                                <h2 className=" ff_Inter  fw-normal fs_sm text_primary">
-                                  {CEO}
-                                </h2>
-                              </div>
-                            </div>
-                          </div>
-                        </Col>
-                        <h2 className=" ff_Inter fw-bold fs_lg text_primary">
-                          Visit :
-                          <a
-                            className=" fw-normal text_lightprimary know_hover"
-                            href="#"
+                          </Col>
+                          <h2
+                            className=" ff_Inter fw-bold fs_lg text_primary"
+                            data-aos="fade-up"
+                            data-aos-duration="800"
+                            data-aos-delay="100"
+                            data-aos-offset="0"
                           >
-                            {link}
-                          </a>
-                        </h2>
-                      </Row>
+                            Visit :
+                            <a
+                              className=" fw-normal text_lightprimary know_hover"
+                              href="#"
+                            >
+                              {link}
+                            </a>
+                          </h2>
+                        </Row>
+                      </div>
+                    );
+                  })}
+                </Slider>
+              </Col>
+            </Row>
+            <div className=" position-absolute top-0 end-0 max_200 index_1 d-none d-lg-block">
+              <Slider
+                {...settings}
+                ref={(slider1) => setNav1(slider1)}
+                className="overlay_up"
+              >
+                {WorkDummyData.map((value) => {
+                  const { image, id } = value;
+                  return (
+                    <div className="py-2" key={id}>
+                      <img className="w-100 " src={image} alt="image" />
                     </div>
                   );
                 })}
               </Slider>
-            </Col>
-            <div className=" position-absolute position_dots_3  d-none d-md-inline-block opacity-50">
-              <img src={Dots} alt="Dots" />
             </div>
-            <div className=" position-absolute position_dots_2 d-none d-md-inline-block opacity-50">
-              <img src={Dots} alt="Dots" />
+          </div>
+          <div className={Index === 2 ? "d-block" : "d-none"}>
+            <Row className=" py-lg-5 justify-content-center justify-content-md-start">
+              <Col xs={12} sm={10} md={12} lg={10} className=" py-5 mb-lg-5">
+                <Slider {...settings2} ref={(slider2) => setNav2(slider2)}>
+                  {WorkDummyData.map((value) => {
+                    const {
+                      image2,
+                      heading,
+                      subheading,
+                      paragraph,
+                      paragraph2,
+                      id,
+                      link,
+                      Flutterimage,
+                      StackUsedName1,
+                      StackUsedName2,
+                      StackUsedName3,
+                      PHPimage,
+                      figmaImage,
+                      CeoImage,
+                      CEO,
+                    } = value;
+                    return (
+                      <div key={id}>
+                        <Row className=" py-lg-5 position-relative index_1  justify-content-center justify-content-md-start">
+                          <Col xs={8} md={4} lg={3}>
+                            <img className=" w-100" src={image2} alt="image2" />
+                          </Col>
+                          <Col xs={12} md={8}>
+                            <div className="ps-xl-5 pt-4 pt-lg-0">
+                              <div className=" d-flex align-items-center">
+                                <img src={app_logo} alt="app_logo" />
+                                <h2 className=" ff_Roboto fw-bold fs_4xl text_primary text-uppercase mb-0 ms-3 ms-lg-5">
+                                  {heading}
+                                </h2>
+                              </div>
+                              <p className=" ff_Inter fw-normal fs_lg text_primary pt-4">
+                                {paragraph}
+                              </p>
+                              <h2 className=" ff_Roboto fw-bold fs_xl text_primary text-capitalize pt-1 pt-lg-4 pt-xl-5">
+                                Stack Used
+                              </h2>
+                              <div className="pt-3 d-flex align-items-center">
+                                <div className=" d-flex align-items-center">
+                                  <img src={Flutterimage} alt="Flutterimage" />
+                                  <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3">
+                                    {StackUsedName1}
+                                  </h2>
+                                </div>
+                                <div className=" d-flex align-items-center ms-4 ms-sm-5">
+                                  <img src={PHPimage} alt="PHPimage" />
+                                  <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3 text-uppercase">
+                                    {StackUsedName2}
+                                  </h2>
+                                </div>
+                                <div className=" d-flex align-items-center ms-4 ms-sm-5">
+                                  <img src={figmaImage} alt="figmaImage" />
+                                  <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3 text-uppercase">
+                                    {StackUsedName3}
+                                  </h2>
+                                </div>
+                              </div>
+                              <h2 className=" ff_Roboto fw-bold fs_xl text_primary text-capitalize  pt-1 pt-lg-4 pt-xl-5 mt-4">
+                                What they say
+                              </h2>
+                              <div className=" d-flex pt-2 pt-lg-4 align-items-md-center flex-column flex-sm-row pt-4 pt-sm-0">
+                                <div className="me-3">
+                                  <img src={CeoImage} alt="CeoImage" />
+                                </div>
+                                <div className="ms-1 pt-4 pt-sm-0">
+                                  <p className=" ff_Inter fw-normal  fs_sm text_primary mb-0 pb-2">
+                                    {paragraph2}
+                                  </p>
+                                  <h2 className=" ff_Inter  fw-bold fs_sm text_primary mb-0">
+                                    CEO
+                                  </h2>
+                                  <h2 className=" ff_Inter  fw-normal fs_sm text_primary">
+                                    {CEO}
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </Col>
+                          <h2 className=" ff_Inter fw-bold fs_lg text_primary">
+                            Visit :
+                            <a
+                              className=" fw-normal text_lightprimary know_hover"
+                              href="#"
+                            >
+                              {link}
+                            </a>
+                          </h2>
+                        </Row>
+                      </div>
+                    );
+                  })}
+                </Slider>
+              </Col>
+            </Row>
+            <div className=" position-absolute top-0 end-0 max_200 index_1 d-none d-lg-block">
+              <Slider
+                {...settings}
+                ref={(slider1) => setNav1(slider1)}
+                className="overlay_up"
+              >
+                {WorkDummyData.map((value) => {
+                  const { image, id } = value;
+                  return (
+                    <div className="py-2" key={id}>
+                      <img className="w-100 " src={image} alt="image" />
+                    </div>
+                  );
+                })}
+              </Slider>
             </div>
-          </Row>
-          <div className=" position-absolute top-0 end-0 max_200 index_1 d-none d-lg-block">
-            <Slider
-              {...settings}
-              ref={(slider1) => setNav1(slider1)}
-              className="overlay_up"
-            >
-              {WorkDummyData.map((value) => {
-                const { image, id } = value;
-                return (
-                  <div className="py-2" key={id}>
-                    <img className="w-100 " src={image} alt="image" />
-                  </div>
-                );
-              })}
-            </Slider>
+          </div>
+          <div className={Index === 3 ? "d-block" : "d-none"}>
+            <Row className=" py-lg-5 justify-content-center justify-content-md-start">
+              <Col xs={12} sm={10} md={12} lg={10} className=" py-5 mb-lg-5">
+                <Slider {...settings2} ref={(slider2) => setNav2(slider2)}>
+                  {WorkDummyData.map((value) => {
+                    const {
+                      image2,
+                      heading,
+                      subheading,
+                      paragraph,
+                      paragraph2,
+                      id,
+                      link,
+                      Flutterimage,
+                      StackUsedName1,
+                      StackUsedName2,
+                      StackUsedName3,
+                      PHPimage,
+                      figmaImage,
+                      CeoImage,
+                      CEO,
+                    } = value;
+                    return (
+                      <div key={id}>
+                        <Row className=" py-lg-5 position-relative index_1  justify-content-center justify-content-md-start">
+                          <Col xs={8} md={4} lg={3}>
+                            <img className=" w-100" src={image2} alt="image2" />
+                          </Col>
+                          <Col xs={12} md={8}>
+                            <div className="ps-xl-5 pt-4 pt-lg-0">
+                              <div className=" d-flex align-items-center">
+                                <img src={app_logo} alt="app_logo" />
+                                <h2 className=" ff_Roboto fw-bold fs_4xl text_primary text-uppercase mb-0 ms-3 ms-lg-5">
+                                  {heading}
+                                </h2>
+                              </div>
+                              <p className=" ff_Inter fw-normal fs_lg text_primary pt-4">
+                                {paragraph}
+                              </p>
+                              <h2 className=" ff_Roboto fw-bold fs_xl text_primary text-capitalize pt-1 pt-lg-4 pt-xl-5">
+                                Stack Used
+                              </h2>
+                              <div className="pt-3 d-flex align-items-center">
+                                <div className=" d-flex align-items-center">
+                                  <img src={Flutterimage} alt="Flutterimage" />
+                                  <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3">
+                                    {StackUsedName1}
+                                  </h2>
+                                </div>
+                                <div className=" d-flex align-items-center ms-4 ms-sm-5">
+                                  <img src={PHPimage} alt="PHPimage" />
+                                  <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3 text-uppercase">
+                                    {StackUsedName2}
+                                  </h2>
+                                </div>
+                                <div className=" d-flex align-items-center ms-4 ms-sm-5">
+                                  <img src={figmaImage} alt="figmaImage" />
+                                  <h2 className=" ff_Inter fw-normal fs_lg text_primary mb-0 ms-3 text-uppercase">
+                                    {StackUsedName3}
+                                  </h2>
+                                </div>
+                              </div>
+                              <h2 className=" ff_Roboto fw-bold fs_xl text_primary text-capitalize  pt-1 pt-lg-4 pt-xl-5 mt-4">
+                                What they say
+                              </h2>
+                              <div className=" d-flex pt-2 pt-lg-4 align-items-md-center flex-column flex-sm-row pt-4 pt-sm-0">
+                                <div className="me-3">
+                                  <img src={CeoImage} alt="CeoImage" />
+                                </div>
+                                <div className="ms-1 pt-4 pt-sm-0">
+                                  <p className=" ff_Inter fw-normal  fs_sm text_primary mb-0 pb-2">
+                                    {paragraph2}
+                                  </p>
+                                  <h2 className=" ff_Inter  fw-bold fs_sm text_primary mb-0">
+                                    CEO
+                                  </h2>
+                                  <h2 className=" ff_Inter  fw-normal fs_sm text_primary">
+                                    {CEO}
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </Col>
+                          <h2 className=" ff_Inter fw-bold fs_lg text_primary">
+                            Visit :
+                            <a
+                              className=" fw-normal text_lightprimary know_hover"
+                              href="#"
+                            >
+                              {link}
+                            </a>
+                          </h2>
+                        </Row>
+                      </div>
+                    );
+                  })}
+                </Slider>
+              </Col>
+            </Row>
+            <div className=" position-absolute top-0 end-0 max_200 index_1 d-none d-lg-block">
+              <Slider
+                {...settings}
+                ref={(slider1) => setNav1(slider1)}
+                className="overlay_up"
+              >
+                {WorkDummyData.map((value) => {
+                  const { image, id } = value;
+                  return (
+                    <div className="py-2" key={id}>
+                      <img className="w-100 " src={image} alt="image" />
+                    </div>
+                  );
+                })}
+              </Slider>
+            </div>
+          </div>
+          <div className=" position-absolute position_dots_3  d-none d-md-inline-block opacity-50">
+            <img src={Dots} alt="Dots" />
+          </div>
+          <div className=" position-absolute position_dots_2 d-none d-md-inline-block opacity-50">
+            <img src={Dots} alt="Dots" />
           </div>
         </Container>
         <div className=" position-absolute bottom-0 start-0 index_ n_1 d-none d-md-inline-block opacity-50">

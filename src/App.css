@@ -1059,6 +1059,9 @@ textarea {
   right: 11%;
   z-index: 2;
 }
+.border_transparent {
+  border: 2px solid transparent;
+}
 @media (min-width: 400px) {
   .px_xsm_5 {
     padding-left: 48px;

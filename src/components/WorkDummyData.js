@@ -17,7 +17,7 @@ const WorkDummyData = [
     StackUsedName2: "PHP",
     StackUsedName3: "Figma",
     StackUsedName1: "Flutter",
-    heading: "heading",
+    heading: "ELON MUSK VISION",
     subheading: "What they say",
 
     paragraph:
@@ -38,7 +38,7 @@ const WorkDummyData = [
     StackUsedName2: "PHP",
     StackUsedName3: "Figma",
     StackUsedName1: "Flutter",
-    heading: "heading",
+    heading: "ELON MUSK VISION",
     subheading: "What they say",
 
     paragraph:
@@ -59,7 +59,7 @@ const WorkDummyData = [
     StackUsedName2: "PHP",
     StackUsedName3: "Figma",
     StackUsedName1: "Flutter",
-    heading: "heading",
+    heading: "ELON MUSK VISION",
     subheading: "What they say",
 
     paragraph:
@@ -80,7 +80,7 @@ const WorkDummyData = [
     StackUsedName2: "PHP",
     StackUsedName3: "Figma",
     StackUsedName1: "Flutter",
-    heading: "heading",
+    heading: "ELON MUSK VISION",
     subheading: "What they say",
 
     paragraph:
@@ -101,7 +101,7 @@ const WorkDummyData = [
     StackUsedName2: "PHP",
     StackUsedName3: "Figma",
     StackUsedName1: "Flutter",
-    heading: "heading",
+    heading: "ELON MUSK VISION",
     subheading: "What they say",
 
     paragraph:
@@ -122,7 +122,7 @@ const WorkDummyData = [
     StackUsedName2: "PHP",
     StackUsedName3: "Figma",
     StackUsedName1: "Flutter",
-    heading: "heading",
+    heading: "ELON MUSK VISION",
     subheading: "What they say",
 
     paragraph:
@@ -143,7 +143,7 @@ const WorkDummyData = [
     StackUsedName2: "PHP",
     StackUsedName3: "Figma",
     StackUsedName1: "Flutter",
-    heading: "heading",
+    heading: "ELON MUSK VISION",
     subheading: "What they say",
 
     paragraph:
@@ -164,7 +164,7 @@ const WorkDummyData = [
     StackUsedName2: "PHP",
     StackUsedName3: "Figma",
     StackUsedName1: "Flutter",
-    heading: "heading",
+    heading: "ELON MUSK VISION",
     subheading: "What they say",
 
     paragraph:
