@@ -1,26 +1,24 @@
 import React, { useState } from "react";
-import HeroSection from "./HeroSection";
+import HeroSection from "../../components/HeroSection";
 import { Col, Container, Row } from "react-bootstrap";
-import Expertise from "../assets/images/svg/Expertise.svg";
-import Innovation from "../assets/images/svg/Innovation.svg";
-import guaranteed from "../assets/images/svg/guaranteed.svg";
-import PeopleChoose from "../assets/images/png/PeopleChoose.png";
-import Prime from "../assets/images/svg/Prime.svg";
-import Prime_2 from "../assets/images/svg/Prime_2.svg";
-import Dots from "../assets/images/svg/Dots.svg";
-import sri from "../assets/images/svg/sri.svg";
-import sri_2 from "../assets/images/svg/sri_2.svg";
-import app_logo from "../assets/images/svg/app_logo.svg";
-import vision from "../assets/images/png/vision.png";
-import vision_2 from "../assets/images/png/vision_2.png";
-import Closet from "../assets/images/png/Closet.png";
-import Closet_2 from "../assets/images/png/Closet_2.png";
-import edumato_2 from "../assets/images/png/edumato_2.png";
-import edumato_3 from "../assets/images/png/edumato_3.png";
-import WorkDummyData from "./WorkDummyData";
+import Expertise from "../../assets/images/svg/Expertise.svg";
+import Innovation from "../../assets/images/svg/Innovation.svg";
+import guaranteed from "../../assets/images/svg/guaranteed.svg";
+import PeopleChoose from "../../assets/images/png/PeopleChoose.png";
+import Prime from "../../assets/images/svg/Prime.svg";
+import Prime_2 from "../../assets/images/svg/Prime_2.svg";
+import Dots from "../../assets/images/svg/Dots.svg";
+import sri from "../../assets/images/svg/sri.svg";
+import sri_2 from "../../assets/images/svg/sri_2.svg";
+import app_logo from "../../assets/images/svg/app_logo.svg";
+import vision from "../../assets/images/png/vision.png";
+import vision_2 from "../../assets/images/png/vision_2.png";
+import Closet from "../../assets/images/png/Closet.png";
+import Closet_2 from "../../assets/images/png/Closet_2.png";
+import edumato_2 from "../../assets/images/png/edumato_2.png";
+import edumato_3 from "../../assets/images/png/edumato_3.png";
+import WorkDummyData from "../../DummyData/WorkDummyData";
 import Slider from "react-slick";
-import ElonMuskVision from "../assets/images/png/ElonMuskVision.png";
-import EduApp from "../assets/images/png/EduApp.png";
 function ProjectsPage() {
   const data = {
     name: "Projects",

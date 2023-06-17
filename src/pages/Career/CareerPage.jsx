@@ -1,9 +1,9 @@
 import React from "react";
-import NavbarFile from "./NavbarFile";
-import HeroSection from "./HeroSection";
+import NavbarFile from "../../components/NavbarFile";
+import HeroSection from "../../components/HeroSection";
 import { Col, Container, Row } from "react-bootstrap";
-import MaskingImage from "../assets/images/png/MaskingImage.png";
-import ListIsEmpty from "../assets/images/png/ListIsEmpty.png";
+import MaskingImage from "../../assets/images/png/MaskingImage.png";
+import ListIsEmpty from "../../assets/images/png/ListIsEmpty.png";
 
 function CareerPage() {
   const data = {

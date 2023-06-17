@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import TeamDummyData from "./TeamDummyData";
-import GirlChatting from "../assets/images/png/GirlChatting.png";
-import MeetOurGirl from "../assets/images/png/MeetOurGirl.png";
-import Vikash from "../assets/images/png/Vikash.png";
-import JoginderSaini from "../assets/images/png/JoginderSaini.png";
-import RakeshSheoran from "../assets/images/png/RakeshSheoran.png";
-import Linkedin from "../assets/images/svg/Linkedin.svg";
-import HeroSection from "./HeroSection";
+import TeamDummyData from "../../DummyData/TeamDummyData";
+import GirlChatting from "../../assets/images/png/GirlChatting.png";
+import MeetOurGirl from "../../assets/images/png/MeetOurGirl.png";
+import Vikash from "../../assets/images/png/Vikash.png";
+import JoginderSaini from "../../assets/images/png/JoginderSaini.png";
+import RakeshSheoran from "../../assets/images/png/RakeshSheoran.png";
+import Linkedin from "../../assets/images/svg/Linkedin.svg";
+import HeroSection from "../../components/HeroSection";
 import { Tilt } from "react-tilt";
 
 function AboutPage() {

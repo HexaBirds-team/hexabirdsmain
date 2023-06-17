@@ -1,9 +1,9 @@
 import React from "react";
-import HeroSection from "./HeroSection";
+import HeroSection from "../../components/HeroSection";
 import { Col, Container, Row } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
-import Questions from "../assets/images/png/Questions.png";
-import FaqOpen from "../assets/images/png/FaqOpen.png";
+import Questions from "../../assets/images/png/Questions.png";
+import FaqOpen from "../../assets/images/png/FaqOpen.png";
 
 function ContactPage() {
   const data = {

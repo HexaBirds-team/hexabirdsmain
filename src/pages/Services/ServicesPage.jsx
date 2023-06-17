@@ -1,13 +1,13 @@
 import React from "react";
-import HeroSection from "./HeroSection";
+import HeroSection from "../../components/HeroSection";
 import { Col, Container, Row } from "react-bootstrap";
-import service_offer from "../assets/images/png/service_offer.png";
-import WebDevelopment from "../assets/images/png/WebDevelopment.png";
-import AppDevelopment from "../assets/images/png/AppDevelopment.png";
-import AppDesigning from "../assets/images/png/AppDesigning.png";
-import Web_top from "../assets/images/svg/Web_top.svg";
-import Web_bottom from "../assets/images/svg/Web_bottom.svg";
-import ExploreArrow from "../assets/images/svg/ExploreArrow.svg";
+import service_offer from "../../assets/images/png/service_offer.png";
+import WebDevelopment from "../../assets/images/png/WebDevelopment.png";
+import AppDevelopment from "../../assets/images/png/AppDevelopment.png";
+import AppDesigning from "../../assets/images/png/AppDesigning.png";
+import Web_top from "../../assets/images/svg/Web_top.svg";
+import Web_bottom from "../../assets/images/svg/Web_bottom.svg";
+import ExploreArrow from "../../assets/images/svg/ExploreArrow.svg";
 
 function ServicesPage() {
   const data = {

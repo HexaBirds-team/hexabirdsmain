@@ -353,7 +353,7 @@
     linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.08) 100%)
       border-box;
   border: 2px solid transparent;
-  animation: rounded 3s linear infinite alternate;
+  /* animation: rounded 3s linear infinite alternate; */
 }
 @keyframes rounded {
   0% {

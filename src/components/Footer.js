@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import footer_logo from "../assets/images/svg/footer_logo.svg";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -121,36 +122,44 @@ function Footer() {
                     Services
                   </li>
                   <li>
-                    <a
-                      className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
-                      href="#"
-                    >
-                      Websites
-                    </a>
+                    <Link to="/Services">
+                      <a
+                        className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
+                        href="#"
+                      >
+                        Websites
+                      </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
-                      href="#"
-                    >
-                      Mobile Apps
-                    </a>
+                    <Link to="/Services">
+                      <a
+                        className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
+                        href="#"
+                      >
+                        Mobile Apps
+                      </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
-                      href="#"
-                    >
-                      Backend
-                    </a>
+                    <Link to="/Services">
+                      <a
+                        className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
+                        href="#"
+                      >
+                        Backend
+                      </a>{" "}
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
-                      href="#"
-                    >
-                      CMS
-                    </a>
+                    <Link to="/Services">
+                      <a
+                        className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
+                        href="#"
+                      >
+                        CMS
+                      </a>{" "}
+                    </Link>
                   </li>
                 </ul>
               </Col>
@@ -167,44 +176,56 @@ function Footer() {
                     Quick Links
                   </li>
                   <li>
-                    <a
-                      className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
-                      href="#"
-                    >
-                      Home
-                    </a>
+                    <Link to="/">
+                      <a
+                        className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
+                        href="#"
+                      >
+                        Home
+                      </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
-                      href="#"
-                    >
-                      About
-                    </a>
+                    <Link to="/About">
+                      <a
+                        className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
+                        href="#"
+                      >
+                        About
+                      </a>{" "}
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
-                      href="#"
-                    >
-                      Projects
-                    </a>
+                    {" "}
+                    <Link to="/Projects">
+                      <a
+                        className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
+                        href="#"
+                      >
+                        Projects
+                      </a>{" "}
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
-                      href="#"
-                    >
-                      Career
-                    </a>
+                    <Link to="/Career">
+                      <a
+                        className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
+                        href="#"
+                      >
+                        Career
+                      </a>{" "}
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
-                      href="#"
-                    >
-                      Contact
-                    </a>
+                    {" "}
+                    <Link to="/Contact">
+                      <a
+                        className=" ff_Roboto fw-normal fs_xl text_primary mt-2 d-inline-block Read_hover"
+                        href="#"
+                      >
+                        Contact
+                      </a>{" "}
+                    </Link>
                   </li>
                 </ul>
               </Col>
@@ -223,7 +244,7 @@ function Footer() {
               data-aos-delay="100"
               data-aos-offset="0"
             >
-              All rights reserved to Hexabirds Private Limited
+              © 2023 Hexabirds Private Limited. All rights reserved.
             </p>
             <p
               className=" ff_Roboto fw-normal fs_xl text_primary ps-4 text-center"
