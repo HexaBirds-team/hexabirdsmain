@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo_hexabirds from "../assets/images/png/logo_hexabirds.png";
+import CloseIcon from "../assets/images/svg/CloseIcon.svg";
 import { NavLink } from "react-router-dom";
 
 function NavbarFile() {
@@ -217,13 +218,16 @@ function NavbarFile() {
                     </a>
                   </li>
                   <li>
-                    <a
+                    <span
                       className=" position-absolute end_30 top_30 opacity-100 d-lg-none"
                       onClick={() => setopen(true)}
-                      href="#"
                     >
-                      close
-                    </a>
+                      <img
+                        className=" position-absolute top-0 end-0"
+                        src={CloseIcon}
+                        alt="CloseIcon"
+                      />
+                    </span>
                   </li>
                 </ul>
               </div>

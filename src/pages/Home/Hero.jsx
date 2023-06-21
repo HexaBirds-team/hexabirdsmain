@@ -235,9 +235,9 @@ function Hero() {
         </Container>
       </section>
       <section className="pb-5 ">
-        <Container fluid className="pe-xl-0 py-5 my-md-5">
+        <Container fluid className="px-0 py-5 my-xl-5">
           <div className=" d-xl-flex pb-lg-5 mb-lg-5">
-            <div className="writing_lr pt-5 mt-3">
+            <div className="writing_lr pt-xl-5 mt-xl-3 pb-3 pb-xl-0">
               <h2
                 className=" ff_Roboto fw_medium fs_11xl text_dark text-center "
                 data-aos="fade-down"
@@ -322,39 +322,41 @@ function Hero() {
                   data-aos-delay="200"
                   data-aos-offset="200"
                 >
-                  <div className=" position-relative Service_card p-4 ps-5 h-100">
-                    <h2 className=" ff_Roboto fw-normal fs_2xl text_primary">
-                      Websites
-                    </h2>
-                    <p className=" ff_Roboto fw-normal fs_md text_primary opacity_07 pe-4 pe-xxl-5">
-                      Nullam neque nibh, tempus et nisl ac, faucibus pretium
-                      enim. Sed scelerisque urna a nisl vestibulum ultricies.
-                    </p>
-                    <svg
-                      className="lr_animtion"
-                      width="68"
-                      height="16"
-                      viewBox="0 0 68 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M67.7071 8.70711C68.0976 8.31658 68.0976 7.68342 67.7071 7.29289L61.3431 0.928932C60.9526 0.538408 60.3195 0.538408 59.9289 0.928932C59.5384 1.31946 59.5384 1.95262 59.9289 2.34315L65.5858 8L59.9289 13.6569C59.5384 14.0474 59.5384 14.6805 59.9289 15.0711C60.3195 15.4616 60.9526 15.4616 61.3431 15.0711L67.7071 8.70711ZM0 9L67 9V7L0 7L0 9Z"
-                        fill="white"
-                      />
-                    </svg>
-                    <Link to="/Services">
-                      <a
-                        className=" ff_Roboto fw-normal fs_md text_primary me-3 Read_hover ps-3"
-                        href="#"
+                  <div className="px_xsm_5 h-100 px-sm-0">
+                    <div className=" position-relative Service_card p-4 ps-5 h-100">
+                      <h2 className=" ff_Roboto fw-normal fs_2xl text_primary">
+                        Websites
+                      </h2>
+                      <p className=" ff_Roboto fw-normal fs_md text_primary opacity_07 pe-4">
+                        Nullam neque nibh, tempus et nisl ac, faucibus pretium
+                        enim. Sed scelerisque urna a nisl vestibulum ultricies.
+                      </p>
+                      <svg
+                        className="lr_animtion"
+                        width="68"
+                        height="16"
+                        viewBox="0 0 68 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Read More
-                      </a>
-                    </Link>
-                    <span className="dots d-inline-block rounded-circle position-absolute top_10 start_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute top_10 end_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute bottom_10 start_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute bottom_10 end_10"></span>
+                        <path
+                          d="M67.7071 8.70711C68.0976 8.31658 68.0976 7.68342 67.7071 7.29289L61.3431 0.928932C60.9526 0.538408 60.3195 0.538408 59.9289 0.928932C59.5384 1.31946 59.5384 1.95262 59.9289 2.34315L65.5858 8L59.9289 13.6569C59.5384 14.0474 59.5384 14.6805 59.9289 15.0711C60.3195 15.4616 60.9526 15.4616 61.3431 15.0711L67.7071 8.70711ZM0 9L67 9V7L0 7L0 9Z"
+                          fill="white"
+                        />
+                      </svg>
+                      <Link to="/Services">
+                        <a
+                          className=" ff_Roboto fw-normal fs_md text_primary me-3 Read_hover ps-3"
+                          href="#"
+                        >
+                          Read More
+                        </a>
+                      </Link>
+                      <span className="dots d-inline-block rounded-circle position-absolute top_10 start_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute top_10 end_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute bottom_10 start_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute bottom_10 end_10"></span>
+                    </div>
                   </div>
                 </Col>
                 <Col
@@ -367,39 +369,41 @@ function Hero() {
                   data-aos-delay="300"
                   data-aos-offset="200"
                 >
-                  <div className=" position-relative Service_card p-4 ps-5 h-100">
-                    <h2 className=" ff_Roboto fw-normal fs_2xl text_primary">
-                      Mobile App
-                    </h2>
-                    <p className=" ff_Roboto fw-normal fs_md text_primary opacity_07 pe-4 pe-xxl-5">
-                      Nullam neque nibh, tempus et nisl ac, faucibus pretium
-                      enim. Sed scelerisque urna a nisl vestibulum ultricies.
-                    </p>
-                    <svg
-                      className="lr_animtion"
-                      width="68"
-                      height="16"
-                      viewBox="0 0 68 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M67.7071 8.70711C68.0976 8.31658 68.0976 7.68342 67.7071 7.29289L61.3431 0.928932C60.9526 0.538408 60.3195 0.538408 59.9289 0.928932C59.5384 1.31946 59.5384 1.95262 59.9289 2.34315L65.5858 8L59.9289 13.6569C59.5384 14.0474 59.5384 14.6805 59.9289 15.0711C60.3195 15.4616 60.9526 15.4616 61.3431 15.0711L67.7071 8.70711ZM0 9L67 9V7L0 7L0 9Z"
-                        fill="white"
-                      />
-                    </svg>
-                    <Link to="/Services">
-                      <a
-                        className=" ff_Roboto fw-normal fs_md text_primary me-3 Read_hover ps-3"
-                        href="#"
+                  <div className="px_xsm_5 h-100 px-sm-0">
+                    <div className=" position-relative Service_card p-4 ps-5 h-100">
+                      <h2 className=" ff_Roboto fw-normal fs_2xl text_primary">
+                        Mobile App
+                      </h2>
+                      <p className=" ff_Roboto fw-normal fs_md text_primary opacity_07 pe-4">
+                        Nullam neque nibh, tempus et nisl ac, faucibus pretium
+                        enim. Sed scelerisque urna a nisl vestibulum ultricies.
+                      </p>
+                      <svg
+                        className="lr_animtion"
+                        width="68"
+                        height="16"
+                        viewBox="0 0 68 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Read More
-                      </a>
-                    </Link>
-                    <span className="dots d-inline-block rounded-circle position-absolute top_10 start_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute top_10 end_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute bottom_10 start_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute bottom_10 end_10"></span>
+                        <path
+                          d="M67.7071 8.70711C68.0976 8.31658 68.0976 7.68342 67.7071 7.29289L61.3431 0.928932C60.9526 0.538408 60.3195 0.538408 59.9289 0.928932C59.5384 1.31946 59.5384 1.95262 59.9289 2.34315L65.5858 8L59.9289 13.6569C59.5384 14.0474 59.5384 14.6805 59.9289 15.0711C60.3195 15.4616 60.9526 15.4616 61.3431 15.0711L67.7071 8.70711ZM0 9L67 9V7L0 7L0 9Z"
+                          fill="white"
+                        />
+                      </svg>
+                      <Link to="/Services">
+                        <a
+                          className=" ff_Roboto fw-normal fs_md text_primary me-3 Read_hover ps-3"
+                          href="#"
+                        >
+                          Read More
+                        </a>
+                      </Link>
+                      <span className="dots d-inline-block rounded-circle position-absolute top_10 start_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute top_10 end_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute bottom_10 start_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute bottom_10 end_10"></span>
+                    </div>
                   </div>
                 </Col>
                 <Col
@@ -412,39 +416,41 @@ function Hero() {
                   data-aos-delay="400"
                   data-aos-offset="200"
                 >
-                  <div className=" position-relative Service_card p-4 ps-5 h-100">
-                    <h2 className=" ff_Roboto fw-normal fs_2xl text_primary">
-                      Backend
-                    </h2>
-                    <p className=" ff_Roboto fw-normal fs_md text_primary opacity_07 pe-4 pe-xxl-5">
-                      Nullam neque nibh, tempus et nisl ac, faucibus pretium
-                      enim. Sed scelerisque urna a nisl vestibulum ultricies.
-                    </p>
-                    <svg
-                      className="lr_animtion"
-                      width="68"
-                      height="16"
-                      viewBox="0 0 68 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M67.7071 8.70711C68.0976 8.31658 68.0976 7.68342 67.7071 7.29289L61.3431 0.928932C60.9526 0.538408 60.3195 0.538408 59.9289 0.928932C59.5384 1.31946 59.5384 1.95262 59.9289 2.34315L65.5858 8L59.9289 13.6569C59.5384 14.0474 59.5384 14.6805 59.9289 15.0711C60.3195 15.4616 60.9526 15.4616 61.3431 15.0711L67.7071 8.70711ZM0 9L67 9V7L0 7L0 9Z"
-                        fill="white"
-                      />
-                    </svg>
-                    <Link to="/Services">
-                      <a
-                        className=" ff_Roboto fw-normal fs_md text_primary me-3 Read_hover ps-3"
-                        href="#"
+                  <div className="px_xsm_5 h-100 px-sm-0">
+                    <div className=" position-relative Service_card p-4 ps-5 h-100">
+                      <h2 className=" ff_Roboto fw-normal fs_2xl text_primary">
+                        Backend
+                      </h2>
+                      <p className=" ff_Roboto fw-normal fs_md text_primary opacity_07 pe-4">
+                        Nullam neque nibh, tempus et nisl ac, faucibus pretium
+                        enim. Sed scelerisque urna a nisl vestibulum ultricies.
+                      </p>
+                      <svg
+                        className="lr_animtion"
+                        width="68"
+                        height="16"
+                        viewBox="0 0 68 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Read More
-                      </a>
-                    </Link>
-                    <span className="dots d-inline-block rounded-circle position-absolute top_10 start_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute top_10 end_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute bottom_10 start_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute bottom_10 end_10"></span>
+                        <path
+                          d="M67.7071 8.70711C68.0976 8.31658 68.0976 7.68342 67.7071 7.29289L61.3431 0.928932C60.9526 0.538408 60.3195 0.538408 59.9289 0.928932C59.5384 1.31946 59.5384 1.95262 59.9289 2.34315L65.5858 8L59.9289 13.6569C59.5384 14.0474 59.5384 14.6805 59.9289 15.0711C60.3195 15.4616 60.9526 15.4616 61.3431 15.0711L67.7071 8.70711ZM0 9L67 9V7L0 7L0 9Z"
+                          fill="white"
+                        />
+                      </svg>
+                      <Link to="/Services">
+                        <a
+                          className=" ff_Roboto fw-normal fs_md text_primary me-3 Read_hover ps-3"
+                          href="#"
+                        >
+                          Read More
+                        </a>
+                      </Link>
+                      <span className="dots d-inline-block rounded-circle position-absolute top_10 start_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute top_10 end_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute bottom_10 start_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute bottom_10 end_10"></span>
+                    </div>
                   </div>
                 </Col>
                 <Col
@@ -457,39 +463,41 @@ function Hero() {
                   data-aos-delay="500"
                   data-aos-offset="200"
                 >
-                  <div className=" position-relative Service_card p-4 ps-5 h-100">
-                    <h2 className=" ff_Roboto fw-normal fs_2xl text_primary">
-                      E-Commerce
-                    </h2>
-                    <p className=" ff_Roboto fw-normal fs_md text_primary opacity_07 pe-4 pe-xxl-5">
-                      Nullam neque nibh, tempus et nisl ac, faucibus pretium
-                      enim. Sed scelerisque urna a nisl vestibulum ultricies.
-                    </p>
-                    <svg
-                      className="lr_animtion"
-                      width="68"
-                      height="16"
-                      viewBox="0 0 68 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M67.7071 8.70711C68.0976 8.31658 68.0976 7.68342 67.7071 7.29289L61.3431 0.928932C60.9526 0.538408 60.3195 0.538408 59.9289 0.928932C59.5384 1.31946 59.5384 1.95262 59.9289 2.34315L65.5858 8L59.9289 13.6569C59.5384 14.0474 59.5384 14.6805 59.9289 15.0711C60.3195 15.4616 60.9526 15.4616 61.3431 15.0711L67.7071 8.70711ZM0 9L67 9V7L0 7L0 9Z"
-                        fill="white"
-                      />
-                    </svg>
-                    <Link to="/Services">
-                      <a
-                        className=" ff_Roboto fw-normal fs_md text_primary me-3 Read_hover ps-3"
-                        href="#"
+                  <div className="px_xsm_5 h-100 px-sm-0">
+                    <div className=" position-relative Service_card p-4 ps-5 h-100">
+                      <h2 className=" ff_Roboto fw-normal fs_2xl text_primary">
+                        E-Commerce
+                      </h2>
+                      <p className=" ff_Roboto fw-normal fs_md text_primary opacity_07 pe-4">
+                        Nullam neque nibh, tempus et nisl ac, faucibus pretium
+                        enim. Sed scelerisque urna a nisl vestibulum ultricies.
+                      </p>
+                      <svg
+                        className="lr_animtion"
+                        width="68"
+                        height="16"
+                        viewBox="0 0 68 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Read More
-                      </a>
-                    </Link>
-                    <span className="dots d-inline-block rounded-circle position-absolute top_10 start_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute top_10 end_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute bottom_10 start_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute bottom_10 end_10"></span>
+                        <path
+                          d="M67.7071 8.70711C68.0976 8.31658 68.0976 7.68342 67.7071 7.29289L61.3431 0.928932C60.9526 0.538408 60.3195 0.538408 59.9289 0.928932C59.5384 1.31946 59.5384 1.95262 59.9289 2.34315L65.5858 8L59.9289 13.6569C59.5384 14.0474 59.5384 14.6805 59.9289 15.0711C60.3195 15.4616 60.9526 15.4616 61.3431 15.0711L67.7071 8.70711ZM0 9L67 9V7L0 7L0 9Z"
+                          fill="white"
+                        />
+                      </svg>
+                      <Link to="/Services">
+                        <a
+                          className=" ff_Roboto fw-normal fs_md text_primary me-3 Read_hover ps-3"
+                          href="#"
+                        >
+                          Read More
+                        </a>
+                      </Link>
+                      <span className="dots d-inline-block rounded-circle position-absolute top_10 start_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute top_10 end_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute bottom_10 start_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute bottom_10 end_10"></span>
+                    </div>
                   </div>
                 </Col>
                 <Col
@@ -502,39 +510,41 @@ function Hero() {
                   data-aos-delay="600"
                   data-aos-offset="200"
                 >
-                  <div className=" position-relative Service_card p-4 ps-5 h-100">
-                    <h2 className=" ff_Roboto fw-normal fs_2xl text_primary">
-                      CMS Service
-                    </h2>
-                    <p className=" ff_Roboto fw-normal fs_md text_primary opacity_07 pe-4 pe-xxl-5">
-                      Nullam neque nibh, tempus et nisl ac, faucibus pretium
-                      enim. Sed scelerisque urna a nisl vestibulum ultricies.
-                    </p>
-                    <svg
-                      className="lr_animtion"
-                      width="68"
-                      height="16"
-                      viewBox="0 0 68 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M67.7071 8.70711C68.0976 8.31658 68.0976 7.68342 67.7071 7.29289L61.3431 0.928932C60.9526 0.538408 60.3195 0.538408 59.9289 0.928932C59.5384 1.31946 59.5384 1.95262 59.9289 2.34315L65.5858 8L59.9289 13.6569C59.5384 14.0474 59.5384 14.6805 59.9289 15.0711C60.3195 15.4616 60.9526 15.4616 61.3431 15.0711L67.7071 8.70711ZM0 9L67 9V7L0 7L0 9Z"
-                        fill="white"
-                      />
-                    </svg>
-                    <Link to="/Services">
-                      <a
-                        className=" ff_Roboto fw-normal fs_md text_primary me-3 Read_hover ps-3"
-                        href="#"
+                  <div className="px_xsm_5 h-100 px-sm-0">
+                    <div className=" position-relative Service_card p-4 ps-5 h-100">
+                      <h2 className=" ff_Roboto fw-normal fs_2xl text_primary">
+                        CMS Service
+                      </h2>
+                      <p className=" ff_Roboto fw-normal fs_md text_primary opacity_07 pe-4">
+                        Nullam neque nibh, tempus et nisl ac, faucibus pretium
+                        enim. Sed scelerisque urna a nisl vestibulum ultricies.
+                      </p>
+                      <svg
+                        className="lr_animtion"
+                        width="68"
+                        height="16"
+                        viewBox="0 0 68 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Read More
-                      </a>
-                    </Link>
-                    <span className="dots d-inline-block rounded-circle position-absolute top_10 start_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute top_10 end_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute bottom_10 start_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute bottom_10 end_10"></span>
+                        <path
+                          d="M67.7071 8.70711C68.0976 8.31658 68.0976 7.68342 67.7071 7.29289L61.3431 0.928932C60.9526 0.538408 60.3195 0.538408 59.9289 0.928932C59.5384 1.31946 59.5384 1.95262 59.9289 2.34315L65.5858 8L59.9289 13.6569C59.5384 14.0474 59.5384 14.6805 59.9289 15.0711C60.3195 15.4616 60.9526 15.4616 61.3431 15.0711L67.7071 8.70711ZM0 9L67 9V7L0 7L0 9Z"
+                          fill="white"
+                        />
+                      </svg>
+                      <Link to="/Services">
+                        <a
+                          className=" ff_Roboto fw-normal fs_md text_primary me-3 Read_hover ps-3"
+                          href="#"
+                        >
+                          Read More
+                        </a>
+                      </Link>
+                      <span className="dots d-inline-block rounded-circle position-absolute top_10 start_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute top_10 end_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute bottom_10 start_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute bottom_10 end_10"></span>
+                    </div>
                   </div>
                 </Col>
                 <Col
@@ -547,39 +557,41 @@ function Hero() {
                   data-aos-delay="700"
                   data-aos-offset="200"
                 >
-                  <div className=" position-relative Service_card p-4 ps-5 h-100">
-                    <h2 className=" ff_Roboto fw-normal fs_2xl text_primary">
-                      Wordpress
-                    </h2>
-                    <p className=" ff_Roboto fw-normal fs_md text_primary opacity_07 pe-4 pe-xxl-5">
-                      Nullam neque nibh, tempus et nisl ac, faucibus pretium
-                      enim. Sed scelerisque urna a nisl vestibulum ultricies.
-                    </p>
-                    <svg
-                      className="lr_animtion"
-                      width="68"
-                      height="16"
-                      viewBox="0 0 68 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M67.7071 8.70711C68.0976 8.31658 68.0976 7.68342 67.7071 7.29289L61.3431 0.928932C60.9526 0.538408 60.3195 0.538408 59.9289 0.928932C59.5384 1.31946 59.5384 1.95262 59.9289 2.34315L65.5858 8L59.9289 13.6569C59.5384 14.0474 59.5384 14.6805 59.9289 15.0711C60.3195 15.4616 60.9526 15.4616 61.3431 15.0711L67.7071 8.70711ZM0 9L67 9V7L0 7L0 9Z"
-                        fill="white"
-                      />
-                    </svg>
-                    <Link to="/Services">
-                      <a
-                        className=" ff_Roboto fw-normal fs_md text_primary me-3 Read_hover ps-3"
-                        href="#"
+                  <div className="px_xsm_5 h-100 px-sm-0">
+                    <div className=" position-relative Service_card p-4 ps-5 h-100">
+                      <h2 className=" ff_Roboto fw-normal fs_2xl text_primary">
+                        Wordpress
+                      </h2>
+                      <p className=" ff_Roboto fw-normal fs_md text_primary opacity_07 pe-4">
+                        Nullam neque nibh, tempus et nisl ac, faucibus pretium
+                        enim. Sed scelerisque urna a nisl vestibulum ultricies.
+                      </p>
+                      <svg
+                        className="lr_animtion"
+                        width="68"
+                        height="16"
+                        viewBox="0 0 68 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Read More
-                      </a>
-                    </Link>
-                    <span className="dots d-inline-block rounded-circle position-absolute top_10 start_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute top_10 end_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute bottom_10 start_10"></span>
-                    <span className="dots d-inline-block rounded-circle position-absolute bottom_10 end_10"></span>
+                        <path
+                          d="M67.7071 8.70711C68.0976 8.31658 68.0976 7.68342 67.7071 7.29289L61.3431 0.928932C60.9526 0.538408 60.3195 0.538408 59.9289 0.928932C59.5384 1.31946 59.5384 1.95262 59.9289 2.34315L65.5858 8L59.9289 13.6569C59.5384 14.0474 59.5384 14.6805 59.9289 15.0711C60.3195 15.4616 60.9526 15.4616 61.3431 15.0711L67.7071 8.70711ZM0 9L67 9V7L0 7L0 9Z"
+                          fill="white"
+                        />
+                      </svg>
+                      <Link to="/Services">
+                        <a
+                          className=" ff_Roboto fw-normal fs_md text_primary me-3 Read_hover ps-3"
+                          href="#"
+                        >
+                          Read More
+                        </a>
+                      </Link>
+                      <span className="dots d-inline-block rounded-circle position-absolute top_10 start_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute top_10 end_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute bottom_10 start_10"></span>
+                      <span className="dots d-inline-block rounded-circle position-absolute bottom_10 end_10"></span>
+                    </div>
                   </div>
                 </Col>
               </Row>
@@ -590,7 +602,7 @@ function Hero() {
       <section className="py-5">
         <Container>
           <h2
-            className=" ff_Roboto fw-normal fs_11xl text_dark text_shadow pt-5 mt-3"
+            className=" ff_Roboto fw-normal fs_11xl text_dark text_shadow pt-xl-5 mt-3 px_xsm_5 px-sm-0"
             data-aos="fade-down"
             data-aos-duration="800"
             data-aos-delay="100"
@@ -841,7 +853,7 @@ function Hero() {
           alt="Curve_line"
         />
       </section>
-      <section className=" bg_dark my-sm-5 py-5 position-relative">
+      <section className=" bg_dark my-lg-5 py-5 position-relative">
         <Container fluid className="p-0">
           <h1
             className=" ff_Roboto fw-bold fs_10xl text-uppercase text_white_black position-absolute top_n_36 start-0 ps-3 ps-sm-5 ms-md-5  "
@@ -950,12 +962,12 @@ function Hero() {
             data-aos-offset="200"
           >
             Interested in our services?
-            <span className="d-block fw-normal">
+            <span className="d-block fw-normal fs_3xl">
               Answer a few short questions and we’ll get in touch with you!
             </span>
           </h2>
           <button
-            className=" ff_Roboto fw-normal fs_3xl text_primary py-2 px-5 bg_secondary border-0 rounded-4 button_shadow mt-5"
+            className=" ff_Roboto fw-normal fs_3xl text_primary py-2 px-5 bg_secondary border-0 rounded-4 button_shadow mt-4"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="300"
@@ -965,7 +977,7 @@ function Hero() {
           </button>
         </Container>
       </section>
-      <div className=" position-fixed index_99 d-inline-block robo_position overflow-hidden pt-2">
+      <div className=" d-none position-fixed index_99 d-sm-inline-block robo_position overflow-hidden pt-2">
         <span className="d-inline-block position-relative">
           <div className="robo">
             <svg

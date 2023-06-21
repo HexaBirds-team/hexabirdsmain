@@ -39,6 +39,8 @@ function ProjectsPage() {
     verticalSwiping: true,
     asNavFor: nav2,
     slidesToScroll: 1,
+    autoplaySpeed: 2600,
+    pauseOnDotsHover: false,
   };
   const settings2 = {
     autoplay: true,
@@ -48,6 +50,8 @@ function ProjectsPage() {
     speed: 500,
     asNavFor: nav1,
     slidesToScroll: 1,
+    autoplaySpeed: 2600,
+    pauseOnDotsHover: false,
   };
   return (
     <>
@@ -228,14 +232,13 @@ function ProjectsPage() {
             </div>
           </div>
           <div className={Index === 1 ? "d-block" : "d-none"}>
-            <Row className=" py-lg-5 justify-content-center justify-content-md-start">
-              <Col xs={12} sm={10} md={12} lg={10} className=" py-5 mb-lg-5">
+            <Row className=" py -5 justify-content-center justify-content-md-start">
+              <Col xs={12} sm={10} md={12} lg={10} className=" py- 5 mb-l g-5">
                 <Slider {...settings2} ref={(slider2) => setNav2(slider2)}>
                   {WorkDummyData.map((value) => {
                     const {
                       image2,
                       heading,
-                      subheading,
                       paragraph,
                       paragraph2,
                       id,
@@ -251,7 +254,7 @@ function ProjectsPage() {
                     } = value;
                     return (
                       <div key={id}>
-                        <Row className=" py-lg-5 position-relative index_1  justify-content-center justify-content-md-start">
+                        <Row className="position-relative index_1  justify-content-center justify-content-md-start px-1">
                           <Col xs={8} md={4} lg={3}>
                             <img
                               data-aos="fade-right"
@@ -418,7 +421,7 @@ function ProjectsPage() {
               </Slider>
             </div>
           </div>
-          <div className={Index === 2 ? "d-block" : "d-none"}>
+          {/* <div className={Index === 2 ? "d-block" : "d-none"}>
             <Row className=" py-lg-5 justify-content-center justify-content-md-start">
               <Col xs={12} sm={10} md={12} lg={10} className=" py-5 mb-lg-5">
                 <Slider {...settings2} ref={(slider2) => setNav2(slider2)}>
@@ -649,7 +652,7 @@ function ProjectsPage() {
                 })}
               </Slider>
             </div>
-          </div>
+          </div> */}
           <div className=" position-absolute position_dots_3  d-none d-md-inline-block opacity-50">
             <img src={Dots} alt="Dots" />
           </div>
@@ -657,9 +660,9 @@ function ProjectsPage() {
             <img src={Dots} alt="Dots" />
           </div>
         </Container>
-        <div className=" position-absolute bottom-0 start-0 index_ n_1 d-none d-md-inline-block opacity-50">
+        {/* <div className=" position-absolute bottom-0 start-0 index_ n_1 d-none d-md-inline-block opacity-50">
           <img src={Dots} alt="Dots" />
-        </div>
+        </div> */}
       </section>
       <section className=" py-5 my-5">
         <Container>
@@ -685,7 +688,7 @@ function ProjectsPage() {
               your company an increase of business and quick market expansion.
             </span>
           </p>
-          <div className=" d-flex justify-content-center pt-5 align-items-center overflow-auto">
+          <div className=" d-flex justify-content-center pt-5 align-items-center overflow-auto scrollbar_none">
             <div
               className="hover_images"
               data-aos="zoom-in"

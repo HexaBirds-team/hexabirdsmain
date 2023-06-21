@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <footer className="tr_to_black mt-5">
+      <footer className="tr_to_black mt-lg-5">
         <div className="bg_red_to_tr pt-5">
           <Container className="py-5">
             <Row className=" pb-lg-5">

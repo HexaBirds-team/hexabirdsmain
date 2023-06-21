@@ -347,9 +347,9 @@ function AboutPage() {
         <Container>
           <Row className=" position-relative py-5 mb-md-4">
             <Col xs={12} lg={3}>
-              <div className="d-lg-inline-block rotate_n_90 position_lg_absolute top-50 start-0 opacity_Low_3">
+              <div className="d-lg-inline-block rotate_n_90 position_lg_absolute top-50 start-0 opacity_L ow_3">
                 <h2
-                  className=" ff_Inter fw-bold fs_10xl text-dark  text-center"
+                  className=" ff_Inter fw-bold fs_10xl text_dark  text-center box_shadow_white"
                   data-aos="fade-down"
                   data-aos-duration="800"
                   data-aos-delay="200"
@@ -368,7 +368,7 @@ function AboutPage() {
                       xs={4}
                       sm={3}
                       md={2}
-                      className="pt-5"
+                      className="pt-5 index_1"
                       key={id}
                       data-aos="zoom-in"
                       data-aos-duration="800"
@@ -379,7 +379,7 @@ function AboutPage() {
                         <span className="teamline d-inline-block position-absolute top-0 translate-middle-x start-50"></span>
                         <div className="imgoverlay">
                           <img
-                            className="w-100 position-relative index_1"
+                            className="w-100 position-relative"
                             src={images}
                             alt="team"
                           />

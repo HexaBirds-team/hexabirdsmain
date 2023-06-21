@@ -32,7 +32,7 @@ function CareerPage() {
                 data-aos-delay="100"
                 data-aos-offset="0"
               >
-                We are building a Team at{" "}
+                We are building a Team at
                 <span className=" fw-bold text_secondary text-uppercase">
                   HEXABIRDS
                 </span>{" "}
@@ -58,7 +58,7 @@ function CareerPage() {
       </section>
       <section className="py-md-5">
         <Container>
-          <div className=" d-flex overflow-scroll">
+          <div className=" d-flex overflow-auto scrollbar_none">
             <button
               className=" py-1 text-nowrap px-4 text-uppercase ff_Inter fw-normal fs_lg border-0 bg_secondary rounded-pill text_primary"
               data-aos="zoom-in"
@@ -66,7 +66,7 @@ function CareerPage() {
               data-aos-delay="100"
               data-aos-offset="200"
             >
-              View All
+              All
             </button>
             <button
               className=" py-1 text-nowrap px-4 text-uppercase ff_Inter fw-normal fs_lg bg-transparent ms-3 rounded-pill text_light  border_secondary"
